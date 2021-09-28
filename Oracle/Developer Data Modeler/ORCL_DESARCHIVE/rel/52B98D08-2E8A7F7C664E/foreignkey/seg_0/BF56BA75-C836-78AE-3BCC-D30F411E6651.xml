@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BF56BA75-C836-78AE-3BCC-D30F411E6651" containerWithKeyObject="D0E994AB-E1FA-7413-60CE-2CCA7858FFC8" localFKIndex="8C94C577-69C8-FC0F-2166-75B5E4D2C573" name="FK_SCN_DPN">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:52:48 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<referredTableLongName>SECCIONAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BFB30C03-0217-A4B6-F08C-69809DE706A7</referredTableID>
+<keyObject>95234617-E7C7-8339-30A2-914046526D85</keyObject>
+<referredKeyID>95234617-E7C7-8339-30A2-914046526D85</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SECCIONAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>9CEC10BC-6D75-AC66-65AC-1ECF95630B22</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

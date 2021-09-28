@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="88FAE52E-4C7E-CC63-280E-437DC8C9C4DF" containerWithKeyObject="E9997329-3718-EDB4-AC6A-4D5E0647820B" localFKIndex="4A7C6E5D-FD09-ACF0-24A9-DBDEB5C1D2AA" name="FK_ESR_ROL">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:32:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<referredTableLongName>ESTADO_ROL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>80529546-4A57-B480-A940-49CFF861244A</referredTableID>
+<keyObject>29AED08A-1A7B-3952-CB59-3EFC7A8965EC</keyObject>
+<referredKeyID>29AED08A-1A7B-3952-CB59-3EFC7A8965EC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESTADO_ROL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

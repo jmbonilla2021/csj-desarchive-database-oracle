@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFB30C03-0217-A4B6-F08C-69809DE706A7" name="SECCIONAL">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:40:31 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<abbreviation>SCN</abbreviation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SECCIONAL" id="9CEC10BC-6D75-AC66-65AC-1ECF95630B22">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:41:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_SECCIONAL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SECCIONAL</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="895D5A5A-9CC9-38E2-DD7D-5DFC4AC52C01">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:41:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESTADO_SECCIONAL" id="BC3EA4A2-CFC8-701C-58E5-2EAFBF5F82C4">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 21:44:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA1C9B6F-D458-BE2A-A93D-2A40137F96B8" referredColumn="4CE58F53-08B6-71AE-69A0-DF4A2EA7EA6F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95234617-E7C7-8339-30A2-914046526D85" name="PK_SCN">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:41:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CEC10BC-6D75-AC66-65AC-1ECF95630B22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9798882-A4C7-395A-80CF-2F94776F35CB" name="FK_ESS_SCN">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 21:44:22 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC3EA4A2-CFC8-701C-58E5-2EAFBF5F82C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
