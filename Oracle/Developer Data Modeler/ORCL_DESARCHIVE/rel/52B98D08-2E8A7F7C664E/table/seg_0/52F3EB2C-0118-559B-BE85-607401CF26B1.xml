@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52F3EB2C-0118-559B-BE85-607401CF26B1" name="MENUSXROL">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 14:58:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>MNR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MENU" id="9A155082-1AED-0C6E-CD3A-67A04FC1FD5B">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 14:58:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99CF5974-75A0-8E2E-8AAF-8CD0D01B02C1" referredColumn="DEEF565B-63FA-FF63-0091-9CF04882F5F4"/>
+</associations>
+</Column>
+<Column name="ID_ROL" id="67B83236-9B1F-30FE-DAEC-414508659E2B">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 14:58:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30EF2405-6E5A-4B8C-CBEF-F88B66565AA1" referredColumn="2E04A431-BF5E-596D-19ED-062B3F51D174"/>
+</associations>
+</Column>
+<Column name="VER_MENU" id="52780708-8234-F7CB-AFE7-1EF2DAFE7F55">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 15:18:04 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VER" id="3B9D4C8E-5653-EC9B-F3B2-857605DEB54A">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:50:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INHABILITAR" id="6D80BD15-4EA1-E676-0CED-ABA221848708">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:50:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREAR" id="E294A915-51E2-F6E6-3D7C-E7627E0A7D15">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:50:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDITAR" id="CA245E6B-CDC3-A519-8A63-3E8C8A2943D9">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:50:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ELIMINAR" id="418CCBEC-4293-1632-CF11-9744B9C922CE">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:50:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="AF056145-9778-05AB-FA5B-82ED665CBE77">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 21:42:39 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A86B36D-5903-C360-3DEC-7740ABD137DA" name="PK_MNR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 14:59:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A155082-1AED-0C6E-CD3A-67A04FC1FD5B"/>
+<colUsage columnID="67B83236-9B1F-30FE-DAEC-414508659E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3906C657-724F-A541-7D5D-96D573CA03EB" name="FK_MEN_MNR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:50:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A155082-1AED-0C6E-CD3A-67A04FC1FD5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09BDDD9A-33B5-3DC6-E98C-D58FD0E3F19C" name="FK_ROL_MNR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:53:30 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67B83236-9B1F-30FE-DAEC-414508659E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
