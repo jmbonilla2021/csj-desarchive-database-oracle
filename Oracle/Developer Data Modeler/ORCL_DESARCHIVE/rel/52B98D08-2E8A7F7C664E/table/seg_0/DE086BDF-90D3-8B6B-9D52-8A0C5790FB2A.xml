@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE086BDF-90D3-8B6B-9D52-8A0C5790FB2A" name="ROLESXGRUPO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:04:48 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<abbreviation>RXG</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ROL" id="AC757A99-AADC-07DA-B0FD-05455D0A6E3F">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:05:06 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC3915CC-45F8-CAA0-EFA8-0FAE7DB5BBF4" referredColumn="2E04A431-BF5E-596D-19ED-062B3F51D174"/>
+</associations>
+</Column>
+<Column name="ID_GRUPO" id="7539C5D1-FB00-832D-4312-A6CE031025BB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:05:06 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29369B83-CC6E-ADAC-148F-040894B6C8FB" referredColumn="9910152C-3674-4463-27B9-29DD1D219D84"/>
+</associations>
+</Column>
+<Column name="ES_ACTIVO" id="3B241B5B-46D7-E0F7-303D-3A2ACE89F272">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 21:42:21 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47604FB0-B6A8-9DCE-2D34-D5206A6AEA82" name="PK_RXG">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:14:19 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7539C5D1-FB00-832D-4312-A6CE031025BB"/>
+<colUsage columnID="AC757A99-AADC-07DA-B0FD-05455D0A6E3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="599AD8CF-9C53-FECA-EEA4-F77BAFF7DBBE" name="FK_GRP_RXG">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:14:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7539C5D1-FB00-832D-4312-A6CE031025BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42D7DC4A-1BB4-FD98-D870-F194ECE88738" name="FK_ROL_RXG">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:15:22 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC757A99-AADC-07DA-B0FD-05455D0A6E3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
