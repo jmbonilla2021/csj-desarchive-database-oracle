@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="29369B83-CC6E-ADAC-148F-040894B6C8FB" containerWithKeyObject="DE086BDF-90D3-8B6B-9D52-8A0C5790FB2A" localFKIndex="599AD8CF-9C53-FECA-EEA4-F77BAFF7DBBE" name="FK_GRP_RXG">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:14:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>GRUPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0F2CB48F-E508-CAF0-5CA3-941A0B12B632</referredTableID>
+<keyObject>0D52AA95-1B14-84BB-FCA3-45E2E9783083</keyObject>
+<referredKeyID>0D52AA95-1B14-84BB-FCA3-45E2E9783083</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_GRUPO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

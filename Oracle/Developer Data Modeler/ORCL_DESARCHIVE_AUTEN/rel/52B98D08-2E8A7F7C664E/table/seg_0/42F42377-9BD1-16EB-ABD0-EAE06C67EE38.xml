@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42F42377-9BD1-16EB-ABD0-EAE06C67EE38" name="USUARIO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:03:37 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>USU</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="838DE0E8-48B4-A945-A638-DB8D69734E09">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_USUARIO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_USUARIO</autoIncrementTriggerName>
+<associations>
+<colAssociation fkAssociation="FD497347-3D17-169C-4B1D-18BC13877716" referredColumn="95A6DB62-EBED-B63A-7E29-283E89280370"/>
+</associations>
+</Column>
+<Column name="NUMERO_IDENTIFICACION" id="F105E6E9-4C0A-1788-AFB1-0A165F46249E">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-29 15:43:01 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_NOMBRE" id="0E9C2518-BC20-FFE3-5BA5-B60CB054500C">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="EDE333B1-1F2D-230E-38D6-FF6EB02DE6BC">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="5F3914A7-51F9-4758-7CF8-10C80EAF7BE5">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="A9E73F0F-985A-957C-3AA7-7927BEA2B695">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="8B32E32F-982D-BD52-4DAE-EEF1D0856D75">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-29 15:16:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ROL" id="FAD1E79D-61F7-C978-BA8F-ADB41C0EAB99">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8533BDC-542A-8762-C6AA-6A744471D602" referredColumn="2E04A431-BF5E-596D-19ED-062B3F51D174"/>
+</associations>
+</Column>
+<Column name="ID_ESTADO_USUARIO" id="87D428C1-E0C9-6155-D3C9-2DEC1498F9F5">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:12:36 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="551D9F2F-6749-2BCA-5402-9D31FCEC6F4C" referredColumn="9EC4F048-EDAB-5E92-7876-CC5E14ADC933"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_IDENTIFICACION" id="F522A901-2908-3520-47E4-79FB08F61123">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-29 15:04:56 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F40E2133-B249-AAE3-247D-BB0FD5385B5C" referredColumn="DAEDF781-F55F-4586-E4BE-513EECFCB7A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5138431-624C-D258-98EA-1AB15D5BCF13" name="PK_USU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:17:10 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="838DE0E8-48B4-A945-A638-DB8D69734E09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5919D52F-0520-1E46-F9D1-11A7B70683EB" name="FK_ROL_USU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 21:17:57 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAD1E79D-61F7-C978-BA8F-ADB41C0EAB99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EBB94A5-4D5D-AC62-EE51-DDE840C56128" name="FK_EUS_USU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:18:14 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87D428C1-E0C9-6155-D3C9-2DEC1498F9F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA179780-EDF3-F332-5344-BAC0D2B5C61F" name="FK_DTU_USU">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:51:30 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="838DE0E8-48B4-A945-A638-DB8D69734E09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19AA3875-9C15-4EB1-CA85-5A1C2CA80B9B" name="FK_TID_USU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-29 15:05:05 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F522A901-2908-3520-47E4-79FB08F61123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

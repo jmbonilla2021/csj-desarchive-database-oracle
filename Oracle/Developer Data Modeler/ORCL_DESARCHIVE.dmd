@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ORCL_DESARCHIVE" id="22AB2A3E-3221-9CD4-0D87-671909611EF4" version="3.5">
-<createdBy>japaez</createdBy>
-<createdTime>2021-09-09 19:52:00 UTC</createdTime>
-<ownerDesignName>MER_MICRO_ADMON</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>22AB2A3E-3221-9CD4-0D87-671909611EF4</designId>
-</OSDM_Design>

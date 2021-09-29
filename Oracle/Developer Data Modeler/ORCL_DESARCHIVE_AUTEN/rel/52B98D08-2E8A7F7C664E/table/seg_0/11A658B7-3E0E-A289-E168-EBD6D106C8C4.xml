@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11A658B7-3E0E-A289-E168-EBD6D106C8C4" name="MUNICIPIO">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:41:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<abbreviation>MUN</abbreviation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MUNICIPIO" id="0F1CFCC4-734B-70CA-1E43-5A6A64A97B9F">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:42:34 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_MUNICIPIO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_MUNICIPIO</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="0AAD2B1A-7224-8507-C8FB-6DAD3B601DD7">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:42:34 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="3ED0CDE1-0CD0-1D09-74E1-9BB7F31C1052">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:42:34 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DEPARTAMENTO" id="68F962EA-0A29-D9B1-DD8C-8020A8F48390">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:42:34 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16C91C54-A632-8A31-D4E9-19A1464CC4BF" referredColumn="6853CD72-8B1D-97C2-F947-1DFB9CC4171D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAAA22B1-8482-E817-9B8D-87DD8E7C3F0F" name="PK_MUN">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:42:34 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F1CFCC4-734B-70CA-1E43-5A6A64A97B9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A962911B-670F-29E0-F307-19D1B2E10F03" name="FK_DEP_MUN">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:47:25 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68F962EA-0A29-D9B1-DD8C-8020A8F48390"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

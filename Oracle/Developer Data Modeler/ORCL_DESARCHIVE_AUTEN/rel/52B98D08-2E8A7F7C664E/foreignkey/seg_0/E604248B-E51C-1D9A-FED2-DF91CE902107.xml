@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E604248B-E51C-1D9A-FED2-DF91CE902107" containerWithKeyObject="845CD932-82D8-3806-D594-AAB81C766677" localFKIndex="0D1853CB-2A8F-1B37-4CE1-DAEA4CBBAED2" name="FK_CRG_DTU">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:52:59 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>CARGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3A04DA43-A1AA-36F8-1814-3875E8CE4899</referredTableID>
+<keyObject>6B9393D0-EAAA-AA7E-5448-AD4D827F2593</keyObject>
+<referredKeyID>6B9393D0-EAAA-AA7E-5448-AD4D827F2593</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CARGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>E6431924-31E9-F0D4-5C5D-D575AF5A87A9</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
