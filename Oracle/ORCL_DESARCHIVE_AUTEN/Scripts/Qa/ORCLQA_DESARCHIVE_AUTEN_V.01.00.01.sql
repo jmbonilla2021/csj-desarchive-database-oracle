@@ -5,6 +5,11 @@
 --                               ID_TIPO_IDENTIFICACION
 --                             - Se crea la tabla TIPO_IDENTIFICACION
 --                             - Se crea la relacion entre la tabla TIPO_IDENTIFICACION y USUARIO.
+--                             - Se elimina la llave foranea FK_DTU_USU para ajustar la relacion con la tabla DETALLE_USUARIO
+--                             - Se crea la llave foranea FK_USU_DTU para ajustar la relacion con la tabla DETALLE_USUARIO
+--                             - Se crea el indice IDX_CRD_IDUSUARIO asociado al campo ID_USUARIO para la tabla CREDENCIAL 
+--                               para garantizar la union uno a uno
+---
 -- PARÁMETROS DE ENTRADA:	  : N/A 
 -- PARÁMETROS DE SALIDA       : N/A
 -- OBJETOS QUE LO REFERENCIAN : N/A
@@ -45,3 +50,12 @@ END;
 ALTER TABLE SCHQA_DESARCHIVE_AUTEN.USUARIO
     ADD CONSTRAINT FK_TID_USU FOREIGN KEY ( ID_TIPO_IDENTIFICACION )
         REFERENCES SCHQA_DESARCHIVE_AUTEN.TIPO_IDENTIFICACION ( ID_TIPO_IDENTIFICACION );
+		
+ALTER TABLE SCHQA_DESARCHIVE_AUTEN.USUARIO DROP CONSTRAINT FK_DTU_USU;
+ALTER TABLE SCHQA_DESARCHIVE_AUTEN.DETALLE_USUARIO ADD CONSTRAINT FK_USU_DTU FOREIGN KEY ( ID_USUARIO ) REFERENCES USUARIO ( ID_USUARIO );
+CREATE UNIQUE INDEX SCHQA_DESARCHIVE_AUTEN.IDX_USU_DTU ON SCHQA_DESARCHIVE_AUTEN.DETALLE_USUARIO (ID_USUARIO ASC );
+
+CREATE UNIQUE INDEX SCHQA_DESARCHIVE_AUTEN.IDX_CRD_IDUSUARIO ON SCHQA_DESARCHIVE_AUTEN.CREDENCIAL (ID_USUARIO ASC );
+
+
+
