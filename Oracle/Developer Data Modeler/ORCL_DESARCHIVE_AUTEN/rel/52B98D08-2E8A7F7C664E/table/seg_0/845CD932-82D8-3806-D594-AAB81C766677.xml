@@ -17,7 +17,11 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_DETALLE_USUARIO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_DETALLE_USUARIO</autoIncrementTriggerName>
 </Column>
 <Column name="ID_USUARIO" id="3D08B4AE-CD24-D87B-61EF-A754914877C4">
 <createdBy>gedua</createdBy>
@@ -27,8 +31,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C3D2262-5D21-E104-DACA-EAA649DCB74F" referredColumn="838DE0E8-48B4-A945-A638-DB8D69734E09"/>
+</associations>
 </Column>
 <Column name="ID_CARGO" id="5A65A3E6-38DA-A002-557A-DA89430383DD">
 <createdBy>gedua</createdBy>
@@ -38,7 +45,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="E604248B-E51C-1D9A-FED2-DF91CE902107" referredColumn="E6431924-31E9-F0D4-5C5D-D575AF5A87A9"/>
@@ -52,7 +59,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="194E9362-FC72-5674-2C71-5BA1AECF2AA9" referredColumn="F8678377-C22F-B189-E468-C2418E8F9239"/>
@@ -69,6 +76,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="95A6DB62-EBED-B63A-7E29-283E89280370"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C502EB17-8D15-D4CD-9E52-A4DD39AA577E" name="IDX_USU_DTU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-01 21:48:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D08B4AE-CD24-D87B-61EF-A754914877C4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="6884F27E-3C2A-736D-6D1C-DD03B1853550" name="FK_DPN_DTU">
@@ -89,6 +106,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5A65A3E6-38DA-A002-557A-DA89430383DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3D08140-1C73-74B5-0BFD-5F88834F47B4" name="FK_USU_DTU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-01 21:45:38 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D08B4AE-CD24-D87B-61EF-A754914877C4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

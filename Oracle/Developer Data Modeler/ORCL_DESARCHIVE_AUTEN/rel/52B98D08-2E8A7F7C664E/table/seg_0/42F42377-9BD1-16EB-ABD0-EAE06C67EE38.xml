@@ -23,9 +23,6 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>SEQ_USUARIO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_USUARIO</autoIncrementTriggerName>
-<associations>
-<colAssociation fkAssociation="FD497347-3D17-169C-4B1D-18BC13877716" referredColumn="95A6DB62-EBED-B63A-7E29-283E89280370"/>
-</associations>
 </Column>
 <Column name="NUMERO_IDENTIFICACION" id="F105E6E9-4C0A-1788-AFB1-0A165F46249E">
 <createdBy>japaez</createdBy>
@@ -166,16 +163,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="87D428C1-E0C9-6155-D3C9-2DEC1498F9F5"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="EA179780-EDF3-F332-5344-BAC0D2B5C61F" name="FK_DTU_USU">
-<createdBy>gedua</createdBy>
-<createdTime>2021-09-22 17:51:30 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="838DE0E8-48B4-A945-A638-DB8D69734E09"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="19AA3875-9C15-4EB1-CA85-5A1C2CA80B9B" name="FK_TID_USU">

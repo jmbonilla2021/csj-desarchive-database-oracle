@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------------------------------------------
 -- OBJETIVO:                   Asingar todos los indices del esquema al tablespace de indices
 -- PARÁMETROS DE ENTRADA:	   
---                             OWNER          =	 SCHQA_DESARCHIVE_AUTEN                         
+--                             OWNER          =	 SCHQA_ORCL_DESARCHIVE_AUTEN                         
 --                             TABLESPACE_IDX =  ORCLQA_DESARCHIVE_AUTEN_IDX
 -- PARÁMETROS DE SALIDA:       N/A
 -- OBJETOS QUE LO REFERENCIAN  N/A
