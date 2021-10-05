@@ -5,6 +5,7 @@
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_14</ordsAlias>
 <abbreviation>DPN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
@@ -45,9 +46,9 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NUMERO_CUENTA" id="74F21C31-3979-0A39-6CDC-38D2D3C930C2">
-<createdBy>gedua</createdBy>
-<createdTime>2021-09-22 17:39:52 UTC</createdTime>
+<Column name="NUMERO_CUENTA" id="5C9D5B97-4E2C-2794-5C48-355CF938F988">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-01 17:42:34 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

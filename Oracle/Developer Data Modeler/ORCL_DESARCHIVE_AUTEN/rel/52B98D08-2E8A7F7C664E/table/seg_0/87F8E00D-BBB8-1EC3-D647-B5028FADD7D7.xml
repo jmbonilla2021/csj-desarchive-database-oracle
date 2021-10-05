@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87F8E00D-BBB8-1EC3-D647-B5028FADD7D7" name="BODEGA">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:36:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<abbreviation>BDG</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BODEGA" id="6789E11F-D31E-F885-D8EA-D92F31E26423">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_BODEGA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_BODEGA</autoIncrementTriggerName>
+</Column>
+<Column name="IDENTIFICACION" id="1E50C580-1A3E-CF88-C584-D390369ACB81">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="1EC72BA6-0F98-328C-23AE-E0D31F630CCC">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="01C38C71-1B3B-4B53-1150-00A352725A3D">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION" id="D46C805F-62DF-7420-1D7F-5A0A839D0290">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:39:56 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MUNICIPIO" id="D01E880B-5CD0-B71D-9E4A-A5947551F628">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="21F9B4B5-7BEC-EB0B-C0DF-DF2F22CA80D3">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:40:14 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7047DFA4-8C57-2696-77E6-6BEC8A69ADA8" name="PK_BDG">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6789E11F-D31E-F885-D8EA-D92F31E26423"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D410D7C-3780-BB4C-DDD6-ABD38F5FBF97" name="BODEGA__IDX">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:40:50 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E50C580-1A3E-CF88-C584-D390369ACB81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

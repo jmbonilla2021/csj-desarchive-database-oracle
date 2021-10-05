@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B61C7DF8-A98F-40B0-F9D8-07D2BC899CEC" containerWithKeyObject="53E2206E-39F9-D131-82B3-C7EB7B92AFB8" localFKIndex="B548E9AB-AC7B-E233-07B0-A029A6614459" name="FK_JDC_JXB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:49:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>JURISDICCION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D12B9B4A-6C9B-2968-A88E-F1CEF5A89DC7</referredTableID>
+<keyObject>352CF14C-A9B4-CCC4-91A7-0DC38D433F60</keyObject>
+<referredKeyID>352CF14C-A9B4-CCC4-91A7-0DC38D433F60</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_JURISDICCION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
