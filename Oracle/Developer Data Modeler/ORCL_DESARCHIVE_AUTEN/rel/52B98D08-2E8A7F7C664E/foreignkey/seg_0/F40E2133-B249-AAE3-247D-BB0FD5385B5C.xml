@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F40E2133-B249-AAE3-247D-BB0FD5385B5C" containerWithKeyObject="42F42377-9BD1-16EB-ABD0-EAE06C67EE38" localFKIndex="19AA3875-9C15-4EB1-CA85-5A1C2CA80B9B" name="FK_TID_USU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-29 15:05:05 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>TIPO_IDENTIFICACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A53D24DD-6DBC-CA55-BAB3-A4EE631759CC</referredTableID>
+<keyObject>9DEBA189-B69D-E30B-8BB8-9646615CE7E5</keyObject>
+<referredKeyID>9DEBA189-B69D-E30B-8BB8-9646615CE7E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TIPO_IDENTIFICACION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

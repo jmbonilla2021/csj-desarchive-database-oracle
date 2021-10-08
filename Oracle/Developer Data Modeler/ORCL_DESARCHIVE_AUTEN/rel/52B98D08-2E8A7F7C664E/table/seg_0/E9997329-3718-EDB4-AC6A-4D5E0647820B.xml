@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9997329-3718-EDB4-AC6A-4D5E0647820B" name="ROL">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 20:16:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<abbreviation>ROL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ROL" id="2E04A431-BF5E-596D-19ED-062B3F51D174">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 20:18:47 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_ROL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_ROL</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="2E88A388-3700-89E1-099E-7036CB5B1412">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 20:18:47 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="159B9409-6E8B-42EB-A665-1104EEB18154">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 20:18:47 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5258F02C-769A-C220-2A91-A29CDFB7AC93" name="PK_ROL">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-09 20:18:47 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E04A431-BF5E-596D-19ED-062B3F51D174"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
