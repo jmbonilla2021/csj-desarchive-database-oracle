@@ -46,19 +46,28 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_ESTADO_MENU" id="7F2574E2-2D82-5233-532D-AB5711041A7F">
+<Column name="URL" id="BD7B0EE6-3B32-4988-1929-499AD605E0A1">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-07 14:08:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="7F2574E2-2D82-5233-532D-AB5711041A7F">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:43:57 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="619BCABC-31EA-D965-ABBD-4BB46C323ACF" referredColumn="63D24473-DF7E-163E-2CB5-93981A9BD443"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -71,16 +80,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DEEF565B-63FA-FF63-0091-9CF04882F5F4"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="0F37FBE9-29BE-B262-9045-BBF989776175" name="FK_ESM_MEN">
-<createdBy>japaez</createdBy>
-<createdTime>2021-09-15 20:44:09 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="7F2574E2-2D82-5233-532D-AB5711041A7F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

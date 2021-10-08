@@ -15,6 +15,7 @@
 -- REALIZADO POR:               
 -- OBJETIVO MODIFICACIÓN:       
 ----------------------------------------------------------------------------------------------------------------------
+ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
 DECLARE
   v_texto VARCHAR2(4000);
   CURSOR c_index

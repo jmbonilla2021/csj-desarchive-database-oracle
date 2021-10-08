@@ -6,7 +6,7 @@
 -- PARÁMETROS DE SALIDA:       N/A
 -- OBJETOS QUE LO REFERENCIAN  N/A
 -- LIDER TÉCNICO:              Gabriel Duarte
--- FECHA:                      2021/09/27
+-- FECHA:                      2021/10/08
 -- REALIZADO POR:              INFORMATICA & TECNOLOGIA (GEDV - JAPC)
 --	         Este componente fue realizado bajo la metodología de desarrollo de Informática & Tecnología 
 --             y se encuentra Protegido por las leyes de derechos de autor.
@@ -15,6 +15,7 @@
 -- REALIZADO POR:               
 -- OBJETIVO MODIFICACIÓN:       
 ----------------------------------------------------------------------------------------------------------------------
+ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
 DECLARE
   v_texto VARCHAR2(4000);
   CURSOR c_index

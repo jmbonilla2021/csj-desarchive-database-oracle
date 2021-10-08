@@ -5,6 +5,7 @@
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_17</ordsAlias>
 <abbreviation>DEP</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
@@ -23,9 +24,9 @@
 <autoIncrementSequenceName>SEQ_DEPARTAMENTO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_DEPARTAMENTO</autoIncrementTriggerName>
 </Column>
-<Column name="NOMBRE" id="D333C124-C1ED-E478-7C1D-1FB97C07FFCE">
-<createdBy>gedua</createdBy>
-<createdTime>2021-09-22 17:41:47 UTC</createdTime>
+<Column name="CODIGO" id="73030E39-7A39-21C6-135A-33E554910FCF">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-23 16:28:37 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,9 +35,9 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO" id="73030E39-7A39-21C6-135A-33E554910FCF">
-<createdBy>japaez</createdBy>
-<createdTime>2021-09-23 16:28:37 UTC</createdTime>
+<Column name="NOMBRE" id="D333C124-C1ED-E478-7C1D-1FB97C07FFCE">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:41:47 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -67,6 +68,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6853CD72-8B1D-97C2-F947-1DFB9CC4171D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2E371AF-1354-33E5-FB99-D6D3B689B600" name="IDX_CODIGO_DEP">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-07 14:44:37 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73030E39-7A39-21C6-135A-33E554910FCF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

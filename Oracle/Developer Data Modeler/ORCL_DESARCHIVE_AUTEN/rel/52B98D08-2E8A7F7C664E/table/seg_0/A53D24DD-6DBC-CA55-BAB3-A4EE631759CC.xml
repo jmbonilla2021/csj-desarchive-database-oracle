@@ -35,6 +35,18 @@
 <ownDataTypeParameters>500,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ABREVIACION" id="0218EC00-81F3-FBD5-070A-10D32FEB50A4">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-07 14:11:45 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ES_ACTIVO" id="7E82B987-87AE-561B-433C-4B6915EF3D88">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:03:38 UTC</createdTime>

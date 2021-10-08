@@ -72,6 +72,16 @@
 <colUsage columnID="0F1CFCC4-734B-70CA-1E43-5A6A64A97B9F"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="F0D109D3-AF7C-4CC6-C0B9-99B7E21A6541" name="IDX_CODIGO_MUN">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-07 14:44:00 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AAD2B1A-7224-8507-C8FB-6DAD3B601DD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="A962911B-670F-29E0-F307-19D1B2E10F03" name="FK_DEP_MUN">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:47:25 UTC</createdTime>

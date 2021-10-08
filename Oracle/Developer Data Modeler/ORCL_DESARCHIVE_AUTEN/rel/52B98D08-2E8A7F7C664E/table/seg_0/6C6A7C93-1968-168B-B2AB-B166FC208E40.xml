@@ -21,7 +21,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<autoIncrementSequenceName>SEQ_CRED</autoIncrementSequenceName>
+<autoIncrementSequenceName>SEQ_CREDENCIAL</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_CREDENCIAL</autoIncrementTriggerName>
 </Column>
 <Column name="USUARIO" id="419D036C-2EC0-1175-26A7-8C96FFF9FF2C">

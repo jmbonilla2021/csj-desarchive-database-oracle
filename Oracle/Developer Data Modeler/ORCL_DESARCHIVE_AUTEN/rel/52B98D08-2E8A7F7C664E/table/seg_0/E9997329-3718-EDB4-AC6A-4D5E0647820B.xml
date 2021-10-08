@@ -35,19 +35,16 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_ESTADO_ROL" id="159B9409-6E8B-42EB-A665-1104EEB18154">
+<Column name="ES_ACTIVO" id="159B9409-6E8B-42EB-A665-1104EEB18154">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 20:18:47 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="88FAE52E-4C7E-CC63-280E-437DC8C9C4DF" referredColumn="3D29CB27-C104-2C68-49ED-49F6854698B0"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -60,16 +57,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2E04A431-BF5E-596D-19ED-062B3F51D174"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4A7C6E5D-FD09-ACF0-24A9-DBDEB5C1D2AA" name="FK_ESR_ROL">
-<createdBy>japaez</createdBy>
-<createdTime>2021-09-15 20:32:15 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="159B9409-6E8B-42EB-A665-1104EEB18154"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
