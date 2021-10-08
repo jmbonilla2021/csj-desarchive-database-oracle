@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="845CD932-82D8-3806-D594-AAB81C766677" name="DETALLE_USUARIO">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:49:04 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<abbreviation>DTU</abbreviation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DETALLE_USUARIO" id="95A6DB62-EBED-B63A-7E29-283E89280370">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_DETALLE_USUARIO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_DETALLE_USUARIO</autoIncrementTriggerName>
+</Column>
+<Column name="ID_USUARIO" id="3D08B4AE-CD24-D87B-61EF-A754914877C4">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A51FD88B-5FB0-3A4E-C5BB-2F56F8025827" referredColumn="838DE0E8-48B4-A945-A638-DB8D69734E09"/>
+</associations>
+</Column>
+<Column name="ID_CARGO" id="5A65A3E6-38DA-A002-557A-DA89430383DD">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E604248B-E51C-1D9A-FED2-DF91CE902107" referredColumn="E6431924-31E9-F0D4-5C5D-D575AF5A87A9"/>
+</associations>
+</Column>
+<Column name="ID_DEPENDENCIA" id="914E4369-3526-1E28-F606-DF7CB942AC9E">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="194E9362-FC72-5674-2C71-5BA1AECF2AA9" referredColumn="F8678377-C22F-B189-E468-C2418E8F9239"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4B276BA-88B7-3EC3-9283-480BA2FF06C0" name="PK_DTU">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95A6DB62-EBED-B63A-7E29-283E89280370"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D90C521-A91C-4939-0728-F1C078683D74" name="IDX_USU_DTU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-30 22:29:45 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D08B4AE-CD24-D87B-61EF-A754914877C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6884F27E-3C2A-736D-6D1C-DD03B1853550" name="FK_DPN_DTU">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:52:36 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="914E4369-3526-1E28-F606-DF7CB942AC9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D1853CB-2A8F-1B37-4CE1-DAEA4CBBAED2" name="FK_CRG_DTU">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:52:59 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A65A3E6-38DA-A002-557A-DA89430383DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3A11063-8079-C9D4-ABFA-12B017C3E36B" name="FK_USU_DTU">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-30 22:29:13 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D08B4AE-CD24-D87B-61EF-A754914877C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

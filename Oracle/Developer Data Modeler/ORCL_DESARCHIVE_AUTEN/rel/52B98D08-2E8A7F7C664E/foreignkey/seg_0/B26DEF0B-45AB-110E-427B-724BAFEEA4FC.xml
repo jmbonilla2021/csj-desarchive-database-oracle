@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B26DEF0B-45AB-110E-427B-724BAFEEA4FC" containerWithKeyObject="D0E994AB-E1FA-7413-60CE-2CCA7858FFC8" localFKIndex="0DF2AFBD-99FD-A3A6-2B74-5263B5D56DB9" name="FK_MUN_DEP">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-23 16:32:46 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>MUNICIPIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11A658B7-3E0E-A289-E168-EBD6D106C8C4</referredTableID>
+<keyObject>EAAA22B1-8482-E817-9B8D-87DD8E7C3F0F</keyObject>
+<referredKeyID>EAAA22B1-8482-E817-9B8D-87DD8E7C3F0F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MUNICIPIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

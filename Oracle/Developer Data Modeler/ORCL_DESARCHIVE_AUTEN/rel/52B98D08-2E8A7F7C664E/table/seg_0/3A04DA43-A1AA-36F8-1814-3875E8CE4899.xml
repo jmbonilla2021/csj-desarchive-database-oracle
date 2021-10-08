@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A04DA43-A1AA-36F8-1814-3875E8CE4899" name="CARGO">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:39:58 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<abbreviation>CRG</abbreviation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CARGO" id="E6431924-31E9-F0D4-5C5D-D575AF5A87A9">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:40:25 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_CARGO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_CARGO</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="A248F8FB-6F06-332B-38E0-F418EBC8A55C">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:40:25 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="76D24460-A2EB-2311-1079-0157DD37475B">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-29 20:21:24 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B9393D0-EAAA-AA7E-5448-AD4D827F2593" name="PK_CRG">
+<createdBy>gedua</createdBy>
+<createdTime>2021-09-22 17:40:25 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6431924-31E9-F0D4-5C5D-D575AF5A87A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

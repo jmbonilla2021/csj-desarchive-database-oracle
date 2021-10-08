@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DC3915CC-45F8-CAA0-EFA8-0FAE7DB5BBF4" containerWithKeyObject="DE086BDF-90D3-8B6B-9D52-8A0C5790FB2A" localFKIndex="42D7DC4A-1BB4-FD98-D870-F194ECE88738" name="FK_ROL_RXG">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-10 16:15:22 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>ROL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E9997329-3718-EDB4-AC6A-4D5E0647820B</referredTableID>
+<keyObject>5258F02C-769A-C220-2A91-A29CDFB7AC93</keyObject>
+<referredKeyID>5258F02C-769A-C220-2A91-A29CDFB7AC93</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ROL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

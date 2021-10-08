@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5EDE737-6F4D-F4B8-DB7B-1DCD2628254B" name="USUARIO_POR_BODEGA">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:41:06 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<abbreviation>USB</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="6277EC07-9747-B222-B31D-13AAB730B159">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:42:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27960559-8AFF-BB8C-5ABF-6028312FD606" referredColumn="838DE0E8-48B4-A945-A638-DB8D69734E09"/>
+</associations>
+</Column>
+<Column name="ID_BODEGA" id="0C7FC9A4-843C-D54D-551B-A4680477A7CB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:42:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E45D9580-A04E-8D5D-4B4E-95728B1D56F6" referredColumn="6789E11F-D31E-F885-D8EA-D92F31E26423"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A0895D0-ADB1-4B01-C887-5CF6F490BC18" name="PK_USU_BDG">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:42:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6277EC07-9747-B222-B31D-13AAB730B159"/>
+<colUsage columnID="0C7FC9A4-843C-D54D-551B-A4680477A7CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E85B904-FB39-5660-B6D9-9654F0390232" name="FK_USU_UXB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:42:29 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6277EC07-9747-B222-B31D-13AAB730B159"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C0509B9-3C3B-423B-9A4E-68167473B946" name="FK_BDG_UXB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:42:43 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C7FC9A4-843C-D54D-551B-A4680477A7CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

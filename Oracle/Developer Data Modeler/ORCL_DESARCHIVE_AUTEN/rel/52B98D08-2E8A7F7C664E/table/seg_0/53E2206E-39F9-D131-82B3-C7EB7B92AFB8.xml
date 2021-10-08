@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="53E2206E-39F9-D131-82B3-C7EB7B92AFB8" name="JURISDICCION_POR_BODEGA">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:47:30 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<abbreviation>JXB</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BODEGA" id="4100772B-0F26-A57B-1DEA-B1E776CB7F5C">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:48:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E196AC1-B3BA-74DA-4E2C-61FA485C674A" referredColumn="6789E11F-D31E-F885-D8EA-D92F31E26423"/>
+</associations>
+</Column>
+<Column name="ID_JURISDICCION" id="6BAB3A77-E6DE-C85D-C8D8-6C3A59A35C2F">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:48:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B61C7DF8-A98F-40B0-F9D8-07D2BC899CEC" referredColumn="B8D72766-E314-3C74-02F1-2901FC1DAA56"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A9270AD-F0CB-5A3A-48D8-357AC211EF29" name="PK_JXB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:48:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4100772B-0F26-A57B-1DEA-B1E776CB7F5C"/>
+<colUsage columnID="6BAB3A77-E6DE-C85D-C8D8-6C3A59A35C2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="901C8E8C-3CCA-6DDF-CFB9-64EFAC06C799" name="FK_BDG_JXB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:48:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4100772B-0F26-A57B-1DEA-B1E776CB7F5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B548E9AB-AC7B-E233-07B0-A029A6614459" name="FK_JDC_JXB">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:49:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BAB3A77-E6DE-C85D-C8D8-6C3A59A35C2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

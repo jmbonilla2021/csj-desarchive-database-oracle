@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D073353-38D3-975A-22EC-4EC6FBDDE611" name="ESTADO_GRUPO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:04:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<abbreviation>EGR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTADO_GRUPO" id="E152C4C9-B60E-24EA-E1A0-57A8F2B211D5">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:06:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_ESTADO_GRUPO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_ESTADO_GRUPO</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="4EBD1CBE-2AB2-617A-03C8-674777E9D4C8">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:06:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A02725F-5AED-D48B-5D41-9B81DBC79778" name="PK_EGR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-09-15 20:06:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E152C4C9-B60E-24EA-E1A0-57A8F2B211D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
