@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D12B9B4A-6C9B-2968-A88E-F1CEF5A89DC7" name="JURISDICCION">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:44:19 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<abbreviation>JDC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_JURISDICCION" id="B8D72766-E314-3C74-02F1-2901FC1DAA56">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_JURISDICCION</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_JURISDICCION</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="F653D6EF-427C-1ACA-DBEF-5DABF75E729D">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:46:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="140BDE7F-FFEC-7B72-AECE-E06D761EB509">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="4D52A94D-F156-ACCA-D030-0D7B4D29BD18">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="352CF14C-A9B4-CCC4-91A7-0DC38D433F60" name="PK_JDC">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8D72766-E314-3C74-02F1-2901FC1DAA56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0BEDF1E-67B2-56EA-561E-01A0D71D6BE8" name="IDX_JDC_CODIGO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-05 22:46:07 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F653D6EF-427C-1ACA-DBEF-5DABF75E729D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
