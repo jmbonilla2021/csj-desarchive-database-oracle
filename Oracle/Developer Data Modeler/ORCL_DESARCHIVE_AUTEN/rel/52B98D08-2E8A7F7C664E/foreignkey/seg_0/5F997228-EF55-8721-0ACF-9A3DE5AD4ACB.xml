@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B26DEF0B-45AB-110E-427B-724BAFEEA4FC" containerWithKeyObject="D0E994AB-E1FA-7413-60CE-2CCA7858FFC8" localFKIndex="0DF2AFBD-99FD-A3A6-2B74-5263B5D56DB9" name="FK_MUN_DEP">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5F997228-EF55-8721-0ACF-9A3DE5AD4ACB" containerWithKeyObject="845CD932-82D8-3806-D594-AAB81C766677" localFKIndex="DD4189E5-C077-A393-B606-E745848584D7" name="FK_MUN_DTU">
 <createdBy>japaez</createdBy>
-<createdTime>2021-09-23 16:32:46 UTC</createdTime>
+<createdTime>2021-10-19 15:23:27 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <referredTableLongName>MUNICIPIO</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
