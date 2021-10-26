@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D5A8D4F-3BEA-1041-E67A-EECCEBF6FF86" name="MENU_X_ROL">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:44:59 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<abbreviation>MXR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MENU" id="15B5880D-4EB1-1484-83C1-B55102C61CA7">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:52:01 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="941D8819-05A5-64B8-5AE1-21287D3FC32A" referredColumn="DEEF565B-63FA-FF63-0091-9CF04882F5F4"/>
+</associations>
+</Column>
+<Column name="ID_ROL" id="D0FBA8AB-F605-79EB-80B3-9216534B5289">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:52:01 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25517A3E-A892-1155-C23C-8286614B9720" referredColumn="2E04A431-BF5E-596D-19ED-062B3F51D174"/>
+</associations>
+</Column>
+<Column name="ID_PERMISOSXMODULO" id="A937B2FD-F383-1BB0-6EC7-CDFAC7478AD6">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:52:01 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61F329A0-E21E-2D96-CBB4-5C8103DF9EBB" name="PK_MXR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:52:01 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15B5880D-4EB1-1484-83C1-B55102C61CA7"/>
+<colUsage columnID="D0FBA8AB-F605-79EB-80B3-9216534B5289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E1A5915-BC6C-D1E9-D198-27B81EA51D84" name="FK_ROL_MXR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:52:48 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0FBA8AB-F605-79EB-80B3-9216534B5289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E220459-BD04-D263-1832-479B7D40B2C1" name="FK_MEN_MXR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:53:00 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15B5880D-4EB1-1484-83C1-B55102C61CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

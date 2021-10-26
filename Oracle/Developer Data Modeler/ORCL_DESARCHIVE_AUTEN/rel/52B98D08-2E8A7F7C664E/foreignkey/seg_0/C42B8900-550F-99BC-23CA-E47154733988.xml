@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C42B8900-550F-99BC-23CA-E47154733988" containerWithKeyObject="DC9BAFEA-345B-69A3-46BC-3CA1CC25EC2B" localFKIndex="75344CFD-45B1-612E-C6E2-B51B2269BEE0" name="FK_PEM_MEN">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:58:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>PERMISOS_X_MODULO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3336EEAF-754C-19B6-A30B-ADCF1F9BFAB6</referredTableID>
+<keyObject>99115525-090A-EB72-F3D4-E4BD4CCD7839</keyObject>
+<referredKeyID>99115525-090A-EB72-F3D4-E4BD4CCD7839</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PERMISOSXMODULO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

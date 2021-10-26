@@ -69,6 +69,20 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_PERMISOSXMODULO" id="2423FC79-6D0F-7570-06E1-8A0B30AECB65">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:56:13 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C42B8900-550F-99BC-23CA-E47154733988" referredColumn="2F78C218-517E-2DBE-0574-FCF29676DAE4"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="8C47E626-CDAF-4F9C-1438-FC851992FA02" name="PK_MEN">
@@ -80,6 +94,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DEEF565B-63FA-FF63-0091-9CF04882F5F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75344CFD-45B1-612E-C6E2-B51B2269BEE0" name="FK_PEM_MEN">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:58:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2423FC79-6D0F-7570-06E1-8A0B30AECB65"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

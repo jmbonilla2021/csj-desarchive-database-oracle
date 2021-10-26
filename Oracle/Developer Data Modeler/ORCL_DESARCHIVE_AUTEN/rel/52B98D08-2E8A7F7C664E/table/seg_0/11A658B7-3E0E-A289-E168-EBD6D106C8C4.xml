@@ -5,6 +5,7 @@
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_18</ordsAlias>
 <abbreviation>MUN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
@@ -45,6 +46,17 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ES_ACTIVO" id="A1854856-FEE4-6CF0-1912-D1E6A91396EE">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 17:34:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ID_DEPARTAMENTO" id="68F962EA-0A29-D9B1-DD8C-8020A8F48390">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:42:34 UTC</createdTime>
@@ -53,7 +65,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="16C91C54-A632-8A31-D4E9-19A1464CC4BF" referredColumn="6853CD72-8B1D-97C2-F947-1DFB9CC4171D"/>
@@ -79,6 +91,7 @@
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="0F1CFCC4-734B-70CA-1E43-5A6A64A97B9F"/>
 <colUsage columnID="0AAD2B1A-7224-8507-C8FB-6DAD3B601DD7"/>
 </indexColumnUsage>
 </ind_PK_UK>
