@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="941D8819-05A5-64B8-5AE1-21287D3FC32A" containerWithKeyObject="5D5A8D4F-3BEA-1041-E67A-EECCEBF6FF86" localFKIndex="6E220459-BD04-D263-1832-479B7D40B2C1" name="FK_MEN_MXR">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:53:00 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<referredTableLongName>MENU</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DC9BAFEA-345B-69A3-46BC-3CA1CC25EC2B</referredTableID>
+<keyObject>8C47E626-CDAF-4F9C-1438-FC851992FA02</keyObject>
+<referredKeyID>8C47E626-CDAF-4F9C-1438-FC851992FA02</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MENU</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
