@@ -47,6 +47,9 @@
 <dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDB17949-61E0-ADE4-24C5-26399A0BCEB0" referredColumn="2F78C218-517E-2DBE-0574-FCF29676DAE4"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -80,6 +83,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="15B5880D-4EB1-1484-83C1-B55102C61CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7197C517-6328-58F7-EBD2-7DE64B9BB189" name="FK_PEM_ROL">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-27 21:11:34 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A937B2FD-F383-1BB0-6EC7-CDFAC7478AD6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
