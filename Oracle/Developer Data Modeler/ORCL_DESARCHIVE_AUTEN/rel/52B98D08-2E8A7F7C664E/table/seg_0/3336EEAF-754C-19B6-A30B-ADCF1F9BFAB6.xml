@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3336EEAF-754C-19B6-A30B-ADCF1F9BFAB6" name="PERMISOS_X_MODULO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:53:26 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<abbreviation>PEM</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERMISOSXMODULO" id="2F78C218-517E-2DBE-0574-FCF29676DAE4">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:54:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_PERMISOSXMODULO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_PERMISOSXMODULO</autoIncrementTriggerName>
+</Column>
+<Column name="CONSULTAR" id="8F3EF2F7-EB27-B9A1-B4C7-F98C0DE527FF">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:54:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREAR" id="A9A43E2A-F9D6-1FB0-C7CF-E4A1FFCFEFA0">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:54:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDITAR" id="7A65971A-93B9-3257-D927-679B656F9F5E">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:54:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="EC50C02A-BF99-EC19-ED1B-BEA19ACCF8A2">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:54:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="99115525-090A-EB72-F3D4-E4BD4CCD7839" name="PK_PEM">
+<createdBy>japaez</createdBy>
+<createdTime>2021-10-26 16:54:49 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F78C218-517E-2DBE-0574-FCF29676DAE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
