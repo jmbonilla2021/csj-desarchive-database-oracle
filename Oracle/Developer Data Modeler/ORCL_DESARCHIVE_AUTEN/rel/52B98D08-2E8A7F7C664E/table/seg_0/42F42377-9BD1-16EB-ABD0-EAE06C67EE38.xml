@@ -21,6 +21,8 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_USUARIO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_USUARIO</autoIncrementTriggerName>
 </Column>
@@ -111,7 +113,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A8533BDC-542A-8762-C6AA-6A744471D602" referredColumn="2E04A431-BF5E-596D-19ED-062B3F51D174"/>

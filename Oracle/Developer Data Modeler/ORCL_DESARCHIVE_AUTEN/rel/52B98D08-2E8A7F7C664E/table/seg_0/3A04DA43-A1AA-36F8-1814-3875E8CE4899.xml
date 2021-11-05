@@ -20,6 +20,8 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_CARGO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_CARGO</autoIncrementTriggerName>
 </Column>

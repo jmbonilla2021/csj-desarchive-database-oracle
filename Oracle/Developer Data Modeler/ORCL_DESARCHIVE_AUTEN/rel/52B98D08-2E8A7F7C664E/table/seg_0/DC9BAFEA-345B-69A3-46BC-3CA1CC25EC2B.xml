@@ -21,6 +21,8 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_MENU</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_MENU</autoIncrementTriggerName>
 </Column>

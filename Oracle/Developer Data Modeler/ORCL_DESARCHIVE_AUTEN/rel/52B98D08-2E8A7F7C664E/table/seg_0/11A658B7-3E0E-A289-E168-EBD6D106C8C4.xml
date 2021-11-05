@@ -21,6 +21,8 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_MUNICIPIO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_MUNICIPIO</autoIncrementTriggerName>
 </Column>
@@ -65,7 +67,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="16C91C54-A632-8A31-D4E9-19A1464CC4BF" referredColumn="6853CD72-8B1D-97C2-F947-1DFB9CC4171D"/>
