@@ -21,6 +21,8 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_PERMISOSXMODULO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_PERMISOSXMODULO</autoIncrementTriggerName>
 </Column>
