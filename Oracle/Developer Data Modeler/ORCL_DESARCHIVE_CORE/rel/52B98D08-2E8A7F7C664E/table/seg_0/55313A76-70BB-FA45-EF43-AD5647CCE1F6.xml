@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55313A76-70BB-FA45-EF43-AD5647CCE1F6" name="JUZGADO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-10 16:26:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<abbreviation>JUZ</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_JUZGADO" id="4546AB0B-88D7-0A27-3D51-B32B094FEBA8">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-10 16:27:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_JUZGADO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_JUZGADO</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="DFD73A15-0DCC-BDAB-1978-ED88C76EA459">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-10 16:27:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="42E8FD3A-D5C3-3B5B-4411-B54706DACA80">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-10 16:27:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="86745C86-6626-A25A-A8EE-936D8D0C5875">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-10 16:27:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="337D2CA0-8853-DFAE-8ED5-6601AB295ADD" name="PK_JUZ">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-10 16:27:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4546AB0B-88D7-0A27-3D51-B32B094FEBA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A37BACA8-195C-4BB4-1658-F6E27AC81517" name="IDX_CODIGO_JUZGADO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-10 16:27:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4546AB0B-88D7-0A27-3D51-B32B094FEBA8"/>
+<colUsage columnID="DFD73A15-0DCC-BDAB-1978-ED88C76EA459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
