@@ -1,0 +1,156 @@
+/*
+-------------------------------------------------------------------------------------------------------------------------------
+-- OBJETIVO                  : Creacion del modelo relacional motor de reglas el cual contempla:
+                               para el modulo de Reparto.
+-- PARÁMETROS DE ENTRADA     : La ejecución del script solicita los siguientes parametros
+								SERVICIO        : ORCL_DESARCHIVE_SWEB
+								SIZE_TABLESPACE : DEVOPS -> 10
+								                  19C    -> 1000
+												  21C    -> 1000
+-- PARÁMETROS DE SALIDA      : NA   
+-- OBJETOS QUE LO REFERENCIAN: NA
+-- LIDER TÉCNICO             :              
+-- FECHAHORA                 : 2021/10/12
+-- REALIZADO POR             : INFORMATICA & TECNOLOGIA (GEDV - JAPC)
+--	                           Este componente fue realizado bajo la metodología de desarrollo de Informática & Tecnología 
+--                             y se encuentra Protegido por las leyes de derechos de autor.
+-- FECHAHORA MODIFICACIÓN    : 2021/10/12 5:43PM
+-- LIDER MODIFICACIÓN        : INFORMATICA & TECNOLOGIA (GEDV - JAPC)
+-- REALIZADO POR             : Javier Paez Cruz
+-- OBJETIVO MODIFICACIÓN     : Ajuste general creacion estructura base de datos solo contemplando un parametro para la 
+--                             construccion de los objetos.                                    
+-----------------------------------------------------------------------------------------------------------------------------
+*/
+DECLARE
+   V_CREASERVICIO   VARCHAR2(4000);
+   V_INICIASERVICIO VARCHAR2(4000);
+   V_SERVICIO       VARCHAR2(500);
+   V_SIZE_TBL       NUMBER;
+   V_CREATABLESDATA VARCHAR2(4000);
+   V_CREATABLESIDX  VARCHAR2(4000);
+   V_RUTA           VARCHAR2(500);
+   V_RUTA_DATA      VARCHAR2(500);
+   V_RUTA_IDX       VARCHAR2(500);
+   V_CREA_USUARIO   VARCHAR2(500);
+   V_USUARIO        VARCHAR2(500);
+   V_CREA_ROL       VARCHAR2(500);   
+   
+BEGIN
+    DELETE FROM AUDITORIA_OBJETOS;COMMIT;
+    V_SERVICIO := '&SERVICIO';
+	V_SIZE_TBL := '&SIZE_TABLESPACE';
+    --Creando servicio
+    V_CREASERVICIO := 'BEGIN
+                          DBMS_SERVICE.CREATE_SERVICE(
+                            SERVICE_NAME => :SERVICIO,
+                            NETWORK_NAME => :SERVICIO);
+                        END;';
+    EXECUTE IMMEDIATE V_CREASERVICIO USING V_SERVICIO;                    
+    PROC_AUDITA_OBJETOS('CREA SERVICIO '||V_SERVICIO||' OK.',NULL,NULL);
+
+    --Iniciando servicio
+    V_INICIASERVICIO := ' BEGIN
+                           DBMS_SERVICE.START_SERVICE(SERVICE_NAME => :SERVICIO);
+                        END;';
+    EXECUTE IMMEDIATE V_INICIASERVICIO USING V_SERVICIO;
+    PROC_AUDITA_OBJETOS('INICIA SERVICIO '||V_SERVICIO||' OK.',NULL,NULL);
+    
+    EXECUTE IMMEDIATE 'CREATE ROLE ROL_REPARTO_CORE';
+    PROC_AUDITA_OBJETOS('CREA ROL OK.',NULL,NULL);
+    EXECUTE IMMEDIATE 'GRANT CREATE SESSION, CREATE TABLE, CREATE SEQUENCE, CREATE VIEW, CREATE TRIGGER,CREATE PROCEDURE TO ROL_REPARTO_CORE';
+    PROC_AUDITA_OBJETOS('OTORGA PERMISOS OK.',NULL,NULL);
+    
+    ---Obteniendo ruta de instalacion del motor
+    SELECT SUBSTR(FILE_NAME,1,INSTR(FILE_NAME,'\',-1))
+    INTO   V_RUTA
+    FROM   DBA_DATA_FILES
+    WHERE  ROWNUM = 1;
+
+    ---Creando tablespacedata
+    V_RUTA_DATA      := V_RUTA||V_SERVICIO||'_DATA.DBF';
+    V_CREATABLESDATA := 'CREATE TABLESPACE '||V_SERVICIO||'_DATA DATAFILE '''||V_RUTA_DATA||''' SIZE '||V_SIZE_TBL||'m AUTOEXTEND ON NEXT 10m MAXSIZE UNLIMITED';
+    EXECUTE IMMEDIATE V_CREATABLESDATA;
+    PROC_AUDITA_OBJETOS('CREA TABLESPACE DATA '||V_RUTA_DATA||' OK...',NULL,NULL);
+
+    ---Creando tablespace idx
+    V_RUTA_IDX      := V_RUTA||V_SERVICIO||'_IDX.DBF';
+    V_CREATABLESIDX := 'CREATE TABLESPACE '||V_SERVICIO||'_IDX  DATAFILE '''||V_RUTA_IDX||''' SIZE '||V_SIZE_TBL||'m AUTOEXTEND ON NEXT 10m MAXSIZE UNLIMITED';
+    EXECUTE IMMEDIATE V_CREATABLESIDX;
+    PROC_AUDITA_OBJETOS('CREA TABLESPACE IDX '||V_RUTA_IDX||' OK...',NULL,NULL);
+
+    ---Creando usuario
+    V_USUARIO := 'SCH_'||V_SERVICIO;
+    V_CREA_USUARIO := '
+                    CREATE USER '||V_USUARIO||' IDENTIFIED BY '||V_USUARIO||'
+                    DEFAULT TABLESPACE '||V_SERVICIO||'_DATA
+                    TEMPORARY TABLESPACE TEMP
+                    QUOTA UNLIMITED ON '||V_SERVICIO||'_DATA';
+    EXECUTE IMMEDIATE V_CREA_USUARIO;   
+    PROC_AUDITA_OBJETOS('CREA USUARIO '||V_USUARIO||' OK...',NULL,NULL);
+
+    ---Otorgando permisos al usuario
+    EXECUTE IMMEDIATE 'GRANT ROL_REPARTO_CORE TO '||V_USUARIO;
+    PROC_AUDITA_OBJETOS('OTORTANDO PERMISOS ROL, OK...',NULL,NULL);
+    PROC_AUDITA_OBJETOS('INICIA CREACION OBJETOS BD ....',NULL,NULL);
+EXCEPTION
+  WHEN OTHERS THEN
+    PROC_AUDITA_OBJETOS('ERROR DURANTE INSTALACION BD',SQLCODE,SQLERRM);
+END;
+/
+
+
+
+
+
+--- GENERACION DE PERMISOS 
+DECLARE
+  V_ROL  VARCHAR2(4000);
+  CURSOR C_PERMISOS
+  IS 
+    SELECT 'GRANT SELECT, INSERT, UPDATE, DELETE ON SCH_ORCL_REPARTO_CORE.'||TABLE_NAME||' TO ' AS SENTENCIA
+    FROM   USER_TABLES;
+  R_PER C_PERMISOS%ROWTYPE;
+BEGIN
+  PROC_AUDITA_OBJETOS('FINALIZA CREACION OBJETOS BD OK....',NULL,NULL);
+  PROC_AUDITA_OBJETOS('INICIA ASIGNACION PERMISOS OBJETOS....',NULL,NULL);
+  V_ROL := 'ROL_REPARTO_CORE';
+  OPEN C_PERMISOS;
+  LOOP
+    FETCH C_PERMISOS INTO R_PER;
+    EXIT WHEN C_PERMISOS%NOTFOUND;
+      EXECUTE IMMEDIATE R_PER.SENTENCIA||V_ROL;
+  END LOOP;
+  CLOSE C_PERMISOS;
+  PROC_AUDITA_OBJETOS('FINALIZA ASIGNACION PERMISOS OBJETOS OK....',NULL,NULL);
+EXCEPTION
+  WHEN OTHERS THEN
+    IF C_PERMISOS%ISOPEN THEN CLOSE C_PERMISOS; END IF;
+	PROC_AUDITA_OBJETOS('ERROR GENERANDO PERMISOS....',SQLCODE,SQLERRM);
+END;
+/
+DECLARE
+  v_texto VARCHAR2(4000);
+  v_idx   VARCHAR2(4000):= 'ORCL_REPARTO_CORE_IDX';
+  v_ow    VARCHAR2(4000):= 'SCH_ORCL_REPARTO_CORE';
+  CURSOR c_index(p_tbl_idx VARCHAR2,
+                 p_tbl_ow  VARCHAR2)
+  IS 
+    SELECT ('ALTER INDEX '||OWNER||'.'||INDEX_NAME||' REBUILD TABLESPACE '||p_tbl_idx)AS SENTENCIA
+    FROM ALL_INDEXES WHERE OWNER = v_ow; 
+  r_index c_index%ROWTYPE;
+BEGIN
+  PROC_AUDITA_OBJETOS('INICIA ASIGNACION INDICES OBJETOS A TABLESPACE IDX....',NULL,NULL);
+  OPEN c_index(v_idx,v_ow);
+  LOOP
+  FETCH c_index INTO r_index;
+  EXIT WHEN c_index%NOTFOUND;
+    EXECUTE IMMEDIATE r_index.sentencia;
+  END LOOP;
+  CLOSE c_index;
+  EXECUTE IMMEDIATE 'ALTER USER '||v_ow||' QUOTA 1000M on '||v_idx||'';  -- ASIGNA LA CUOTA AL TABLESPACE DE INDICE
+  PROC_AUDITA_OBJETOS('FINALIZA ASIGNACION INDICES OBJETOS A TABLESPACE IDX OK....',NULL,NULL);
+EXCEPTION
+  WHEN OTHERS THEN
+    IF c_index%ISOPEN THEN CLOSE c_index; END IF;
+    PROC_AUDITA_OBJETOS('ERROR ASIGNANDO OBJ A TABLESPACES IDX....',SQLCODE,SQLERRM);
+END;

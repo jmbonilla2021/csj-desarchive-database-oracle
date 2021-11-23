@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E6B02CE-21B1-1D16-4E04-DC2FE26DF7BD" schemaObject="2A2E69A4-1B9C-B0D0-3097-B0836FAE6F93" name="SOLICITUD">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 13:58:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<abbreviation>SLC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SOLICITUD" id="9EE93142-4584-4526-74BE-BCAB4E385971">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_APELLIDOS" id="23F7E72D-18E8-5001-93E9-12909C24618C">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_DOCUMENTO" id="E2BE2A00-FE27-AC2E-F401-CA5410B93826">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_CELULAR" id="C2EEE6BF-96E4-95E2-4ABB-7366B92C6ECC">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO_NOTIFICACION" id="5C55DB85-FAB1-2B30-4D0C-C2D13BF3F911">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREA" id="DF43F3D6-ED7E-CD64-D2EF-787E69176DBF">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREA" id="4D7974C0-C124-916E-69FA-C6EEDA12BD9D">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_DOCUMENTO" id="00277FDC-0CF0-CE60-7722-5D5282D6CF0A">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_PROCESO" id="90A81CE7-B9AA-B50E-DE04-5FF1933CE4A8">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_JUZGADO" id="3FC2532C-D27E-9BEB-DE78-4B760BED1DAD">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESPECIALIDAD" id="615AE692-8915-F77A-9E76-44669AD80544">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:00:11 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESTADO_SOLICITUD" id="E04B3683-F075-0986-3447-D7ACA3E25EE1">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:01:23 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="912424F0-5B7B-E579-6D9A-E4CF16333B96" name="PK_SLC">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-23 14:01:23 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EE93142-4584-4526-74BE-BCAB4E385971"/>
+<colUsage columnID="00277FDC-0CF0-CE60-7722-5D5282D6CF0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
