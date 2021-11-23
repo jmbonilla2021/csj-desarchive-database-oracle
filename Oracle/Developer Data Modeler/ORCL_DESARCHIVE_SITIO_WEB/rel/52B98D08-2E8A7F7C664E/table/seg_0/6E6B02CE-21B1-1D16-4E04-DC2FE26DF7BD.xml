@@ -18,22 +18,29 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_SOLICITUD</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SOLICITUD</autoIncrementTriggerName>
 </Column>
 <Column name="NOMBRE_APELLIDOS" id="23F7E72D-18E8-5001-93E9-12909C24618C">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-23 14:00:11 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NUMERO_DOCUMENTO" id="E2BE2A00-FE27-AC2E-F401-CA5410B93826">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-23 14:00:11 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -42,7 +49,6 @@
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-23 14:00:11 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -56,7 +62,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FECHA_CREA" id="DF43F3D6-ED7E-CD64-D2EF-787E69176DBF">
+<Column name="USUARIO_CREA" id="4D7974C0-C124-916E-69FA-C6EEDA12BD9D">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-23 14:00:11 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -65,11 +71,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="USUARIO_CREA" id="4D7974C0-C124-916E-69FA-C6EEDA12BD9D">
+<Column name="FECHA_CREA" id="DF43F3D6-ED7E-CD64-D2EF-787E69176DBF">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-23 14:00:11 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -134,7 +139,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9EE93142-4584-4526-74BE-BCAB4E385971"/>
-<colUsage columnID="00277FDC-0CF0-CE60-7722-5D5282D6CF0A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
