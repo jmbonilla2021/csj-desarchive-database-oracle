@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A118B3C-6A56-B9C9-EAEA-717CC5A63599" name="SOLICITUD">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:00:42 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>SLC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SOLICITUD" id="21772E0B-83C6-84B2-E994-5653604EABD8">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRES_APELLIDOS" id="B04C9B00-E920-A361-D03F-A3D35107B9ED">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_DOCUMENTO" id="ED890415-49FB-340C-39DB-423F9CDFAC2E">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_DOCUMENTO" id="0F6EE8CA-86D9-4F96-524C-7172EF8D8BC4">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_CELULAR" id="18AE7557-24A8-23A3-CFFC-82C86F02E57A">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO_NOTIFICACION" id="F9AF2E51-ACCC-5902-FDE9-08F119896221">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREA" id="016E0951-535F-6A9B-99AC-96245176551E">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREA" id="35C4D115-A9D5-0E1C-50A1-C418170666C8">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_PROCESO" id="42832226-DDC9-14C6-C31B-1058A4693C35">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_JUZGADO" id="A3FF9B8F-22EE-4E65-70DE-D2F5F4AC6B88">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESPECIALIDAD" id="56D34444-C32A-109F-2DC1-A290A609C900">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESTADO_SOLICITUD" id="B7ACA022-E296-E022-ACA7-540FDF8A0192">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
