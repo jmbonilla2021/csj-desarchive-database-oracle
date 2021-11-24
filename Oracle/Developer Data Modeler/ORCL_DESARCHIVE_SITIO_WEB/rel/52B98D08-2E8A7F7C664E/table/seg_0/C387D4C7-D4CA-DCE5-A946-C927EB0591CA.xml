@@ -26,7 +26,7 @@
 <autoIncrementSequenceName>SEQ_ESTADO_SOLICITUD</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_ESTADO_SOLICITUD</autoIncrementTriggerName>
 </Column>
-<Column name="NOMBRE" id="0A6C32A0-84C1-BBB0-DDFB-292CB0F01CB3">
+<Column name="CODIGO" id="BC137AA4-3724-D671-1395-6E0494C98C0E">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 14:36:32 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -37,7 +37,7 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO" id="BC137AA4-3724-D671-1395-6E0494C98C0E">
+<Column name="NOMBRE" id="0A6C32A0-84C1-BBB0-DDFB-292CB0F01CB3">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 14:36:32 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>

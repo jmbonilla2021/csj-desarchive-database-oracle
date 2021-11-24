@@ -5,7 +5,7 @@
 -- PARÁMETROS DE SALIDA      : NA   
 -- OBJETOS QUE LO REFERENCIAN: NA
 -- LIDER TÉCNICO             :              
--- FECHAHORA                 : 2021/11/19
+-- FECHAHORA                 : 2021/11/23
 -- REALIZADO POR             : INFORMATICA & TECNOLOGIA (GEDV - JAPC)
 --	                           Este componente fue realizado bajo la metodología de desarrollo de Informática & Tecnología 
 --                             y se encuentra Protegido por las leyes de derechos de autor.
@@ -37,7 +37,6 @@ BEGIN
                  ID_AUDITORIA NUMBER(19),
 				 PROYECTO     VARCHAR2(4000),
 				 BD           VARCHAR2(4000),
-                 OBJETO       VARCHAR2(4000),
                  MENSAJE      VARCHAR2(4000),
                  COD_ERROR    NUMBER,
                  ERROR        VARCHAR2(4000),
@@ -67,11 +66,16 @@ END;
 /
 
 ---- Creacion de procedimiento
-CREATE OR REPLACE PROCEDURE PROC_AUDITA_OBJETOS(V_MENSAJE   VARCHAR2,
+CREATE OR REPLACE PROCEDURE PROC_AUDITA_OBJETOS(V_PROYECTO  VARCHAR2,
+                                                V_BD        VARCHAR2,  
+                                                V_MENSAJE   VARCHAR2,
                                                 V_ERROR     VARCHAR2,
                                                 V_MSJ_ERROR VARCHAR2)
 IS
 BEGIN
-  INSERT INTO AUDITORIA_OBJETOS(MENSAJE, COD_ERROR , ERROR, FECHA)VALUES(V_MENSAJE,V_ERROR,V_MSJ_ERROR,SYSDATE);
+  INSERT INTO AUDITORIA_OBJETOS(PROYECTO,BD,MENSAJE, COD_ERROR , ERROR, FECHA)VALUES(V_PROYECTO,V_BD,V_MENSAJE,V_ERROR,V_MSJ_ERROR,SYSDATE);
   COMMIT;
+EXCEPTION 
+  WHEN OTHERS THEN
+     DBMS_OUTPUT.PUT_LINE('ERROR: '||SQLCODE||'-'||SQLERRM);
 END PROC_AUDITA_OBJETOS;
