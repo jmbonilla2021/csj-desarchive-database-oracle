@@ -80,6 +80,9 @@
 <dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9B8EF45-7D1D-0997-0C08-33F978C4F6DC" referredColumn="21772E0B-83C6-84B2-E994-5653604EABD8"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -92,6 +95,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F77A47AA-27DD-F5A3-B056-D01599AD31F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74566B5E-BE18-CE62-21B5-B48FDA6E7185" name="FK_SLC_PRO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:09:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7E259F0-C483-D512-5AB1-D260DBD8B4D2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
