@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E6B02CE-21B1-1D16-4E04-DC2FE26DF7BD" schemaObject="2A2E69A4-1B9C-B0D0-3097-B0836FAE6F93" name="SOLICITUD">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E6B02CE-21B1-1D16-4E04-DC2FE26DF7BD" name="SOLICITUD">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-23 13:58:02 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -18,15 +18,24 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_SOLICITUD</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SOLICITUD</autoIncrementTriggerName>
 </Column>
 <Column name="NOMBRE_APELLIDOS" id="23F7E72D-18E8-5001-93E9-12909C24618C">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-23 14:00:11 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NUMERO_DOCUMENTO" id="E2BE2A00-FE27-AC2E-F401-CA5410B93826">
@@ -34,8 +43,11 @@
 <createdTime>2021-11-23 14:00:11 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NUMERO_CELULAR" id="C2EEE6BF-96E4-95E2-4ABB-7366B92C6ECC">
