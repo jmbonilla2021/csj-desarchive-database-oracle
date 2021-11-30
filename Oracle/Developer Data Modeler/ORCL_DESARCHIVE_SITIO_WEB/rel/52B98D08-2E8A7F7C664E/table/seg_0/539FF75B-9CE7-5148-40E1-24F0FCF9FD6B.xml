@@ -59,10 +59,11 @@
 <ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_ANIO_PROCESO" id="82E6A44C-81F1-85F4-D109-5C4DC63AA2CE">
+<Column name="CODIGO_ANIO_PROCESO" id="4D778A13-78C2-D354-04CA-C9223031D31C">
 <createdBy>japaez</createdBy>
-<createdTime>2021-11-24 14:34:24 UTC</createdTime>
+<createdTime>2021-11-29 15:51:09 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

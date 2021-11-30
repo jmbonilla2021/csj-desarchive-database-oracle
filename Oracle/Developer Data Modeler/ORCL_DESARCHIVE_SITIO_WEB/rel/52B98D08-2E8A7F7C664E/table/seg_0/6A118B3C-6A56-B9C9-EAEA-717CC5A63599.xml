@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A118B3C-6A56-B9C9-EAEA-717CC5A63599" name="SOLICITUD">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A118B3C-6A56-B9C9-EAEA-717CC5A63599" name="SOLICITUD_DES">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:00:42 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -9,23 +9,24 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_SOLICITUD" id="21772E0B-83C6-84B2-E994-5653604EABD8">
+<Column name="ID_SOLICITUD_DES" id="21772E0B-83C6-84B2-E994-5653604EABD8">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
 <autoIncrementCache>100</autoIncrementCache>
-<autoIncrementSequenceName>SEQ_SOLICITUD</autoIncrementSequenceName>
-<autoIncrementTriggerName>TRG_SOLICITUD</autoIncrementTriggerName>
+<autoIncrementSequenceName>SEQ_SOLICITUD_DES</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SOLICITUD_DES</autoIncrementTriggerName>
 </Column>
-<Column name="NOMBRES_APELLIDOS" id="B04C9B00-E920-A361-D03F-A3D35107B9ED">
+<Column name="NUMERO_IDENTIFICACION" id="0F6EE8CA-86D9-4F96-524C-7172EF8D8BC4">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -36,7 +37,7 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NUMERO_DOCUMENTO" id="0F6EE8CA-86D9-4F96-524C-7172EF8D8BC4">
+<Column name="PRIMER_NOMBRE" id="B04C9B00-E920-A361-D03F-A3D35107B9ED">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -47,7 +48,42 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NUMERO_CELULAR" id="18AE7557-24A8-23A3-CFFC-82C86F02E57A">
+<Column name="SEGUNDO_NOMBRE" id="522454CF-DAB1-2C00-6EE3-965048635341">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-29 15:48:53 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="9F8DC4B0-9AC3-36DF-C60E-09D28283BDC8">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-29 15:48:53 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="38FBD234-E2DB-ED9E-29BD-6555881B227E">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-29 15:48:53 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="18AE7557-24A8-23A3-CFFC-82C86F02E57A">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -69,29 +105,7 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FECHA_CREA" id="016E0951-535F-6A9B-99AC-96245176551E">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-24 15:01:55 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="USUARIO_CREA" id="35C4D115-A9D5-0E1C-50A1-C418170666C8">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-24 15:01:55 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>1000</dataTypeSize>
-<ownDataTypeParameters>1000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ID_TIPO_DOCUMENTO" id="ED890415-49FB-340C-39DB-423F9CDFAC2E">
+<Column name="CODIGO_TIPO_PROCESO" id="ED890415-49FB-340C-39DB-423F9CDFAC2E">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -102,7 +116,7 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_TIPO_PROCESO" id="42832226-DDC9-14C6-C31B-1058A4693C35">
+<Column name="CODIGO_JUZGADO" id="42832226-DDC9-14C6-C31B-1058A4693C35">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -113,7 +127,7 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_JUZGADO" id="A3FF9B8F-22EE-4E65-70DE-D2F5F4AC6B88">
+<Column name="CODIGO_ESPECIALIDAD" id="A3FF9B8F-22EE-4E65-70DE-D2F5F4AC6B88">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
@@ -124,9 +138,9 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_ESPECIALIDAD" id="56D34444-C32A-109F-2DC1-A290A609C900">
+<Column name="CODIGO_TIPO_DOCUMENTO" id="F034AC16-1DB1-1323-160F-C19E9107D631">
 <createdBy>japaez</createdBy>
-<createdTime>2021-11-24 15:01:55 UTC</createdTime>
+<createdTime>2021-11-29 16:50:47 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -143,11 +157,22 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7C07C2E4-FDD5-14D7-58E2-6F68A78D11C1" referredColumn="A4A7A2D4-EFC1-66A0-8649-F4D10351FA0C"/>
 </associations>
+</Column>
+<Column name="FECHA_RADICADO_SOLICITUD" id="DEDC764F-455E-4EB1-A9CE-DD0055230FF2">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-30 14:00:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

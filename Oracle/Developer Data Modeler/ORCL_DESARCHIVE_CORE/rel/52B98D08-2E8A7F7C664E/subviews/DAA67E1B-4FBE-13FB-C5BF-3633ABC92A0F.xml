@@ -14,6 +14,13 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="30EC06C9-EA37-C8DE-C068-DBD83EAAC46C" otype="Table" vid="123A64F4-522B-158B-982B-687B1C56B636">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1294" y="646" width="345" height="161"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="53E2206E-39F9-D131-82B3-C7EB7B92AFB8" otype="Table" vid="A8D8FA38-D206-188E-A355-FBD70C7CD5D8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="580" y="409" width="362" height="139"/>
@@ -27,7 +34,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6C74116B-CF55-E66A-8449-D21951A17841" otype="Table" vid="35C88BDA-7FA2-FB0C-C848-8FE15C3BCCCF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1013" y="619" width="327" height="149"/>
+<bounds x="896" y="615" width="327" height="149"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3355393</backgroundColor>
 <foregroundColor>-16776961</foregroundColor>
@@ -38,7 +45,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="931BD9AE-6259-CD75-5FAF-24C978DCAA7C" otype="Table" vid="56558689-614B-C4D2-C1A2-A09324C863F5">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="562" y="640" width="325" height="153"/>
+<bounds x="452" y="638" width="325" height="153"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3355393</backgroundColor>
 <foregroundColor>-16776961</foregroundColor>
@@ -53,7 +60,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F605B918-0D4A-6F70-E3F9-DD799075761F" otype="Table" vid="7FCFD9A0-0670-224A-5B8B-105617AEF413">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="209" y="644" width="230" height="114"/>
+<bounds x="144" y="603" width="230" height="114"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3355393</backgroundColor>
 <foregroundColor>-16776961</foregroundColor>

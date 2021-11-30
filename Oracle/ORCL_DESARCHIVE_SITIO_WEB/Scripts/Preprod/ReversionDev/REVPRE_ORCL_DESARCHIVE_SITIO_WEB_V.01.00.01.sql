@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------------------------------------------------------------------------------
--- OBJETIVO                  : Reversion del script ORCL_DESARCHIVE_SITIO_WEB_01_00_01.sql
+-- OBJETIVO                  : Reversion del script ORCLPRE_DESARCHIVE_SITIO_WEB_01_00_01.sql
 -- PARÁMETROS DE ENTRADA     : NA
 -- PARÁMETROS DE SALIDA      : NA   
 -- OBJETOS QUE LO REFERENCIAN: NA

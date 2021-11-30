@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B788733-1E9E-9CD8-8A32-1D3E8E8026A8" name="DEPARTAMENTO">
-<createdBy>gedua</createdBy>
-<createdTime>2021-09-22 17:41:14 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<ordsAlias>table_17</ordsAlias>
-<abbreviation>DEP</abbreviation>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30EC06C9-EA37-C8DE-C068-DBD83EAAC46C" name="TIPO_SUJETO_PROCESAL">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-30 16:02:29 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>TSP</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_DEPARTAMENTO" id="6853CD72-8B1D-97C2-F947-1DFB9CC4171D">
-<createdBy>gedua</createdBy>
-<createdTime>2021-09-22 17:41:47 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<Column name="ID_TIPO_SUJETO_PROCESAL" id="9236FB6A-53AD-382D-3683-CBB65260F776">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-30 16:04:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -23,13 +23,13 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
 <autoIncrementCache>100</autoIncrementCache>
-<autoIncrementSequenceName>SEQ_DEPARTAMENTO</autoIncrementSequenceName>
-<autoIncrementTriggerName>TRG_DEPARTAMENTO</autoIncrementTriggerName>
+<autoIncrementSequenceName>SEQ_TIPO_SUJETO_PROCESAL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_TIPO_SUJETO_PROCESAL</autoIncrementTriggerName>
 </Column>
-<Column name="CODIGO" id="73030E39-7A39-21C6-135A-33E554910FCF">
+<Column name="CODIGO" id="1E676380-D0C0-60A7-9E71-2CC60551B8F9">
 <createdBy>japaez</createdBy>
-<createdTime>2021-09-23 16:28:37 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<createdTime>2021-11-30 16:04:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -37,10 +37,10 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NOMBRE" id="D333C124-C1ED-E478-7C1D-1FB97C07FFCE">
-<createdBy>gedua</createdBy>
-<createdTime>2021-09-22 17:41:47 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<Column name="NOMBRE" id="BCFA2A15-8F98-E3A8-47D5-0A1DF8A0023A">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-30 16:04:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -48,10 +48,10 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ES_ACTIVO" id="89A67DCD-4E71-376E-3C3A-113938D7CA53">
+<Column name="ES_ACTIVO" id="DED7E479-CB6F-17BE-A81B-843FD16C9095">
 <createdBy>japaez</createdBy>
-<createdTime>2021-09-23 16:28:50 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<createdTime>2021-11-30 16:04:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -61,25 +61,25 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="CEFD5D19-F607-BBFE-162B-3F6A883F8C85" name="PK_DEP">
-<createdBy>gedua</createdBy>
-<createdTime>2021-09-22 17:41:47 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ind_PK_UK id="03C78FA1-EF8F-F6F5-B031-BD9EF130EC17" name="TIPO_SUJETO_PROCESAL_PK">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-30 16:04:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6853CD72-8B1D-97C2-F947-1DFB9CC4171D"/>
+<colUsage columnID="9236FB6A-53AD-382D-3683-CBB65260F776"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D2E371AF-1354-33E5-FB99-D6D3B689B600" name="IDX_CODIGO_DEP">
+<ind_PK_UK id="C3C0EA23-64B3-1F19-2212-2B7152971475" name="IDX_CODIGO_TP_SPROCESAL">
 <createdBy>japaez</createdBy>
-<createdTime>2021-10-07 14:44:37 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<createdTime>2021-11-30 16:04:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="73030E39-7A39-21C6-135A-33E554910FCF"/>
+<colUsage columnID="1E676380-D0C0-60A7-9E71-2CC60551B8F9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
