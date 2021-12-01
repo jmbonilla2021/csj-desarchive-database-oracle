@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C387D4C7-D4CA-DCE5-A946-C927EB0591CA" name="ESTADO_SOLICITUD">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 14:36:04 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>ESS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTADO_SOLICITUD" id="A4A7A2D4-EFC1-66A0-8649-F4D10351FA0C">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 14:36:32 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_ESTADO_SOLICITUD</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_ESTADO_SOLICITUD</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="BC137AA4-3724-D671-1395-6E0494C98C0E">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 14:36:32 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="0A6C32A0-84C1-BBB0-DDFB-292CB0F01CB3">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 14:36:32 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="3AE39499-7399-E70B-9548-D031A24A83C4">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 14:36:32 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C0EA4E4-A4CD-3248-8E03-E397445C7E86" name="PK_ESS">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:08:45 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4A7A2D4-EFC1-66A0-8649-F4D10351FA0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40B10AA9-F16F-6FBD-4490-DDBF0A6D7E52" name="IDX_CODIGO_ESTADO_SOLICITUD">
+<createdBy>japaez</createdBy>
+<createdTime>2021-11-24 15:08:45 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC137AA4-3724-D671-1395-6E0494C98C0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
