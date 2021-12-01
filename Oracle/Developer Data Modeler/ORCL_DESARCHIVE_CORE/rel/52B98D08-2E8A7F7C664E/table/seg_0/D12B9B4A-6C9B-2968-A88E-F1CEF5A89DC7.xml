@@ -32,8 +32,9 @@
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NOMBRE" id="140BDE7F-FFEC-7B72-AECE-E06D761EB509">
@@ -78,7 +79,6 @@
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B8D72766-E314-3C74-02F1-2901FC1DAA56"/>
 <colUsage columnID="F653D6EF-427C-1ACA-DBEF-5DABF75E729D"/>
 </indexColumnUsage>
 </ind_PK_UK>
