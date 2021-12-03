@@ -37,6 +37,18 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NUMERO_PROCESO_JUD" id="64C4E3A4-45F9-5717-DD43-A8EF861C23FF">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 21:51:55 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="INFORMACION_PAQUETE" id="43D933F0-C198-C373-7FEF-8747C44D1852">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 14:34:24 UTC</createdTime>
