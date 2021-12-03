@@ -61,6 +61,27 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="FECHA_BLOQUEO" id="0D00F355-0BC0-6EEA-CF96-062F0BB26CC2">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:49:54 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_BLOQUEADO" id="7352F6C9-5065-F942-4812-B53B12D2032B">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:49:54 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ID_USUARIO" id="8DFDD9A0-31D7-B68E-E19D-2652CC848F41">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:22:18 UTC</createdTime>

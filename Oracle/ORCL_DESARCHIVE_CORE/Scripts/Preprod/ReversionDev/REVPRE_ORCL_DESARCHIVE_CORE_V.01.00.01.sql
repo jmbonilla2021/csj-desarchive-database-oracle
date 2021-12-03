@@ -1,11 +1,11 @@
 /*
 -------------------------------------------------------------------------------------------------------------------------------
--- OBJETIVO                  : Script de reversion del script ORCLPRE_DESARCHIVE_SITIO_WEB_01_00_02.sql
+-- OBJETIVO                  : Script de reversion
 -- PARÁMETROS DE ENTRADA     :   
 -- PARÁMETROS DE SALIDA      : NA   
 -- OBJETOS QUE LO REFERENCIAN: NA
 -- LIDER TÉCNICO             :              
--- FECHAHORA                 : 2021/11/29
+-- FECHAHORA                 : 2021/10/14
 -- REALIZADO POR             : INFORMATICA & TECNOLOGIA (GEDV - JAPC)
 --	                           Este componente fue realizado bajo la metodología de desarrollo de Informática & Tecnología 
 --                             y se encuentra Protegido por las leyes de derechos de autor.
@@ -24,7 +24,7 @@ DECLARE
      SELECT ('ALTER SYSTEM KILL SESSION '||''''||VS.SID||','||VS.SERIAL#||'''')AS SESION_ACTIVA
      INTO   v_sesion
      FROM   V$SESSION VS
-     WHERE  USERNAME = 'SCH_ORCL_DESARCHIVE_SWEB_PRE';
+     WHERE  USERNAME = 'SCH_ORCL_DESARCHIVE_CORE_PRE';
   r_drop c_drop%ROWTYPE;
      
 BEGIN
@@ -46,16 +46,17 @@ END;
 /
 
 BEGIN
-	DBMS_SERVICE.stop_service('ORCL_DESARCHIVE_SWEB_PRE');
+	DBMS_SERVICE.stop_service('ORCL_DESARCHIVE_CORE_PRE');
 END;
 /
 BEGIN
-	DBMS_SERVICE.delete_service('ORCL_DESARCHIVE_SWEB_PRE');
+	DBMS_SERVICE.delete_service('ORCL_DESARCHIVE_CORE_PRE');
 END;
 /
 
-DROP ROLE ROLPRE_DESARCHIVE_SWEB;
-DROP USER SCH_ORCL_DESARCHIVE_SWEB_PRE CASCADE;
 
-DROP TABLESPACE ORCL_DESARCHIVE_SWEB_PRE_DATA INCLUDING CONTENTS;
-DROP TABLESPACE ORCL_DESARCHIVE_SWEB_PRE_IDX  INCLUDING CONTENTS;
+DROP ROLE ROL_DESARCHIVE_CORE_PRE;
+DROP USER SCH_ORCL_DESARCHIVE_CORE_PRE CASCADE;
+
+DROP TABLESPACE ORCL_DESARCHIVE_CORE_PRE_DATA INCLUDING CONTENTS;
+DROP TABLESPACE ORCL_DESARCHIVE_CORE_PRE_IDX  INCLUDING CONTENTS;

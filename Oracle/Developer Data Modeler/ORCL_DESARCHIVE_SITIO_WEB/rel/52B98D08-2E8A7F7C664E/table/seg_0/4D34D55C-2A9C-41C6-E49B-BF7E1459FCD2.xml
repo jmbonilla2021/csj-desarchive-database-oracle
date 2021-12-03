@@ -30,7 +30,6 @@
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-29 15:52:49 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -54,7 +53,6 @@
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-29 15:52:49 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -74,16 +72,26 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NOMBRE_APELLIDOS" id="47D6BCC7-2DCC-6567-DF73-1AE56B284B91">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-01 20:31:16 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="CODIGO_TIPO_SUJ_PROCESAL" id="5E4C2C53-3186-4C1C-D6F7-E721FFB4C175">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-29 15:52:49 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

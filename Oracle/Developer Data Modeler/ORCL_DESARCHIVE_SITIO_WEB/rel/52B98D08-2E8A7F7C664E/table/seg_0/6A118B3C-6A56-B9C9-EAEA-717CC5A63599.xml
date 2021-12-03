@@ -83,6 +83,17 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NOMBRE_APELLIDOS" id="15C8BE33-0122-8A0B-1E7A-47A1FE7499C4">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-01 20:22:44 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="TELEFONO" id="18AE7557-24A8-23A3-CFFC-82C86F02E57A">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:01:55 UTC</createdTime>
@@ -111,9 +122,9 @@
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CODIGO_JUZGADO" id="42832226-DDC9-14C6-C31B-1058A4693C35">
@@ -122,9 +133,9 @@
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CODIGO_ESPECIALIDAD" id="A3FF9B8F-22EE-4E65-70DE-D2F5F4AC6B88">
@@ -133,9 +144,9 @@
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CODIGO_TIPO_DOCUMENTO" id="F034AC16-1DB1-1323-160F-C19E9107D631">
@@ -144,9 +155,9 @@
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_ESTADO_SOLICITUD" id="B7ACA022-E296-E022-ACA7-540FDF8A0192">
