@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_USUARIO" id="6277EC07-9747-B222-B31D-13AAB730B159">
+<Column name="ID_BODEGA" id="6277EC07-9747-B222-B31D-13AAB730B159">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:42:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
@@ -20,15 +20,28 @@
 <ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_BODEGA" id="0C7FC9A4-843C-D54D-551B-A4680477A7CB">
+<Column name="CODIGO_TIPO_IDENTIFICACION" id="610CAC4D-CDA1-B2D7-828B-C9567B177306">
 <createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:42:03 UTC</createdTime>
+<createdTime>2021-12-01 13:55:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_IDENTIFICACION" id="8B08E190-DEE2-7460-8A09-D5F479251D14">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-01 13:55:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -42,7 +55,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6277EC07-9747-B222-B31D-13AAB730B159"/>
-<colUsage columnID="0C7FC9A4-843C-D54D-551B-A4680477A7CB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

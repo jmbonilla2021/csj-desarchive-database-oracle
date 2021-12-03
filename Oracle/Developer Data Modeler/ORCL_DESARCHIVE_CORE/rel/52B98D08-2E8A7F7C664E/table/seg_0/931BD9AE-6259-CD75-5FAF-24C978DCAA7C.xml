@@ -33,8 +33,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NOMBRE" id="53E614B4-F98F-4298-19F9-50E96FBBB49B">
@@ -79,7 +79,6 @@
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8F90993D-5372-A811-B14A-BF6D0E5F33D4"/>
 <colUsage columnID="7A3138DF-3BD5-2B87-6757-61AF5C72EA02"/>
 </indexColumnUsage>
 </ind_PK_UK>
