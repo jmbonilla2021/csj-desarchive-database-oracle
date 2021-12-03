@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CA6D4FA-953E-53FA-4FDD-88AD45D6BCE7" name="PROCESO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:51:54 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<abbreviation>PRC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROCESO" id="8A78A71E-6B31-8165-4936-95A2171DB6B6">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_PROCESO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_PROCESO</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="88F7C4F1-1882-7C1E-4F5C-01DB880FADEC">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="587EDCC6-0B20-BA15-E497-FE289ABEFFE9">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="3D8AF4C7-C4B2-93D6-FDB4-8DD2136E5E16">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82DBCD28-5818-4F71-F0DE-465A61B05E61" name="PK_PRC">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A78A71E-6B31-8165-4936-95A2171DB6B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4491190A-F64A-4AD9-8260-D1FF18EC0371" name="IDX_CODIGO_PROCESO">
+<createdBy>japaez</createdBy>
+<createdTime>2021-12-03 20:55:51 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88F7C4F1-1882-7C1E-4F5C-01DB880FADEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
