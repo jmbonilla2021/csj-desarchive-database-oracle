@@ -1,12 +1,12 @@
 /*
 -------------------------------------------------------------------------------------------------------------------------------
 -- OBJETIVO                  : Creacion del modelo relacional BD DESARCHIVE SITIO WEB Modulo desarchive.
--- PARÁMETROS DE ENTRADA     : La ejecución del script solicita los siguientes parametros
+-- PAR�?METROS DE ENTRADA     : La ejecución del script solicita los siguientes parametros
 								SERVICIO        : ORCL_DESARCHIVE_SWEB
 								SIZE_TABLESPACE : DEVOPS -> 10
 								                  19C    -> 1000
 												  21C    -> 1000
--- PARÁMETROS DE SALIDA      : NA   
+-- PAR�?METROS DE SALIDA      : NA   
 -- OBJETOS QUE LO REFERENCIAN: NA
 -- LIDER TÉCNICO             : Gabriel Eduardo Duarte             
 -- FECHAHORA                 : 2021/11/23
@@ -115,7 +115,7 @@ ALTER TABLE SCH_ORCL_DESARCHIVE_SWEB.ESTADO_SOLICITUD ADD CONSTRAINT PK_ESS PRIM
 CREATE TABLE SCH_ORCL_DESARCHIVE_SWEB.PROCESO (
     ID_PROCESO          NUMBER(19) NOT NULL,
     NUMERO_PROCESO      NUMBER(19) NOT NULL,
-	NUMERO_PROCESO_JUD  NUMBER(19)NULL,
+	NUMERO_PROCESO_JUD  NVARCHAR2(1000) NULL,
     INFORMACION_PAQUETE NVARCHAR2(1000) NOT NULL,
     OBSERVACIONES       NVARCHAR2(2000) ,
     CODIGO_ANIO_PROCESO NVARCHAR2(2000) NOT NULL,
