@@ -3,7 +3,6 @@
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:18:43 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<ordsAlias>table_6</ordsAlias>
 <abbreviation>TPP</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
