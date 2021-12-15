@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C2F31EA-A43F-7A73-1CF3-6841B3DEF652" name="ESP_X_TIPO_PROCESO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:13:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<abbreviation>EXT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_PROCESO" id="BB4DA0B1-CFEC-AF9C-F589-A83CBF57C785">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E5F9C7FF-9150-AF7E-6861-BC9CA8393B67" referredColumn="8F90993D-5372-A811-B14A-BF6D0E5F33D4"/>
+</associations>
+</Column>
+<Column name="ID_ESPECIALIDAD" id="04C120AE-835D-F43C-0BC6-2BE322A232F3">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAAFD756-EDB8-5E49-AADA-6443A0040E58" referredColumn="8E3445D3-BD5D-97E5-F07C-9E43DB75884F"/>
+</associations>
+</Column>
+<Column name="REQUIERE_PAGO" id="936938A8-FD94-FA03-CB19-5308DFD2C4AB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_VISIBLE_SITIO_WEB" id="E775E805-34E7-9A0C-5226-A59E7B2DDB68">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F3A4F32-CEA7-4AD5-8CC6-A916F36B5CB1" name="PK_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:15:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB4DA0B1-CFEC-AF9C-F589-A83CBF57C785"/>
+<colUsage columnID="04C120AE-835D-F43C-0BC6-2BE322A232F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EF832E6-FE3F-5147-0DED-E30A181DB351" name="FK_ESP_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:19:35 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04C120AE-835D-F43C-0BC6-2BE322A232F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C7C5323-7161-8658-AE59-BB2B8BC5C40E" name="FK_TPP_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:21:41 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB4DA0B1-CFEC-AF9C-F589-A83CBF57C785"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

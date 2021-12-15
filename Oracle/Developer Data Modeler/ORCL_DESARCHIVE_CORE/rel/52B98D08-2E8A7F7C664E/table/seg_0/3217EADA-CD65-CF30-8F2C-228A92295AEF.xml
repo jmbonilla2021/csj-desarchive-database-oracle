@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3217EADA-CD65-CF30-8F2C-228A92295AEF" name="TARIFA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:26:00 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<abbreviation>TRA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TARIFA" id="907C66A9-F706-5EA2-FF14-59770594E089">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_TARIFA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG__TARIFA</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="2DCF66EF-9E7C-145C-84A8-6CCBB073D632">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="94AD6C9F-2FF7-432E-D2B1-3EECE08FD371">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR" id="366E3FF0-AB80-7C20-E942-8BAFCB7B58B2">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,19,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ACTUALIZACION" id="21DDD16F-9001-A86A-BE6D-BEA1076FE020">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="702865DE-AD6D-2FF9-A49D-EBA78CE2BAC0" name="PK_TRA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="907C66A9-F706-5EA2-FF14-59770594E089"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3FFCC34-F6EF-2316-1255-9AEDD1CF3080" name="IDX_TARIFA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:22:23 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94AD6C9F-2FF7-432E-D2B1-3EECE08FD371"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

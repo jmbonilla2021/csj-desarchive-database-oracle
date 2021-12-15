@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A198D573-2B04-F6E9-01A9-1F85D7CC2401" containerWithKeyObject="4AD0A657-94A2-7FD4-0B00-D27E1624E611" localFKIndex="E753AB8A-7E68-14C3-DCB1-16FD6C6ADDD0" name="FK_TRA_HTF">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:25:41 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>TARIFA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3217EADA-CD65-CF30-8F2C-228A92295AEF</referredTableID>
+<keyObject>702865DE-AD6D-2FF9-A49D-EBA78CE2BAC0</keyObject>
+<referredKeyID>702865DE-AD6D-2FF9-A49D-EBA78CE2BAC0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TARIFA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AAAFD756-EDB8-5E49-AADA-6443A0040E58" containerWithKeyObject="9C2F31EA-A43F-7A73-1CF3-6841B3DEF652" localFKIndex="0EF832E6-FE3F-5147-0DED-E30A181DB351" name="FK_ESP_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:19:35 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>ESPECIALIDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6C74116B-CF55-E66A-8449-D21951A17841</referredTableID>
+<keyObject>AC50DC47-973E-37E4-05C2-E8DE97180CCA</keyObject>
+<referredKeyID>AC50DC47-973E-37E4-05C2-E8DE97180CCA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESPECIALIDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
