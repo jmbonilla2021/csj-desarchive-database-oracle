@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E5F9C7FF-9150-AF7E-6861-BC9CA8393B67" containerWithKeyObject="9C2F31EA-A43F-7A73-1CF3-6841B3DEF652" localFKIndex="4C7C5323-7161-8658-AE59-BB2B8BC5C40E" name="FK_TPP_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 19:21:41 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>TIPO_PROCESO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>931BD9AE-6259-CD75-5FAF-24C978DCAA7C</referredTableID>
+<keyObject>64D2CBEB-0E95-1800-E77D-99D8F6105E7E</keyObject>
+<referredKeyID>64D2CBEB-0E95-1800-E77D-99D8F6105E7E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TIPO_PROCESO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

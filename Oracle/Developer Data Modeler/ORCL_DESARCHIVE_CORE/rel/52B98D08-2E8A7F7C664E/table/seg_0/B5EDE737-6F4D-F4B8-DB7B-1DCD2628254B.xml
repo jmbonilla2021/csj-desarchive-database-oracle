@@ -24,24 +24,22 @@
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-01 13:55:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NUMERO_IDENTIFICACION" id="8B08E190-DEE2-7460-8A09-D5F479251D14">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-01 13:55:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -55,6 +53,8 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6277EC07-9747-B222-B31D-13AAB730B159"/>
+<colUsage columnID="610CAC4D-CDA1-B2D7-828B-C9567B177306"/>
+<colUsage columnID="8B08E190-DEE2-7460-8A09-D5F479251D14"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

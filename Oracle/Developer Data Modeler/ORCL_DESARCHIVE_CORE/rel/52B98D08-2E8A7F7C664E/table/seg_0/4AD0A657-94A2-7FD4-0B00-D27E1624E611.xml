@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4AD0A657-94A2-7FD4-0B00-D27E1624E611" name="HISTORICO_TARIFA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<abbreviation>HTF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HISTORICO_TARIFA" id="2A6B9A43-7A06-B49C-5E16-0A714E56F6CA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_HISTORICO_TARIFA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_HISTORICO_TARIFA</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="A2D64418-9F73-1CA1-AD6F-C4B470D4EE52">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="E7DFCC7F-141E-2791-7B81-BB5BA01A7C80">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR" id="73734DC1-85B8-D005-5989-5577FFF66D0B">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,19,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ACTUALIZACION" id="9EB438F2-EB31-3B38-AD79-67E99843527B">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TARIFA" id="646715A6-720D-06AF-0289-FCCB045AB25E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:23:34 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A198D573-2B04-F6E9-01A9-1F85D7CC2401" referredColumn="907C66A9-F706-5EA2-FF14-59770594E089"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4013B467-1197-8565-271A-41C4B113E7AF" name="PK_HTF">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A6B9A43-7A06-B49C-5E16-0A714E56F6CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06276846-3230-10DD-A897-07A570C24911" name="IDX_HISTORICO_TARIFA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:25:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7DFCC7F-141E-2791-7B81-BB5BA01A7C80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E753AB8A-7E68-14C3-DCB1-16FD6C6ADDD0" name="FK_TRA_HTF">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:25:41 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="646715A6-720D-06AF-0289-FCCB045AB25E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
