@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -59,6 +59,32 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_MUNICIPIO" id="807DD695-44A4-A9C0-86F9-C92DE550168E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-27 13:58:38 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESPECIALIDAD" id="8B1FA856-1C72-A80D-AEB2-5FA771A3DF1A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-27 13:58:51 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7209FEC4-3890-9AB4-1A4D-04EFFE002929" referredColumn="8E3445D3-BD5D-97E5-F07C-9E43DB75884F"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="337D2CA0-8853-DFAE-8ED5-6601AB295ADD" name="PK_JUZ">
@@ -80,6 +106,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DFD73A15-0DCC-BDAB-1978-ED88C76EA459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="855B84B7-9E5E-D2C4-0ECD-8870AA953F11" name="FK_ESP_JUZ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-27 14:00:09 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B1FA856-1C72-A80D-AEB2-5FA771A3DF1A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

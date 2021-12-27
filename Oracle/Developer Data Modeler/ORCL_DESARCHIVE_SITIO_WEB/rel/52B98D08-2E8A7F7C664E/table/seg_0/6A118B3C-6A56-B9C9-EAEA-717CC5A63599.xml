@@ -3,7 +3,6 @@
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-24 15:00:42 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
-<ordsAlias>table_5</ordsAlias>
 <abbreviation>SLC</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -168,7 +167,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7C07C2E4-FDD5-14D7-58E2-6F68A78D11C1" referredColumn="A4A7A2D4-EFC1-66A0-8649-F4D10351FA0C"/>
