@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -59,6 +59,20 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_JURISDICCION" id="810C255D-C690-CE77-C74C-0A7412FC3F21">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-23 21:18:25 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FD0D5E5-41A6-6494-8B8A-EF2F7FD7C048" referredColumn="B8D72766-E314-3C74-02F1-2901FC1DAA56"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="AC50DC47-973E-37E4-05C2-E8DE97180CCA" name="PK_ESP">
@@ -80,6 +94,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2DB9B334-9831-9BB7-BB7F-9AA53A04B890"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A4DEA41-EB91-8B13-B9E0-CEC28AEAFFF4" name="FK_JDC_ESP">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-23 21:19:57 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="810C255D-C690-CE77-C74C-0A7412FC3F21"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

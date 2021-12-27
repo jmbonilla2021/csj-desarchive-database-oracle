@@ -48,6 +48,18 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ES_VISIBLE_SITIO_WEB" id="8B37C60C-B89C-11ED-4427-FC4F257F9D46">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-27 14:04:12 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ES_ACTIVO" id="A1854856-FEE4-6CF0-1912-D1E6A91396EE">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-26 17:34:27 UTC</createdTime>
@@ -67,7 +79,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="16C91C54-A632-8A31-D4E9-19A1464CC4BF" referredColumn="6853CD72-8B1D-97C2-F947-1DFB9CC4171D"/>
