@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -81,8 +81,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A198D573-2B04-F6E9-01A9-1F85D7CC2401" referredColumn="907C66A9-F706-5EA2-FF14-59770594E089"/>
@@ -99,16 +99,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2A6B9A43-7A06-B49C-5E16-0A714E56F6CA"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="06276846-3230-10DD-A897-07A570C24911" name="IDX_HISTORICO_TARIFA">
-<createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:25:03 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="E7DFCC7F-141E-2791-7B81-BB5BA01A7C80"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="E753AB8A-7E68-14C3-DCB1-16FD6C6ADDD0" name="FK_TRA_HTF">
