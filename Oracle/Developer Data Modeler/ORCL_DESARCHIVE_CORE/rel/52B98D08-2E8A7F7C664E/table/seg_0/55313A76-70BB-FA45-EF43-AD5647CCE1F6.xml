@@ -59,16 +59,15 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO_MUNICIPIO" id="807DD695-44A4-A9C0-86F9-C92DE550168E">
+<Column name="ID_MUNICIPIO" id="807DD695-44A4-A9C0-86F9-C92DE550168E">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-27 13:58:38 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_ESPECIALIDAD" id="8B1FA856-1C72-A80D-AEB2-5FA771A3DF1A">
