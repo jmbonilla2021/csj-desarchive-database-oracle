@@ -22,7 +22,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_SUJETO_PROCESAL</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_SUJETO_PROCESAL</autoIncrementTriggerName>
 </Column>
