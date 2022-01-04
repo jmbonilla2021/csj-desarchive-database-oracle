@@ -18,7 +18,13 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_USUARIO_POR_BODEGA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_USUARIO_POR_BODEGA</autoIncrementTriggerName>
 </Column>
 <Column name="CODIGO_TIPO_IDENTIFICACION" id="610CAC4D-CDA1-B2D7-828B-C9567B177306">
 <createdBy>japaez</createdBy>
@@ -44,7 +50,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3A0895D0-ADB1-4B01-C887-5CF6F490BC18" name="PK_USU_BDG">
+<ind_PK_UK id="3A0895D0-ADB1-4B01-C887-5CF6F490BC18" name="PK_USU">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:42:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>

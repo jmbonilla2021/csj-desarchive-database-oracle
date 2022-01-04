@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFB30C03-0217-A4B6-F08C-69809DE706A7" name="SECCIONAL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFB30C03-0217-A4B6-F08C-69809DE706A7" schemaObject="86770842-3C20-5FE2-72DC-8398784230FA" name="SECCIONAL">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:40:31 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
@@ -20,7 +20,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_SECCIONAL</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_SECCIONAL</autoIncrementTriggerName>
 </Column>

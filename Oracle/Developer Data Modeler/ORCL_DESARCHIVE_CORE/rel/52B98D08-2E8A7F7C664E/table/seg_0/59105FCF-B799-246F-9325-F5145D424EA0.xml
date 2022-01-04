@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4AD0A657-94A2-7FD4-0B00-D27E1624E611" name="HISTORICO_TARIFA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59105FCF-B799-246F-9325-F5145D424EA0" name="NOVEDAD">
 <createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<createdTime>2022-01-04 15:32:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<ordsAlias>table_11</ordsAlias>
-<abbreviation>HTF</abbreviation>
+<ordsAlias>table_22</ordsAlias>
+<abbreviation>NOV</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_HISTORICO_TARIFA" id="2A6B9A43-7A06-B49C-5E16-0A714E56F6CA">
+<Column name="ID_NOVEDAD" id="7592AF73-6920-D14A-7692-1A959ABBCFED">
 <createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<createdTime>2022-01-04 15:32:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,12 +23,54 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
 <autoIncrementCache>20</autoIncrementCache>
-<autoIncrementSequenceName>SEQ_HISTORICO_TARIFA</autoIncrementSequenceName>
-<autoIncrementTriggerName>TRG_HISTORICO_TARIFA</autoIncrementTriggerName>
+<autoIncrementSequenceName>SEQ_NOVEDAD</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_NOVEDAD</autoIncrementTriggerName>
 </Column>
-<Column name="NOMBRE" id="A2D64418-9F73-1CA1-AD6F-C4B470D4EE52">
+<Column name="CODIGO_TIPO_IDENTIFICACION" id="3FC5FA9B-71F9-F5CC-06C8-6357463C781B">
 <createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<createdTime>2022-01-04 15:32:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_IDENTIFICACION" id="6A442218-772B-9120-0692-9F13FA3CA8C6">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-04 15:32:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="AB402177-A02D-B92F-32E8-E1E8D570348A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-04 15:42:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="93DE44B6-3607-6916-29A8-CEBE6F391346">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-04 15:42:24 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="5D377E7F-6E8C-7701-2304-8B67BD0BE5E6">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-04 15:42:58 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -38,45 +80,9 @@
 <ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO" id="E7DFCC7F-141E-2791-7B81-BB5BA01A7C80">
+<Column name="ID_TIPO_NOVEDAD" id="9948DD9D-FC25-6088-18F2-5BBA7BB75334">
 <createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>1000</dataTypeSize>
-<ownDataTypeParameters>1000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="VALOR" id="73734DC1-85B8-D005-5989-5577FFF66D0B">
-<createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,19,4</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FECHA_ACTUALIZACION" id="9EB438F2-EB31-3B38-AD79-67E99843527B">
-<createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ID_TARIFA" id="646715A6-720D-06AF-0289-FCCB045AB25E">
-<createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:23:34 UTC</createdTime>
+<createdTime>2022-01-04 15:43:17 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -85,30 +91,33 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A198D573-2B04-F6E9-01A9-1F85D7CC2401" referredColumn="907C66A9-F706-5EA2-FF14-59770594E089"/>
+<colAssociation fkAssociation="B44C2750-1DB1-8710-A328-45EE3EDB1464" referredColumn="5F4E9A90-A508-C3AE-3EEE-8DEAD1957581"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="4013B467-1197-8565-271A-41C4B113E7AF" name="PK_HTF">
+<ind_PK_UK id="8F760240-49EE-BDDF-0F28-31BA95AFC2E7" name="PK_NOV">
 <createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<createdTime>2022-01-04 15:32:03 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2A6B9A43-7A06-B49C-5E16-0A714E56F6CA"/>
+<colUsage columnID="7592AF73-6920-D14A-7692-1A959ABBCFED"/>
+<colUsage columnID="3FC5FA9B-71F9-F5CC-06C8-6357463C781B"/>
+<colUsage columnID="6A442218-772B-9120-0692-9F13FA3CA8C6"/>
+<colUsage columnID="9948DD9D-FC25-6088-18F2-5BBA7BB75334"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E753AB8A-7E68-14C3-DCB1-16FD6C6ADDD0" name="FK_TRA_HTF">
+<ind_PK_UK id="B05BFA78-C4CD-B81F-D2AD-52DC6FE659AA" name="FK_TNV_NOV">
 <createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:25:41 UTC</createdTime>
+<createdTime>2022-01-04 15:54:06 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="646715A6-720D-06AF-0289-FCCB045AB25E"/>
+<colUsage columnID="9948DD9D-FC25-6088-18F2-5BBA7BB75334"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

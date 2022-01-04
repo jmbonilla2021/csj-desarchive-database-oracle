@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BDAEB59-45C3-2947-7867-777849F55A41" name="PERMISOSXMODULOXROL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BDAEB59-45C3-2947-7867-777849F55A41" schemaObject="86770842-3C20-5FE2-72DC-8398784230FA" name="PERMISOSXMODULOXROL">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:15:05 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
@@ -22,7 +22,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_PERMISOSXMODULOXROL</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_PERMISOSXMODULOXROL</autoIncrementTriggerName>
 </Column>

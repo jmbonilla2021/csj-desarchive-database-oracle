@@ -22,7 +22,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_PROCESO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_PROCESO</autoIncrementTriggerName>
 </Column>
@@ -85,6 +85,17 @@
 <associations>
 <colAssociation fkAssociation="B9B8EF45-7D1D-0997-0C08-33F978C4F6DC" referredColumn="21772E0B-83C6-84B2-E994-5653604EABD8"/>
 </associations>
+</Column>
+<Column name="ID_MUNICIPIO" id="32C6A055-71EF-46D1-0783-581260F921F5">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-04 15:17:25 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_SITIO_WEB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
