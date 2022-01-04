@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9997329-3718-EDB4-AC6A-4D5E0647820B" name="ROL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9997329-3718-EDB4-AC6A-4D5E0647820B" schemaObject="86770842-3C20-5FE2-72DC-8398784230FA" name="ROL">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 20:16:55 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
@@ -22,7 +22,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_ROL</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_ROL</autoIncrementTriggerName>
 </Column>

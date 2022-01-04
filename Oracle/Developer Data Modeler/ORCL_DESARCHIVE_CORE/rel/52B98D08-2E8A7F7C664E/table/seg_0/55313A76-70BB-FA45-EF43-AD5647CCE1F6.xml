@@ -22,7 +22,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_JUZGADO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_JUZGADO</autoIncrementTriggerName>
 </Column>
@@ -44,8 +44,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ES_ACTIVO" id="86745C86-6626-A25A-A8EE-936D8D0C5875">
@@ -78,7 +78,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7209FEC4-3890-9AB4-1A4D-04EFFE002929" referredColumn="8E3445D3-BD5D-97E5-F07C-9E43DB75884F"/>

@@ -21,7 +21,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_ESTADO_SOLICITUD</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_ESTADO_SOLICITUD</autoIncrementTriggerName>
 </Column>

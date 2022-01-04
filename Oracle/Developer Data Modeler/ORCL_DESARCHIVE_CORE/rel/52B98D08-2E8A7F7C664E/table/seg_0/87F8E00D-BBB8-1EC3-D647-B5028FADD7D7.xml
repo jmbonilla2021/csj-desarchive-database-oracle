@@ -22,7 +22,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_BODEGA</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_BODEGA</autoIncrementTriggerName>
 </Column>

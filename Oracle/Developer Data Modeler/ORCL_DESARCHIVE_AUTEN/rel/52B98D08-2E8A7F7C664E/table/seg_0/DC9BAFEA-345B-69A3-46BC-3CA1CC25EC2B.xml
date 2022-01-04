@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC9BAFEA-345B-69A3-46BC-3CA1CC25EC2B" name="MENU">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC9BAFEA-345B-69A3-46BC-3CA1CC25EC2B" schemaObject="86770842-3C20-5FE2-72DC-8398784230FA" name="MENU">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-10 15:00:16 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
@@ -22,7 +22,7 @@
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>100</autoIncrementCache>
+<autoIncrementCache>20</autoIncrementCache>
 <autoIncrementSequenceName>SEQ_MENU</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_MENU</autoIncrementTriggerName>
 </Column>
