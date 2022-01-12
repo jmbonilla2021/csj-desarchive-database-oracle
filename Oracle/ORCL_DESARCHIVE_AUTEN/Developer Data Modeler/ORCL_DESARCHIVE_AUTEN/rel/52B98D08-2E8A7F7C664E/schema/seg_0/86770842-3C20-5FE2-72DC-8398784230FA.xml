@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="SCH_ORCL_DESARCHIVE_AUTEN_PRE" directorySegmentName="seg_0" id="86770842-3C20-5FE2-72DC-8398784230FA">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-04 19:36:08 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<ordsAlias>schema_3</ordsAlias>
-</SchemaObject>
