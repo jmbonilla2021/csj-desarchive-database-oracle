@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C6A7C93-1968-168B-B2AB-B166FC208E40" name="CREDENCIAL">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:19:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Credenciales de los Usuarios.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_29</ordsAlias>
 <abbreviation>CRD</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_CREDENCIAL" id="76F1F5D6-D4EF-A539-B60C-0B7938FB6274">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:19:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de Credencial.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="USUARIO" id="419D036C-2EC0-1175-26A7-8C96FFF9FF2C">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:19:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="CONTRASENA" id="36A693E4-6CFD-5975-F0A0-2FF39218E4A5">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:19:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la contraseña.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,6 +57,7 @@
 <Column name="INTENTOS_INVALIDOS" id="2D701B75-F52C-E337-309C-E2A02D89231F">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:19:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena los intentos inválidos de ingreso a la aplicación.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -64,6 +69,7 @@
 <Column name="FECHA_BLOQUEO" id="0D00F355-0BC0-6EEA-CF96-062F0BB26CC2">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:49:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de bloqueo del Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -75,6 +81,7 @@
 <Column name="ES_BLOQUEADO" id="7352F6C9-5065-F942-4812-B53B12D2032B">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:49:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado BLOQUEADO o NO BLOQUEADO del Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -86,6 +93,7 @@
 <Column name="ID_USUARIO" id="8DFDD9A0-31D7-B68E-E19D-2652CC848F41">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:22:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

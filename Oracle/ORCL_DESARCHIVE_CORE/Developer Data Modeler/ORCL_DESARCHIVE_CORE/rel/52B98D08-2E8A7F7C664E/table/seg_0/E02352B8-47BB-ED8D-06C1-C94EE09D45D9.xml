@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E02352B8-47BB-ED8D-06C1-C94EE09D45D9" name="TIPO_NOVEDAD">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:46:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Tipo de Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>tipo_procesov1</ordsAlias>
 <abbreviation>TNV</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_TIPO_NOVEDAD" id="5F4E9A90-A508-C3AE-3EEE-8DEAD1957581">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:46:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Tipo de Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,17 +31,19 @@
 <Column name="CODIGO" id="0009155A-620B-8455-4FB1-492A54E82170">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:46:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del Tipo de Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="NOMBRE" id="1FBC7DE3-264F-56CA-7A1C-8091532C0272">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:46:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Tipo de Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="ES_ACTIVO" id="B6CB4A90-68B7-10DF-D984-73F5F3981E53">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:46:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

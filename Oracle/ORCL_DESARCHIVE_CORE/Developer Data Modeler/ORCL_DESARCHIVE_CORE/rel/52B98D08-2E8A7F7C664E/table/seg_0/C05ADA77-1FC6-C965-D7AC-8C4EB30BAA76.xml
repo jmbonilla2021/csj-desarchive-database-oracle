@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C05ADA77-1FC6-C965-D7AC-8C4EB30BAA76" name="SUJETO_PROCESAL_X_PROCESO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Sujetos Procesales por Porceso.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>SPP</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SUJETO_PROCESAL" id="0ED5816A-A38D-C651-F69E-3B26E63C5DBE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Sujeto Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC384580-D783-9A37-7B77-6FC9C9A05982" referredColumn="1BC54EC9-6608-D311-5F80-EF6634DAA814"/>
+</associations>
+</Column>
+<Column name="ID_PROCESO" id="076DCC21-3813-2220-29CF-331988EBBD2E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Proceso.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60E3D060-75FC-64E4-7E5A-EC427116AF81" referredColumn="FA5438FC-E459-3826-EE30-3C756E34C082"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="16134FCF-C07F-9A91-D36E-C54CC1DDBE1B" name="PK_SPP">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0ED5816A-A38D-C651-F69E-3B26E63C5DBE"/>
+<colUsage columnID="076DCC21-3813-2220-29CF-331988EBBD2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F89C910-00FD-8A3A-F87A-2E4503A9DAE8" name="FK_SJP_SPP">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0ED5816A-A38D-C651-F69E-3B26E63C5DBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="344CFD60-6DAB-767C-4C13-A8D7043C598F" name="FK_PRO_SPP">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="076DCC21-3813-2220-29CF-331988EBBD2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

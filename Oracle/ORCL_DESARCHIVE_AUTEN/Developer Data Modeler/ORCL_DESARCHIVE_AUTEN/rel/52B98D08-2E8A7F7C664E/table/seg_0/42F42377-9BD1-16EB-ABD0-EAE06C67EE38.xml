@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42F42377-9BD1-16EB-ABD0-EAE06C67EE38" name="USUARIO">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 21:03:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Usuarios.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_5</ordsAlias>
 <abbreviation>USU</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_USUARIO" id="838DE0E8-48B4-A945-A638-DB8D69734E09">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="NUMERO_IDENTIFICACION" id="F105E6E9-4C0A-1788-AFB1-0A165F46249E">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:43:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número de identificación de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="PRIMER_NOMBRE" id="0E9C2518-BC20-FFE3-5BA5-B60CB054500C">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el Primer nombre de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="SEGUNDO_NOMBRE" id="EDE333B1-1F2D-230E-38D6-FF6EB02DE6BC">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el Segundo nombre de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,6 +68,7 @@
 <Column name="PRIMER_APELLIDO" id="5F3914A7-51F9-4758-7CF8-10C80EAF7BE5">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el Primer apellido de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -74,6 +80,7 @@
 <Column name="SEGUNDO_APELLIDO" id="A9E73F0F-985A-957C-3AA7-7927BEA2B695">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el Segundo apellido de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -86,6 +93,7 @@
 <Column name="EMAIL" id="8B32E32F-982D-BD52-4DAE-EEF1D0856D75">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el correo electrónico de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -97,6 +105,7 @@
 <Column name="ES_ACTIVO" id="87D428C1-E0C9-6155-D3C9-2DEC1498F9F5">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:12:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -108,6 +117,7 @@
 <Column name="ID_ROL" id="FAD1E79D-61F7-C978-BA8F-ADB41C0EAB99">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 21:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Rol al cual pertenece el Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -122,6 +132,7 @@
 <Column name="ID_TIPO_IDENTIFICACION" id="F522A901-2908-3520-47E4-79FB08F61123">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:04:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Tipo de Identificación de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

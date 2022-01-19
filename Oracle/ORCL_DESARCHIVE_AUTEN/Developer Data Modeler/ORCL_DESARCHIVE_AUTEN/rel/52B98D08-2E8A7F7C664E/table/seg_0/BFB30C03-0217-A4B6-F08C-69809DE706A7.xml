@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFB30C03-0217-A4B6-F08C-69809DE706A7" name="SECCIONAL">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:40:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Seccionales.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <abbreviation>SCN</abbreviation>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -10,6 +11,7 @@
 <Column name="ID_SECCIONAL" id="9CEC10BC-6D75-AC66-65AC-1ECF95630B22">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:41:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Seccional.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -27,6 +29,7 @@
 <Column name="NOMBRE" id="895D5A5A-9CC9-38E2-DD7D-5DFC4AC52C01">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:41:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la Seccional.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,6 +41,7 @@
 <Column name="ES_ACTIVO" id="BC3EA4A2-CFC8-701C-58E5-2EAFBF5F82C4">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 21:44:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Seccional.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59105FCF-B799-246F-9325-F5145D424EA0" name="NOVEDAD">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:32:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Novedades.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_22</ordsAlias>
 <abbreviation>NOV</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_NOVEDAD" id="7592AF73-6920-D14A-7692-1A959ABBCFED">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:32:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="CODIGO_TIPO_IDENTIFICACION" id="3FC5FA9B-71F9-F5CC-06C8-6357463C781B">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:32:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del Tipo de Identificación de la persona persona involucrada en la Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="NUMERO_IDENTIFICACION" id="6A442218-772B-9120-0692-9F13FA3CA8C6">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:32:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código el Número de Identificación de la persona involucrada en la Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="FECHA_INICIO" id="AB402177-A02D-B92F-32E8-E1E8D570348A">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:42:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de inicio de la Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,6 +66,7 @@
 <Column name="FECHA_FIN" id="93DE44B6-3607-6916-29A8-CEBE6F391346">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de finalización de la Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -71,6 +77,7 @@
 <Column name="OBSERVACION" id="5D377E7F-6E8C-7701-2304-8B67BD0BE5E6">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:42:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena las observaciones referentes a la Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -83,6 +90,7 @@
 <Column name="ID_TIPO_NOVEDAD" id="9948DD9D-FC25-6088-18F2-5BBA7BB75334">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-04 15:43:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Tipo de Novedad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -92,6 +100,21 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="B44C2750-1DB1-8710-A328-45EE3EDB1464" referredColumn="5F4E9A90-A508-C3AE-3EEE-8DEAD1957581"/>
+</associations>
+</Column>
+<Column name="ID_ESTADO_NOVEDAD" id="AD3C9812-6E10-1506-DC02-48C053ED9D6F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-14 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Estado de la Novedad.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71E1E8C0-F7A5-6B5B-D69D-2D8C8E005085" referredColumn="01F2BB77-F97E-6216-A79C-0D5284952837"/>
 </associations>
 </Column>
 </columns>
@@ -107,7 +130,6 @@
 <colUsage columnID="7592AF73-6920-D14A-7692-1A959ABBCFED"/>
 <colUsage columnID="3FC5FA9B-71F9-F5CC-06C8-6357463C781B"/>
 <colUsage columnID="6A442218-772B-9120-0692-9F13FA3CA8C6"/>
-<colUsage columnID="9948DD9D-FC25-6088-18F2-5BBA7BB75334"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="B05BFA78-C4CD-B81F-D2AD-52DC6FE659AA" name="FK_TNV_NOV">
@@ -118,6 +140,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9948DD9D-FC25-6088-18F2-5BBA7BB75334"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7A1BAB1-4845-CA1C-CDCD-C2FA73CE7E41" name="FK_ENO_NOV">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-14 15:16:50 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD3C9812-6E10-1506-DC02-48C053ED9D6F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

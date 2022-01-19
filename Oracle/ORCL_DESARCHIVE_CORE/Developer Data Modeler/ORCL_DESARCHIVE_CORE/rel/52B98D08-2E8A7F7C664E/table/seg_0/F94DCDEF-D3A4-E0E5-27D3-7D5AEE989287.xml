@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F94DCDEF-D3A4-E0E5-27D3-7D5AEE989287" name="SUJETO_JURIDICA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Sujetos Procesales - Personas Jurídicas.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>SJU</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SUJETO_JURIDICA" id="DDC97F34-5D2C-5CBB-E85E-4CBA794C3F49">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:35:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Sujeto Procesal - Persona Jurídica.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_SUJETO_JURIDICA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SUJETO_JURIDICA</autoIncrementTriggerName>
+</Column>
+<Column name="RAZON_SOCIAL" id="79479833-6665-1D70-E304-5B1E066BA572">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la razón social del Sujeto Procesal - Persona Jurídica.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_SUJETO_PROCESAL" id="74DF7BFA-47FF-E8BB-219A-40AD90F73B06">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Sujeto Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_SUJETO_PROCESAL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SUJETO_PROCESAL</autoIncrementTriggerName>
+<associations>
+<colAssociation fkAssociation="2DF84AB7-CEA9-3E28-7BC3-207B8F9C0C07" referredColumn="1BC54EC9-6608-D311-5F80-EF6634DAA814"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A4285ED3-05D0-D825-71FE-2420AEC85321" name="PK_SJU">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:35:58 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDC97F34-5D2C-5CBB-E85E-4CBA794C3F49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09C02E87-5D24-4A71-4811-3728B6CF3851" name="FK_SJP_SJU">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:44:51 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74DF7BFA-47FF-E8BB-219A-40AD90F73B06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

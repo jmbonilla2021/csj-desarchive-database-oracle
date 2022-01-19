@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B788733-1E9E-9CD8-8A32-1D3E8E8026A8" name="DEPARTAMENTO">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:41:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Departamentos.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_17</ordsAlias>
 <abbreviation>DEP</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_DEPARTAMENTO" id="6853CD72-8B1D-97C2-F947-1DFB9CC4171D">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:41:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Departamento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="CODIGO" id="73030E39-7A39-21C6-135A-33E554910FCF">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-23 16:28:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único por cada Departamento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="NOMBRE" id="D333C124-C1ED-E478-7C1D-1FB97C07FFCE">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:41:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Departamento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="ES_ACTIVO" id="89A67DCD-4E71-376E-3C3A-113938D7CA53">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-23 16:28:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Departamento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

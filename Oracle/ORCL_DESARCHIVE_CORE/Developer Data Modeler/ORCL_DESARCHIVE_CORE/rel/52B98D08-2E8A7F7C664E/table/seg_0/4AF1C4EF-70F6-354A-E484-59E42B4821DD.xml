@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4AF1C4EF-70F6-354A-E484-59E42B4821DD" name="DETALLE_PAQUETE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Detalles de los Paquetes, referentes a los procesos que se van a desarchivar.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>DPQ</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DETALLE" id="D0CD761E-3240-7AF9-4813-F43A32950D18">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Detalle de Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_DETALLE_PAQUETE</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_DETALLE_PAQUETE</autoIncrementTriggerName>
+</Column>
+<Column name="ANIO_PAQUETE" id="13C2BFFF-3BA2-D683-08BE-A51AA0D771C2">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el año del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_PAQUETE" id="513380AA-F8FF-FC38-E4EA-8583F2F0B7FC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESO" id="A4DA6E3D-9438-AAC1-98BF-340785A2A1B8">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Proceso al cual pertenece el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="384B3B38-F27D-3640-978B-B94BFFF2ED56" referredColumn="FA5438FC-E459-3826-EE30-3C756E34C082"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED86584B-8D73-008A-25B2-1F856787A6EB" name="PK_DPQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0CD761E-3240-7AF9-4813-F43A32950D18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFC70044-8E06-487F-725C-05ABDE312DC7" name="FK_PRO_DPQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4DA6E3D-9438-AAC1-98BF-340785A2A1B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

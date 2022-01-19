@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F45A79C1-4931-5ED0-CF0E-61DF1B07E792" name="SUJETO_NATURAL">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Sujetos Procesales - Personas Naturales.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>SNA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SUJETO_NATURAL" id="0D2810A7-F704-6DBD-260A-EE4A0779121C">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:37:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Sujeto Procesal - Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_SUJETO_NATURAL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SUJETO_NATURAL</autoIncrementTriggerName>
+</Column>
+<Column name="PRIMER_NOMBRE" id="A8AD41A1-1066-5A82-26A9-D81616AD412E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el primer nombre del Sujeto Procesal - Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="25386815-AA13-CD7C-0FAC-86F0B64AE389">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el segundo nombre del Sujeto Procesal - Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="2A023AEF-71C2-DFEE-424A-1E81E7266367">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el primer apellido del Sujeto Procesal - Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="5E74496E-940F-52BF-6ACD-95F1FFA33046">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el segundo apellido del Sujeto Procesal - Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_APELLIDOS" id="2C44EC2E-2F1C-8427-D02B-432CB8FC5D75">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre completo del Sujeto Procesal - Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_SUJETO_PROCESAL" id="54E3DFB8-7360-F0D8-1BDB-00C7412C57C7">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Sujeto Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_SUJETO_PROCESAL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SUJETO_PROCESAL</autoIncrementTriggerName>
+<associations>
+<colAssociation fkAssociation="759EF47E-8D99-73F2-64B8-375D783CEFB7" referredColumn="1BC54EC9-6608-D311-5F80-EF6634DAA814"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5125CFA1-A5DB-09F1-AAAE-68D6E33B65D4" name="PK_SNA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D2810A7-F704-6DBD-260A-EE4A0779121C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6FD9F7E-4929-C5BD-DDB7-C7B3E08275FE" name="FK_SJP_SNA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:46:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54E3DFB8-7360-F0D8-1BDB-00C7412C57C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C2F31EA-A43F-7A73-1CF3-6841B3DEF652" name="ESP_X_TIPO_PROCESO">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 19:13:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Especialidades por Tipo de Proceso.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_10</ordsAlias>
 <abbreviation>EXT</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_TIPO_PROCESO" id="BB4DA0B1-CFEC-AF9C-F589-A83CBF57C785">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Tipo de Proceso.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -26,6 +28,7 @@
 <Column name="ID_ESPECIALIDAD" id="04C120AE-835D-F43C-0BC6-2BE322A232F3">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Especialidad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="REQUIERE_PAGO" id="936938A8-FD94-FA03-CB19-5308DFD2C4AB">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena si requiere pago o no.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -52,6 +56,7 @@
 <Column name="ES_VISIBLE_SITIO_WEB" id="E775E805-34E7-9A0C-5226-A59E7B2DDB68">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 19:14:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena si es visible en el sitio web.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

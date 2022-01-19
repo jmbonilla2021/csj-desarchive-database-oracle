@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3217EADA-CD65-CF30-8F2C-228A92295AEF" name="TARIFA">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 19:26:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las tarifas.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_11</ordsAlias>
 <abbreviation>TRA</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_TARIFA" id="907C66A9-F706-5EA2-FF14-59770594E089">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="NOMBRE" id="2DCF66EF-9E7C-145C-84A8-6CCBB073D632">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="CODIGO" id="94AD6C9F-2FF7-432E-D2B1-3EECE08FD371">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="VALOR" id="366E3FF0-AB80-7C20-E942-8BAFCB7B58B2">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el valor de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -63,6 +68,7 @@
 <Column name="FECHA_ACTUALIZACION" id="21DDD16F-9001-A86A-BE6D-BEA1076FE020">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de actualización de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

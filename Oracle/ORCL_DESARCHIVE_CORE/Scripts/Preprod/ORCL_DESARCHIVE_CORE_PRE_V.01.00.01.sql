@@ -98,355 +98,1120 @@ EXCEPTION
 END;
 /
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ANIO (
-    ID_ANIO   NUMBER(38) NOT NULL,
-    CODIGO    NVARCHAR2(2000) NOT NULL,
-    ES_ACTIVO NUMBER(1) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.anio (
+    id_anio   NUMBER(38) NOT NULL,
+    codigo    NVARCHAR2(2000) NOT NULL,
+    es_activo NUMBER(1) NOT NULL
 );
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_CODIGO_ANIO ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.ANIO (
-        CODIGO
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.anio IS
+    'Tabla que almacena la información de los años de los Procesos.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.anio.id_anio IS
+    'Campo que almacena el identificador único del año.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.anio.codigo IS
+    'Campo que almacena el código único por cada año.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.anio.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del año.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_codigo_anio ON
+    sch_orcl_desarchive_core_pre.anio (
+        codigo
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ANIO ADD CONSTRAINT PK_ANI PRIMARY KEY ( ID_ANIO );
+ALTER TABLE sch_orcl_desarchive_core_pre.anio ADD CONSTRAINT pk_ani PRIMARY KEY ( id_anio );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.BODEGA (
-    ID_BODEGA      NUMBER(38) NOT NULL,
-    IDENTIFICACION NVARCHAR2(1000) NOT NULL,
-    NOMBRE         NVARCHAR2(1000) NOT NULL,
-    TELEFONO       NVARCHAR2(500) NOT NULL,
-    DIRECCION      NVARCHAR2(1000) NOT NULL,
-    ES_ACTIVO      NUMBER(1) NOT NULL,
-    ID_MUNICIPIO   NUMBER(38) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.bodega (
+    id_bodega      NUMBER(38) NOT NULL,
+    identificacion NVARCHAR2(1000) NOT NULL,
+    nombre         NVARCHAR2(1000) NOT NULL,
+    telefono       NVARCHAR2(500) NOT NULL,
+    direccion      NVARCHAR2(1000) NOT NULL,
+    es_activo      NUMBER(1) NOT NULL,
+    id_municipio   NUMBER(38) NOT NULL
 );
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_IDENTIFICACION ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.BODEGA (
-        IDENTIFICACION
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.bodega IS
+    'Tabla que almacena la información de las Bodegas.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.bodega.id_bodega IS
+    'Campo que almacena el identificador único de Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.bodega.identificacion IS
+    'Campo que almacena la identificación de la Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.bodega.nombre IS
+    'Campo que almacena el nombre de la Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.bodega.telefono IS
+    'Campo que almacena el teléfono de la Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.bodega.direccion IS
+    'Campo que almacena la dirección de la Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.bodega.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO de la Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.bodega.id_municipio IS
+    'Campo que almacena el identificador del Municipio donde se encuentra ubicada la Bodega.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_identificacion ON
+    sch_orcl_desarchive_core_pre.bodega (
+        identificacion
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.BODEGA ADD CONSTRAINT PK_BDG PRIMARY KEY ( ID_BODEGA );
+ALTER TABLE sch_orcl_desarchive_core_pre.bodega ADD CONSTRAINT pk_bdg PRIMARY KEY ( id_bodega );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ESP_X_TIPO_PROCESO (
-    ID_TIPO_PROCESO      NUMBER(38) NOT NULL,
-    ID_ESPECIALIDAD      NUMBER(38) NOT NULL,
-    REQUIERE_PAGO        NUMBER(1),
-    ES_VISIBLE_SITIO_WEB NUMBER(1)
+CREATE TABLE sch_orcl_desarchive_core_pre.detalle_paquete (
+    id_detalle     NUMBER(38) NOT NULL,
+    anio_paquete   NVARCHAR2(2000),
+    numero_paquete NVARCHAR2(2000),
+    id_proceso     NUMBER(38) NOT NULL
 );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ESP_X_TIPO_PROCESO ADD CONSTRAINT PK_EXT PRIMARY KEY ( ID_TIPO_PROCESO,
-                                                                                                ID_ESPECIALIDAD );
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.detalle_paquete IS
+    'Tabla que almacena la información de los Detalles de los Paquetes, referentes a los procesos que se van a desarchivar.';
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ESPECIALIDAD (
-    ID_ESPECIALIDAD NUMBER(38) NOT NULL,
-    CODIGO          NVARCHAR2(2000) NOT NULL,
-    NOMBRE          NVARCHAR2(30) NOT NULL,
-    ES_ACTIVO       NUMBER(1) NOT NULL,
-    ID_JURISDICCION NUMBER(38) NOT NULL
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.detalle_paquete.id_detalle IS
+    'Campo que almacena el identificador único del Detalle de Paquete.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.detalle_paquete.anio_paquete IS
+    'Campo que almacena el año del Paquete.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.detalle_paquete.numero_paquete IS
+    'Campo que almacena el número del Paquete.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.detalle_paquete.id_proceso IS
+    'Campo que almacena el identificador del Proceso al cual pertenece el Paquete.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.detalle_paquete ADD CONSTRAINT pk_dpq PRIMARY KEY ( id_detalle );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.esp_x_tipo_proceso (
+    id_tipo_proceso      NUMBER(38) NOT NULL,
+    id_especialidad      NUMBER(38) NOT NULL,
+    requiere_pago        NUMBER(1),
+    es_visible_sitio_web NUMBER(1)
 );
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_CODIGO_ESPECIALIDAD ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.ESPECIALIDAD (
-        CODIGO
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.esp_x_tipo_proceso IS
+    'Tabla que almacena la información de las Especialidades por Tipo de Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.esp_x_tipo_proceso.id_tipo_proceso IS
+    'Campo que almacena el identificador único del Tipo de Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.esp_x_tipo_proceso.id_especialidad IS
+    'Campo que almacena el identificador único de la Especialidad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.esp_x_tipo_proceso.requiere_pago IS
+    'Campo que almacena si requiere pago o no.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.esp_x_tipo_proceso.es_visible_sitio_web IS
+    'Campo que almacena si es visible en el sitio web.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.esp_x_tipo_proceso ADD CONSTRAINT pk_ext PRIMARY KEY ( id_tipo_proceso,
+                                                                                                id_especialidad );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.especialidad (
+    id_especialidad NUMBER(38) NOT NULL,
+    codigo          NVARCHAR2(2000) NOT NULL,
+    nombre          NVARCHAR2(30) NOT NULL,
+    es_activo       NUMBER(1) NOT NULL,
+    id_jurisdiccion NUMBER(38) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.especialidad IS
+    'Tabla que almacena la información de las Especialidades.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.especialidad.id_especialidad IS
+    'Campo que almacena el identificador único de la Especialidad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.especialidad.codigo IS
+    'Campo que almacena el código único de la Especialidad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.especialidad.nombre IS
+    'Campo que almacena el nombre de la Especialidad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.especialidad.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO de la Especialidad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.especialidad.id_jurisdiccion IS
+    'Campo que almacena el identificador de la Jurisdicción al cual pertenece la Especialidad.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_codigo_especialidad ON
+    sch_orcl_desarchive_core_pre.especialidad (
+        codigo
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ESPECIALIDAD ADD CONSTRAINT PK_ESP PRIMARY KEY ( ID_ESPECIALIDAD );
+ALTER TABLE sch_orcl_desarchive_core_pre.especialidad ADD CONSTRAINT pk_esp PRIMARY KEY ( id_especialidad );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.HISTORICO_TARIFA (
-    ID_HISTORICO_TARIFA NUMBER(38) NOT NULL,
-    NOMBRE              NVARCHAR2(2000),
-    CODIGO              NVARCHAR2(1000),
-    VALOR               NUMBER(19, 4),
-    FECHA_ACTUALIZACION DATE,
-    ID_TARIFA           NUMBER(38) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.estado_novedad (
+    id_estado_novedad NUMBER(38) NOT NULL,
+    codigo            NVARCHAR2(1000) NOT NULL,
+    nombre            NVARCHAR2(1000) NOT NULL,
+    es_activo         NUMBER(1) NOT NULL
 );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.HISTORICO_TARIFA ADD CONSTRAINT PK_HTF PRIMARY KEY ( ID_HISTORICO_TARIFA );
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.estado_novedad IS
+    'Tabla que almacena la información de los Estados de las Novedades.';
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION (
-    ID_JURISDICCION NUMBER(38) NOT NULL,
-    CODIGO          NVARCHAR2(2000) NOT NULL,
-    NOMBRE          NVARCHAR2(1000) NOT NULL,
-    ES_ACTIVO       NUMBER(1) NOT NULL
-);
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_novedad.id_estado_novedad IS
+    'Campo que almacena el identificador único del Estado de la Novedad.';
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_JDC_CODIGO ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION (
-        CODIGO
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_novedad.codigo IS
+    'Campo que almacena el código del Estado de la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_novedad.nombre IS
+    'Campo que almacena el nombre del Estado de la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_novedad.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del Estado de la Novedad.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_estado_novedad ON
+    sch_orcl_desarchive_core_pre.estado_novedad (
+        codigo
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION ADD CONSTRAINT PK_JDC PRIMARY KEY ( ID_JURISDICCION );
+ALTER TABLE sch_orcl_desarchive_core_pre.estado_novedad ADD CONSTRAINT pk_eno PRIMARY KEY ( id_estado_novedad );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION_POR_BODEGA (
-    ID_BODEGA       NUMBER(38) NOT NULL,
-    ID_JURISDICCION NUMBER(38) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.estado_solicitud (
+    id_estado_solicitud NUMBER(38) NOT NULL,
+    codigo              NVARCHAR2(1000) NOT NULL,
+    nombre              NVARCHAR2(1000) NOT NULL,
+    es_activo           NUMBER(1) NOT NULL
 );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION_POR_BODEGA ADD CONSTRAINT PK_JXB PRIMARY KEY ( ID_BODEGA,
-                                                                                                     ID_JURISDICCION );
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.estado_solicitud IS
+    'Tabla que almacena la información de los Estados de Solicitud.';
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JUZGADO (
-    ID_JUZGADO      NUMBER(38) NOT NULL,
-    CODIGO          NVARCHAR2(2000) NOT NULL,
-    NOMBRE          NVARCHAR2(1000) NOT NULL,
-    ES_ACTIVO       NUMBER(1) NOT NULL,
-    ID_MUNICIPIO    NUMBER(38) NOT NULL,
-    ID_ESPECIALIDAD NUMBER(38) NOT NULL
-);
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_solicitud.id_estado_solicitud IS
+    'Campo que almacena el identificador único del Estado de Solicitud.';
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_CODIGO_JUZGADO ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.JUZGADO (
-        CODIGO
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_solicitud.codigo IS
+    'Campo que almacena el código único del Estado de Solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_solicitud.nombre IS
+    'Campo que almacena el nombre del Estado de Solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.estado_solicitud.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del Estado de la Solicitud.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_codigo_estado_solicitud ON
+    sch_orcl_desarchive_core_pre.estado_solicitud (
+        codigo
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JUZGADO ADD CONSTRAINT PK_JUZ PRIMARY KEY ( ID_JUZGADO );
+ALTER TABLE sch_orcl_desarchive_core_pre.estado_solicitud ADD CONSTRAINT pk_ess PRIMARY KEY ( id_estado_solicitud );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.NOVEDAD (
-    ID_NOVEDAD                 NUMBER(38) NOT NULL,
-    CODIGO_TIPO_IDENTIFICACION NVARCHAR2(1000) NOT NULL,
-    NUMERO_IDENTIFICACION      NVARCHAR2(1000) NOT NULL,
-    FECHA_INICIO               DATE NOT NULL,
-    FECHA_FIN                  DATE NOT NULL,
-    OBSERVACION                NVARCHAR2(2000),
-    ID_TIPO_NOVEDAD            NUMBER(38) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.historico_tarifa (
+    id_historico_tarifa NUMBER(38) NOT NULL,
+    nombre              NVARCHAR2(2000),
+    codigo              NVARCHAR2(1000),
+    valor               NUMBER(19, 4),
+    fecha_actualizacion DATE,
+    id_tarifa           NUMBER(38) NOT NULL
 );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.NOVEDAD
-    ADD CONSTRAINT PK_NOV PRIMARY KEY ( ID_NOVEDAD,
-                                        CODIGO_TIPO_IDENTIFICACION,
-                                        NUMERO_IDENTIFICACION,
-                                        ID_TIPO_NOVEDAD );
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.historico_tarifa IS
+    'Tabla que almacena el histórico de las tarifas aplicadas en el desarchive de los procesos.';
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TARIFA (
-    ID_TARIFA           NUMBER(38) NOT NULL,
-    NOMBRE              NVARCHAR2(2000) NOT NULL,
-    CODIGO              NVARCHAR2(1000) NOT NULL,
-    VALOR               NUMBER(19, 4) NOT NULL,
-    FECHA_ACTUALIZACION DATE NOT NULL
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.historico_tarifa.id_historico_tarifa IS
+    'Campo que almacena el identificador único del histórico de tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.historico_tarifa.nombre IS
+    'Campo que almacena el nombre de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.historico_tarifa.codigo IS
+    'Campo que almacena el código de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.historico_tarifa.valor IS
+    'Campo que almacena el valor de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.historico_tarifa.fecha_actualizacion IS
+    'Campo que almacena la fecha de actualización de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.historico_tarifa.id_tarifa IS
+    'Campo que almacena el identificador de la tarifa.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.historico_tarifa ADD CONSTRAINT pk_htf PRIMARY KEY ( id_historico_tarifa );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.jurisdiccion (
+    id_jurisdiccion NUMBER(38) NOT NULL,
+    codigo          NVARCHAR2(2000) NOT NULL,
+    nombre          NVARCHAR2(1000) NOT NULL,
+    es_activo       NUMBER(1) NOT NULL
 );
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_TARIFA ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.TARIFA (
-        CODIGO
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.jurisdiccion IS
+    'Tabla que almacena la información de las Jurisdicciones.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.jurisdiccion.id_jurisdiccion IS
+    'Campo que almacena el identificador único de la Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.jurisdiccion.codigo IS
+    'Campo que almacena el código único por cada Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.jurisdiccion.nombre IS
+    'Campo que almacena el nombre de la Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.jurisdiccion.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO de la Jurisdicción.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_jdc_codigo ON
+    sch_orcl_desarchive_core_pre.jurisdiccion (
+        codigo
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TARIFA ADD CONSTRAINT PK_TRA PRIMARY KEY ( ID_TARIFA );
+ALTER TABLE sch_orcl_desarchive_core_pre.jurisdiccion ADD CONSTRAINT pk_jdc PRIMARY KEY ( id_jurisdiccion );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_NOVEDAD (
-    ID_TIPO_NOVEDAD NUMBER(38) NOT NULL,
-    CODIGO          NVARCHAR2(2000) NOT NULL,
-    NOMBRE          NVARCHAR2(1000) NOT NULL,
-    ES_ACTIVO       NUMBER(1) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.jurisdiccion_por_bodega (
+    id_bodega       NUMBER(38) NOT NULL,
+    id_jurisdiccion NUMBER(38) NOT NULL
 );
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_TIPO_NOVEDAD ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_NOVEDAD (
-        CODIGO
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.jurisdiccion_por_bodega IS
+    'Tabla que almacena la información de las Jurisdicciones por Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.jurisdiccion_por_bodega.id_bodega IS
+    'Campo que almacena el identificador de Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.jurisdiccion_por_bodega.id_jurisdiccion IS
+    'Campo que almacena el identificador de la Jurisdicción.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.jurisdiccion_por_bodega ADD CONSTRAINT pk_jxb PRIMARY KEY ( id_bodega,
+                                                                                                     id_jurisdiccion );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.juzgado (
+    id_juzgado      NUMBER(38) NOT NULL,
+    codigo          NVARCHAR2(2000) NOT NULL,
+    nombre          NVARCHAR2(1000) NOT NULL,
+    es_activo       NUMBER(1) NOT NULL,
+    id_municipio    NUMBER(38) NOT NULL,
+    id_especialidad NUMBER(38) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.juzgado IS
+    'Tabla que almacena la información de las Jurisdicciones.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.juzgado.id_juzgado IS
+    'Campo que almacena el identificador único de la Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.juzgado.codigo IS
+    'Campo que almacena el código único de la Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.juzgado.nombre IS
+    'Campo que almacena el nombre de la Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.juzgado.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO de la Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.juzgado.id_municipio IS
+    'Campo que almacena el identificador del Municipio al cual pertenece la Jurisdicción.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.juzgado.id_especialidad IS
+    'Campo que almacena el identificador de la Especialidad al cual pertenece la Jurisdicción.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_juzgado ON
+    sch_orcl_desarchive_core_pre.juzgado (
+        codigo
+    ASC,
+        id_especialidad
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_NOVEDAD ADD CONSTRAINT PK_TNV PRIMARY KEY ( ID_TIPO_NOVEDAD );
+ALTER TABLE sch_orcl_desarchive_core_pre.juzgado ADD CONSTRAINT pk_juz PRIMARY KEY ( id_juzgado );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_PROCESO (
-    ID_TIPO_PROCESO NUMBER(38) NOT NULL,
-    CODIGO          NVARCHAR2(2000) NOT NULL,
-    NOMBRE          NVARCHAR2(1000) NOT NULL,
-    ES_ACTIVO       NUMBER(1) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.novedad (
+    id_novedad                 NUMBER(38) NOT NULL,
+    codigo_tipo_identificacion NVARCHAR2(1000) NOT NULL,
+    numero_identificacion      NVARCHAR2(1000) NOT NULL,
+    fecha_inicio               DATE NOT NULL,
+    fecha_fin                  DATE NOT NULL,
+    observacion                NVARCHAR2(2000),
+    id_tipo_novedad            NUMBER(38) NOT NULL,
+    id_estado_novedad          NUMBER(38) NOT NULL
 );
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_CODIGO_TIPO_PROC ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_PROCESO (
-        CODIGO
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.novedad IS
+    'Tabla que almacena la información de las Novedades.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.id_novedad IS
+    'Campo que almacena el identificador único de la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.codigo_tipo_identificacion IS
+    'Campo que almacena el código del Tipo de Identificación de la persona persona involucrada en la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.numero_identificacion IS
+    'Campo que almacena el código el Número de Identificación de la persona involucrada en la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.fecha_inicio IS
+    'Campo que almacena la fecha de inicio de la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.fecha_fin IS
+    'Campo que almacena la fecha de finalización de la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.observacion IS
+    'Campo que almacena las observaciones referentes a la Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.id_tipo_novedad IS
+    'Campo que almacena el identificador del Tipo de Novedad.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.novedad.id_estado_novedad IS
+    'Campo que almacena el identificador del Estado de la Novedad.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.novedad
+    ADD CONSTRAINT pk_nov PRIMARY KEY ( id_novedad,
+                                        codigo_tipo_identificacion,
+                                        numero_identificacion );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.parametro (
+    id_parametro     NUMBER(38) NOT NULL,
+    nombre_clave     NVARCHAR2(1000) NOT NULL,
+    valor            NVARCHAR2(1000) NOT NULL,
+    id_procedimiento NUMBER(38) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.parametro IS
+    'Tabla que almacena la información de los Parámetros utilizados en la aplicación.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.parametro.id_parametro IS
+    'Campo que almacena el identificador único del Parámetro.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.parametro.nombre_clave IS
+    'Campo que almacena el nombre cleve del Parámetro.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.parametro.valor IS
+    'Campo que almacena el valor del Parámetro.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.parametro.id_procedimiento IS
+    'Campo que almacena el identificador del Procedimiento al cual pertenece el Parámetro.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.parametro ADD CONSTRAINT pk_prm PRIMARY KEY ( id_parametro );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.procedimiento (
+    id_procedimiento NUMBER(38) NOT NULL,
+    codigo           NVARCHAR2(1000) NOT NULL,
+    nombre           NVARCHAR2(1000) NOT NULL,
+    es_activo        NUMBER(1) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.procedimiento IS
+    'Tabla que almacena la información de los Procedimientos o Sistemas que tienen Parámetros para su funcionamiento.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.procedimiento.id_procedimiento IS
+    'Campo que almacena el identificador único de Procedimiento.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.procedimiento.codigo IS
+    'Campo que almacena el código único por cada Procedimiento.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.procedimiento.nombre IS
+    'Campo que almacena el nombre del Procedimiento.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.procedimiento.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del Procedimento.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_codigo_proceso ON
+    sch_orcl_desarchive_core_pre.procedimiento (
+        codigo
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_PROCESO ADD CONSTRAINT PK_TPP PRIMARY KEY ( ID_TIPO_PROCESO );
+ALTER TABLE sch_orcl_desarchive_core_pre.procedimiento ADD CONSTRAINT pk_prc PRIMARY KEY ( id_procedimiento );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_SUJETO_PROCESAL (
-    ID_TIPO_SUJETO_PROCESAL NUMBER(38) NOT NULL,
-    CODIGO                  NVARCHAR2(1000) NOT NULL,
-    NOMBRE                  NVARCHAR2(1000) NOT NULL,
-    ES_ACTIVO               NUMBER(1) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.proceso (
+    id_proceso          NUMBER(38) NOT NULL,
+    numero_proceso      NUMBER(38) NOT NULL,
+    numero_proceso_jud  NUMBER(38),
+    observaciones       NVARCHAR2(2000),
+    codigo_anio_proceso NVARCHAR2(2000) NOT NULL,
+    id_solicitud        NUMBER(38) NOT NULL,
+    id_municipio        NUMBER(38) NOT NULL
 );
 
-CREATE UNIQUE INDEX SCH_ORCL_DESARCHIVE_CORE_PRE.IDX_CODIGO_TP_SPROCESAL ON
-    SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_SUJETO_PROCESAL (
-        CODIGO
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.proceso IS
+    'Tabla que almacena la información de los Procesos a desarchivar.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.proceso.id_proceso IS
+    'Campo que almacena el identificador único del Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.proceso.numero_proceso IS
+    'Campo que almacena el número de Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.proceso.numero_proceso_jud IS
+    'Campo que almacena el Número de Proceso Judicial (CUI).';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.proceso.observaciones IS
+    'Campo que almacena las observaciones referentes al Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.proceso.codigo_anio_proceso IS
+    'Campo que almacena el código del año del Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.proceso.id_solicitud IS
+    'Campo que almacena el identificador de la solicitud al cual pertenece el proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.proceso.id_municipio IS
+    'Campo que almacena el identificador del municipio al cual pertenece el proceso.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.proceso ADD CONSTRAINT pk_pro PRIMARY KEY ( id_proceso );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.solicitud_des (
+    id_solicitud_des         NUMBER(38) NOT NULL,
+    numero_identificacion    NVARCHAR2(1000) NOT NULL,
+    primer_nombre            NVARCHAR2(1000) NOT NULL,
+    segundo_nombre           NVARCHAR2(1000),
+    primer_apellido          NVARCHAR2(1000) NOT NULL,
+    segundo_apellido         NVARCHAR2(1000),
+    nombres_apellidos        NVARCHAR2(2000) NOT NULL,
+    telefono                 NVARCHAR2(1000) NOT NULL,
+    correo_notificacion      NVARCHAR2(1000) NOT NULL,
+    codigo_tipo_proceso      NVARCHAR2(2000) NOT NULL,
+    codigo_juzgado           NVARCHAR2(2000) NOT NULL,
+    codigo_especialidad      NVARCHAR2(2000) NOT NULL,
+    codigo_tipo_documento    NVARCHAR2(2000) NOT NULL,
+    fecha_radicado_solicitud DATE,
+    id_estado_solicitud      NUMBER(38) NOT NULL,
+    id_tipo_solicitud        NUMBER(38) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.solicitud_des IS
+    'Tabla que almacena la información de las Solicitudes de desarchive, realizadas por los usuarios';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.id_solicitud_des IS
+    'Campo que almacena el identificador único de la Solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.numero_identificacion IS
+    'Campo que almacena el número de identificación del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.primer_nombre IS
+    'Campo que almacena el primer nombre del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.segundo_nombre IS
+    'Campo que almacena el segundo nombre del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.primer_apellido IS
+    'Campo que almacena el primer apellido del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.segundo_apellido IS
+    'Campo que almacena el segundo apellido del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.nombres_apellidos IS
+    'Campo que almacena el nombre completo del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.telefono IS
+    'Campo que almacena el teléfono del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.correo_notificacion IS
+    'Campo que almacena el correo electrónico del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.codigo_tipo_proceso IS
+    'Campo que almacena el código del Tipo de Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.codigo_juzgado IS
+    'Campo que almacena el código del Juzgado al cual pertenece el Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.codigo_especialidad IS
+    'Campo que almacena el código de la especialidad al cual pertenece el Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.codigo_tipo_documento IS
+    'Campo que almacena el código del tipo de documento del usuario quien realiza la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.fecha_radicado_solicitud IS
+    'Campo que almacena la fecha de radicación de la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.id_estado_solicitud IS
+    'Campo que almacena el identificador del estado la solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.solicitud_des.id_tipo_solicitud IS
+    'Campo que almacena el identificador del tipo de  la solicitud.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.solicitud_des ADD CONSTRAINT pk_slc PRIMARY KEY ( id_solicitud_des );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.sujeto_juridica (
+    id_sujeto_juridica NUMBER(38) NOT NULL,
+    razon_social       NVARCHAR2(1000) NOT NULL,
+    id_sujeto_procesal NUMBER(38) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.sujeto_juridica IS
+    'Tabla que almacena la información de los Sujetos Procesales - Personas Jurídicas.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_juridica.id_sujeto_juridica IS
+    'Campo que almacena el identificador único del Sujeto Procesal - Persona Jurídica.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_juridica.razon_social IS
+    'Campo que almacena la razón social del Sujeto Procesal - Persona Jurídica.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_juridica.id_sujeto_procesal IS
+    'Campo que almacena el identificador del Sujeto Procesal.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_juridica ADD CONSTRAINT pk_sju PRIMARY KEY ( id_sujeto_juridica );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.sujeto_natural (
+    id_sujeto_natural  NUMBER(38) NOT NULL,
+    primer_nombre      NVARCHAR2(1000) NOT NULL,
+    segundo_nombre     NVARCHAR2(1000),
+    primer_apellido    NVARCHAR2(1000) NOT NULL,
+    segundo_apellido   NVARCHAR2(1000),
+    nombre_apellidos   NVARCHAR2(2000) NOT NULL,
+    id_sujeto_procesal NUMBER(38) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.sujeto_natural IS
+    'Tabla que almacena la información de los Sujetos Procesales - Personas Naturales.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_natural.id_sujeto_natural IS
+    'Campo que almacena el identificador único del Sujeto Procesal - Persona Natural.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_natural.primer_nombre IS
+    'Campo que almacena el primer nombre del Sujeto Procesal - Persona Natural.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_natural.segundo_nombre IS
+    'Campo que almacena el segundo nombre del Sujeto Procesal - Persona Natural.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_natural.primer_apellido IS
+    'Campo que almacena el primer apellido del Sujeto Procesal - Persona Natural.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_natural.segundo_apellido IS
+    'Campo que almacena el segundo apellido del Sujeto Procesal - Persona Natural.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_natural.nombre_apellidos IS
+    'Campo que almacena el nombre completo del Sujeto Procesal - Persona Natural.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_natural.id_sujeto_procesal IS
+    'Campo que almacena el identificador del Sujeto Procesal.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_natural ADD CONSTRAINT pk_sna PRIMARY KEY ( id_sujeto_natural );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.sujeto_procesal (
+    id_sujeto_procesal       NUMBER(38) NOT NULL,
+    codigo_tipo_suj_procesal NVARCHAR2(2000) NOT NULL,
+    tipo_persona             NUMBER(1) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.sujeto_procesal IS
+    'Tabla que almacena la información de los Sujetos Procesales.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_procesal.id_sujeto_procesal IS
+    'Campo que almacena el identificador único del Sujeto Procesal.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_procesal.codigo_tipo_suj_procesal IS
+    'Campo que almacena el código del Tipo de Sujeto Procesal.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_procesal.tipo_persona IS
+    'Campo que almacena el Tipo de Persona.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_procesal ADD CONSTRAINT pk_sjp PRIMARY KEY ( id_sujeto_procesal );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.sujeto_procesal_x_proceso (
+    id_sujeto_procesal NUMBER(38) NOT NULL,
+    id_proceso         NUMBER(38) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.sujeto_procesal_x_proceso IS
+    'Tabla que almacena la información de los Sujetos Procesales por Porceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_procesal_x_proceso.id_sujeto_procesal IS
+    'Campo que almacena el identificador del Sujeto Procesal.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.sujeto_procesal_x_proceso.id_proceso IS
+    'Campo que almacena el identificador del Proceso.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_procesal_x_proceso ADD CONSTRAINT pk_spp PRIMARY KEY ( id_sujeto_procesal,
+                                                                                                       id_proceso );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.tarifa (
+    id_tarifa           NUMBER(38) NOT NULL,
+    nombre              NVARCHAR2(2000) NOT NULL,
+    codigo              NVARCHAR2(1000) NOT NULL,
+    valor               NUMBER(19, 4) NOT NULL,
+    fecha_actualizacion DATE NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.tarifa IS
+    'Tabla que almacena la información de las tarifas.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tarifa.id_tarifa IS
+    'Campo que almacena el identificador único de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tarifa.nombre IS
+    'Campo que almacena el nombre de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tarifa.codigo IS
+    'Campo que almacena el código único de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tarifa.valor IS
+    'Campo que almacena el valor de la tarifa.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tarifa.fecha_actualizacion IS
+    'Campo que almacena la fecha de actualización de la tarifa.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_tarifa ON
+    sch_orcl_desarchive_core_pre.tarifa (
+        codigo
     ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_SUJETO_PROCESAL ADD CONSTRAINT TIPO_SUJETO_PROCESAL_PK PRIMARY KEY ( ID_TIPO_SUJETO_PROCESAL );
+ALTER TABLE sch_orcl_desarchive_core_pre.tarifa ADD CONSTRAINT pk_tra PRIMARY KEY ( id_tarifa );
 
-CREATE TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.USUARIO_POR_BODEGA (
-    ID_BODEGA                  NUMBER(38) NOT NULL,
-    CODIGO_TIPO_IDENTIFICACION NVARCHAR2(1000) NOT NULL,
-    NUMERO_IDENTIFICACION      NVARCHAR2(1000) NOT NULL
+CREATE TABLE sch_orcl_desarchive_core_pre.tipo_novedad (
+    id_tipo_novedad NUMBER(38) NOT NULL,
+    codigo          NVARCHAR2(1000) NOT NULL,
+    nombre          NVARCHAR2(1000) NOT NULL,
+    es_activo       NUMBER(1) NOT NULL
 );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.USUARIO_POR_BODEGA
-    ADD CONSTRAINT PK_USU PRIMARY KEY ( ID_BODEGA,
-                                        CODIGO_TIPO_IDENTIFICACION,
-                                        NUMERO_IDENTIFICACION );
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.tipo_novedad IS
+    'Tabla que almacena la información de los Tipo de Novedad.';
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION_POR_BODEGA
-    ADD CONSTRAINT FK_BDG_JXB FOREIGN KEY ( ID_BODEGA )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.BODEGA ( ID_BODEGA );
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_novedad.id_tipo_novedad IS
+    'Campo que almacena el identificador único del Tipo de Novedad.';
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ESP_X_TIPO_PROCESO
-    ADD CONSTRAINT FK_ESP_EXT FOREIGN KEY ( ID_ESPECIALIDAD )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.ESPECIALIDAD ( ID_ESPECIALIDAD );
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_novedad.codigo IS
+    'Campo que almacena el código del Tipo de Novedad.';
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JUZGADO
-    ADD CONSTRAINT FK_ESP_JUZ FOREIGN KEY ( ID_ESPECIALIDAD )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.ESPECIALIDAD ( ID_ESPECIALIDAD );
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_novedad.nombre IS
+    'Campo que almacena el nombre del Tipo de Novedad.';
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ESPECIALIDAD
-    ADD CONSTRAINT FK_JDC_ESP FOREIGN KEY ( ID_JURISDICCION )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION ( ID_JURISDICCION );
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_novedad.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Novedad.';
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION_POR_BODEGA
-    ADD CONSTRAINT FK_JDC_JXB FOREIGN KEY ( ID_JURISDICCION )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION ( ID_JURISDICCION );
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_tipo_novedad ON
+    sch_orcl_desarchive_core_pre.tipo_novedad (
+        codigo
+    ASC );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.NOVEDAD
-    ADD CONSTRAINT FK_TNV_NOV FOREIGN KEY ( ID_TIPO_NOVEDAD )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_NOVEDAD ( ID_TIPO_NOVEDAD );
+ALTER TABLE sch_orcl_desarchive_core_pre.tipo_novedad ADD CONSTRAINT pk_tnv PRIMARY KEY ( id_tipo_novedad );
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.ESP_X_TIPO_PROCESO
-    ADD CONSTRAINT FK_TPP_EXT FOREIGN KEY ( ID_TIPO_PROCESO )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_PROCESO ( ID_TIPO_PROCESO );
+CREATE TABLE sch_orcl_desarchive_core_pre.tipo_proceso (
+    id_tipo_proceso NUMBER(38) NOT NULL,
+    codigo          NVARCHAR2(1000) NOT NULL,
+    nombre          NVARCHAR2(1000) NOT NULL,
+    es_activo       NUMBER(1) NOT NULL
+);
 
-ALTER TABLE SCH_ORCL_DESARCHIVE_CORE_PRE.HISTORICO_TARIFA
-    ADD CONSTRAINT FK_TRA_HTF FOREIGN KEY ( ID_TARIFA )
-        REFERENCES SCH_ORCL_DESARCHIVE_CORE_PRE.TARIFA ( ID_TARIFA );
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.tipo_proceso IS
+    'Tabla que almacena la información de los Tipos de Proceso.';
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_ANIO START WITH 1 CACHE 20 ORDER;
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_proceso.id_tipo_proceso IS
+    'Campo que almacena el identificador único del Tipo de Proceso.';
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_ANIO BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.ANIO
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_proceso.codigo IS
+    'Campo que almacena el código único del Tipo de Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_proceso.nombre IS
+    'Campo que almacena el nombre único del Tipo de Proceso.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_proceso.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Proceso.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_codigo_tipo_proc ON
+    sch_orcl_desarchive_core_pre.tipo_proceso (
+        codigo
+    ASC );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.tipo_proceso ADD CONSTRAINT pk_tpp PRIMARY KEY ( id_tipo_proceso );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.tipo_solicitud (
+    id_tipo_solicitud NUMBER(38) NOT NULL,
+    codigo            NVARCHAR2(1000) NOT NULL,
+    nombre            NVARCHAR2(1000) NOT NULL,
+    es_activo         NUMBER(1) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.tipo_solicitud IS
+    'Tabla que almacena la información de los Tipo de Solicitudes de desarchive de procesos, realizadas por los usuarios.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_solicitud.id_tipo_solicitud IS
+    'Campo que almacena el identificador único del Tipo de Solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_solicitud.codigo IS
+    'Campo que almacena el código único por cada Tipo de Solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_solicitud.nombre IS
+    'Campo que almacena el nombre del Tipo de Solicitud.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_solicitud.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Solicitud.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_tipo_solicitud ON
+    sch_orcl_desarchive_core_pre.tipo_solicitud (
+        codigo
+    ASC );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.tipo_solicitud ADD CONSTRAINT pk_tso PRIMARY KEY ( id_tipo_solicitud );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.tipo_sujeto_procesal (
+    id_tipo_sujeto_procesal NUMBER(38) NOT NULL,
+    codigo                  NVARCHAR2(1000) NOT NULL,
+    nombre                  NVARCHAR2(1000) NOT NULL,
+    es_activo               NUMBER(1) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.tipo_sujeto_procesal IS
+    'Tabla que almacena la información de los Tipo de Sujeto Procesal.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_sujeto_procesal.id_tipo_sujeto_procesal IS
+    'Campo que almacena el identificador único del Tipo de Sujeto Procesal.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_sujeto_procesal.codigo IS
+    'Campo que almacena el código único por cada Tipo de Sujeto Procesal.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_sujeto_procesal.nombre IS
+    'Campo que almacena el nombre del Tipo de Sujeto Procesal.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.tipo_sujeto_procesal.es_activo IS
+    'Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Sujeto Procesal.';
+
+CREATE UNIQUE INDEX sch_orcl_desarchive_core_pre.idx_codigo_tp_sprocesal ON
+    sch_orcl_desarchive_core_pre.tipo_sujeto_procesal (
+        codigo
+    ASC );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.tipo_sujeto_procesal ADD CONSTRAINT pk_tsp PRIMARY KEY ( id_tipo_sujeto_procesal );
+
+CREATE TABLE sch_orcl_desarchive_core_pre.usuario_por_bodega (
+    id_bodega                  NUMBER(38) NOT NULL,
+    codigo_tipo_identificacion NVARCHAR2(1000) NOT NULL,
+    numero_identificacion      NVARCHAR2(1000) NOT NULL
+);
+
+COMMENT ON TABLE sch_orcl_desarchive_core_pre.usuario_por_bodega IS
+    'Tabla que almacena la información de los Usuarios por Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.usuario_por_bodega.id_bodega IS
+    'Campo que almacena el identificador único de la Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.usuario_por_bodega.codigo_tipo_identificacion IS
+    'Campo que almacena el tipo de identificación del usuario de la Bodega.';
+
+COMMENT ON COLUMN sch_orcl_desarchive_core_pre.usuario_por_bodega.numero_identificacion IS
+    'Campo que almacena el número de identificación del usuario de la Bodega.';
+
+ALTER TABLE sch_orcl_desarchive_core_pre.usuario_por_bodega
+    ADD CONSTRAINT pk_usu PRIMARY KEY ( id_bodega,
+                                        codigo_tipo_identificacion,
+                                        numero_identificacion );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.jurisdiccion_por_bodega
+    ADD CONSTRAINT fk_bdg_jxb FOREIGN KEY ( id_bodega )
+        REFERENCES sch_orcl_desarchive_core_pre.bodega ( id_bodega );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.novedad
+    ADD CONSTRAINT fk_eno_nov FOREIGN KEY ( id_estado_novedad )
+        REFERENCES sch_orcl_desarchive_core_pre.estado_novedad ( id_estado_novedad );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.esp_x_tipo_proceso
+    ADD CONSTRAINT fk_esp_ext FOREIGN KEY ( id_especialidad )
+        REFERENCES sch_orcl_desarchive_core_pre.especialidad ( id_especialidad );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.juzgado
+    ADD CONSTRAINT fk_esp_juz FOREIGN KEY ( id_especialidad )
+        REFERENCES sch_orcl_desarchive_core_pre.especialidad ( id_especialidad );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.solicitud_des
+    ADD CONSTRAINT fk_ess_slc FOREIGN KEY ( id_estado_solicitud )
+        REFERENCES sch_orcl_desarchive_core_pre.estado_solicitud ( id_estado_solicitud );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.especialidad
+    ADD CONSTRAINT fk_jdc_esp FOREIGN KEY ( id_jurisdiccion )
+        REFERENCES sch_orcl_desarchive_core_pre.jurisdiccion ( id_jurisdiccion );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.jurisdiccion_por_bodega
+    ADD CONSTRAINT fk_jdc_jxb FOREIGN KEY ( id_jurisdiccion )
+        REFERENCES sch_orcl_desarchive_core_pre.jurisdiccion ( id_jurisdiccion );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.parametro
+    ADD CONSTRAINT fk_prc_prm FOREIGN KEY ( id_procedimiento )
+        REFERENCES sch_orcl_desarchive_core_pre.procedimiento ( id_procedimiento );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.detalle_paquete
+    ADD CONSTRAINT fk_pro_dpq FOREIGN KEY ( id_proceso )
+        REFERENCES sch_orcl_desarchive_core_pre.proceso ( id_proceso );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_procesal_x_proceso
+    ADD CONSTRAINT fk_pro_spp FOREIGN KEY ( id_proceso )
+        REFERENCES sch_orcl_desarchive_core_pre.proceso ( id_proceso );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_juridica
+    ADD CONSTRAINT fk_sjp_sju FOREIGN KEY ( id_sujeto_procesal )
+        REFERENCES sch_orcl_desarchive_core_pre.sujeto_procesal ( id_sujeto_procesal );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_natural
+    ADD CONSTRAINT fk_sjp_sna FOREIGN KEY ( id_sujeto_procesal )
+        REFERENCES sch_orcl_desarchive_core_pre.sujeto_procesal ( id_sujeto_procesal );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.sujeto_procesal_x_proceso
+    ADD CONSTRAINT fk_sjp_spp FOREIGN KEY ( id_sujeto_procesal )
+        REFERENCES sch_orcl_desarchive_core_pre.sujeto_procesal ( id_sujeto_procesal );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.proceso
+    ADD CONSTRAINT fk_slc_pro FOREIGN KEY ( id_solicitud )
+        REFERENCES sch_orcl_desarchive_core_pre.solicitud_des ( id_solicitud_des );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.novedad
+    ADD CONSTRAINT fk_tnv_nov FOREIGN KEY ( id_tipo_novedad )
+        REFERENCES sch_orcl_desarchive_core_pre.tipo_novedad ( id_tipo_novedad );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.esp_x_tipo_proceso
+    ADD CONSTRAINT fk_tpp_ext FOREIGN KEY ( id_tipo_proceso )
+        REFERENCES sch_orcl_desarchive_core_pre.tipo_proceso ( id_tipo_proceso );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.historico_tarifa
+    ADD CONSTRAINT fk_tra_htf FOREIGN KEY ( id_tarifa )
+        REFERENCES sch_orcl_desarchive_core_pre.tarifa ( id_tarifa );
+
+ALTER TABLE sch_orcl_desarchive_core_pre.solicitud_des
+    ADD CONSTRAINT fk_tso_slc FOREIGN KEY ( id_tipo_solicitud )
+        REFERENCES sch_orcl_desarchive_core_pre.tipo_solicitud ( id_tipo_solicitud );
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_anio START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_anio BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.anio
     FOR EACH ROW
-    WHEN ( NEW.ID_ANIO IS NULL )
+    WHEN ( new.id_anio IS NULL )
 BEGIN
-    :NEW.ID_ANIO := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_ANIO.NEXTVAL;
+    :new.id_anio := sch_orcl_desarchive_core_pre.seq_anio.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_BODEGA START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_bodega START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_BODEGA BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.BODEGA
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_bodega BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.bodega
     FOR EACH ROW
-    WHEN ( NEW.ID_BODEGA IS NULL )
+    WHEN ( new.id_bodega IS NULL )
 BEGIN
-    :NEW.ID_BODEGA := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_BODEGA.NEXTVAL;
+    :new.id_bodega := sch_orcl_desarchive_core_pre.seq_bodega.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_ESPECIALIDAD START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_detalle_paquete START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_ESPECIALIDAD BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.ESPECIALIDAD
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_detalle_paquete BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.detalle_paquete
     FOR EACH ROW
-    WHEN ( NEW.ID_ESPECIALIDAD IS NULL )
+    WHEN ( new.id_detalle IS NULL )
 BEGIN
-    :NEW.ID_ESPECIALIDAD := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_ESPECIALIDAD.NEXTVAL;
+    :new.id_detalle := sch_orcl_desarchive_core_pre.seq_detalle_paquete.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_HISTORICO_TARIFA START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_especialidad START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_HISTORICO_TARIFA BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.HISTORICO_TARIFA
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_especialidad BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.especialidad
     FOR EACH ROW
-    WHEN ( NEW.ID_HISTORICO_TARIFA IS NULL )
+    WHEN ( new.id_especialidad IS NULL )
 BEGIN
-    :NEW.ID_HISTORICO_TARIFA := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_HISTORICO_TARIFA.NEXTVAL;
+    :new.id_especialidad := sch_orcl_desarchive_core_pre.seq_especialidad.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_JURISDICCION START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_estado_novedad START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_JURISDICCION BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.JURISDICCION
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_estado_novedad BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.estado_novedad
     FOR EACH ROW
-    WHEN ( NEW.ID_JURISDICCION IS NULL )
+    WHEN ( new.id_estado_novedad IS NULL )
 BEGIN
-    :NEW.ID_JURISDICCION := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_JURISDICCION.NEXTVAL;
+    :new.id_estado_novedad := sch_orcl_desarchive_core_pre.seq_estado_novedad.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_JUZGADO START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_estado_solicitud START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_JUZGADO BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.JUZGADO
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_estado_solicitud BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.estado_solicitud
     FOR EACH ROW
-    WHEN ( NEW.ID_JUZGADO IS NULL )
+    WHEN ( new.id_estado_solicitud IS NULL )
 BEGIN
-    :NEW.ID_JUZGADO := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_JUZGADO.NEXTVAL;
+    :new.id_estado_solicitud := sch_orcl_desarchive_core_pre.seq_estado_solicitud.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_NOVEDAD START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_historico_tarifa START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_NOVEDAD BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.NOVEDAD
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_historico_tarifa BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.historico_tarifa
     FOR EACH ROW
-    WHEN ( NEW.ID_NOVEDAD IS NULL )
+    WHEN ( new.id_historico_tarifa IS NULL )
 BEGIN
-    :NEW.ID_NOVEDAD := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_NOVEDAD.NEXTVAL;
+    :new.id_historico_tarifa := sch_orcl_desarchive_core_pre.seq_historico_tarifa.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TARIFA START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_jurisdiccion START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG__TARIFA BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.TARIFA
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_jurisdiccion BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.jurisdiccion
     FOR EACH ROW
-    WHEN ( NEW.ID_TARIFA IS NULL )
+    WHEN ( new.id_jurisdiccion IS NULL )
 BEGIN
-    :NEW.ID_TARIFA := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TARIFA.NEXTVAL;
+    :new.id_jurisdiccion := sch_orcl_desarchive_core_pre.seq_jurisdiccion.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TIPO_NOVEDAD START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_juzgado START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_TIPO_NOVEDAD BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_NOVEDAD
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_juzgado BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.juzgado
     FOR EACH ROW
-    WHEN ( NEW.ID_TIPO_NOVEDAD IS NULL )
+    WHEN ( new.id_juzgado IS NULL )
 BEGIN
-    :NEW.ID_TIPO_NOVEDAD := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TIPO_NOVEDAD.NEXTVAL;
+    :new.id_juzgado := sch_orcl_desarchive_core_pre.seq_juzgado.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TIPO_PROCESO START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_novedad START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_TIPO_PROCESO BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_PROCESO
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_novedad BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.novedad
     FOR EACH ROW
-    WHEN ( NEW.ID_TIPO_PROCESO IS NULL )
+    WHEN ( new.id_novedad IS NULL )
 BEGIN
-    :NEW.ID_TIPO_PROCESO := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TIPO_PROCESO.NEXTVAL;
+    :new.id_novedad := sch_orcl_desarchive_core_pre.seq_novedad.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TIPO_SUJETO_PROCESAL START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_parametro START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_TIPO_SUJETO_PROCESAL BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.TIPO_SUJETO_PROCESAL
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_parametro BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.parametro
     FOR EACH ROW
-    WHEN ( NEW.ID_TIPO_SUJETO_PROCESAL IS NULL )
+    WHEN ( new.id_parametro IS NULL )
 BEGIN
-    :NEW.ID_TIPO_SUJETO_PROCESAL := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_TIPO_SUJETO_PROCESAL.NEXTVAL;
+    :new.id_parametro := sch_orcl_desarchive_core_pre.seq_parametro.nextval;
 END;
 /
 
-CREATE SEQUENCE SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_USUARIO_POR_BODEGA START WITH 1 CACHE 20 ORDER;
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_procedimiento START WITH 1 CACHE 20 ORDER;
 
-CREATE OR REPLACE TRIGGER SCH_ORCL_DESARCHIVE_CORE_PRE.TRG_USUARIO_POR_BODEGA BEFORE
-    INSERT ON SCH_ORCL_DESARCHIVE_CORE_PRE.USUARIO_POR_BODEGA
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_procedimiento BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.procedimiento
     FOR EACH ROW
-    WHEN ( NEW.ID_BODEGA IS NULL )
+    WHEN ( new.id_procedimiento IS NULL )
 BEGIN
-    :NEW.ID_BODEGA := SCH_ORCL_DESARCHIVE_CORE_PRE.SEQ_USUARIO_POR_BODEGA.NEXTVAL;
+    :new.id_procedimiento := sch_orcl_desarchive_core_pre.seq_procedimiento.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_proceso START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_proceso BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.proceso
+    FOR EACH ROW
+    WHEN ( new.id_proceso IS NULL )
+BEGIN
+    :new.id_proceso := sch_orcl_desarchive_core_pre.seq_proceso.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_solicitud_des START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_solicitud_des BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.solicitud_des
+    FOR EACH ROW
+    WHEN ( new.id_solicitud_des IS NULL )
+BEGIN
+    :new.id_solicitud_des := sch_orcl_desarchive_core_pre.seq_solicitud_des.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_sujeto_juridica START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_sujeto_juridica BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.sujeto_juridica
+    FOR EACH ROW
+    WHEN ( new.id_sujeto_juridica IS NULL )
+BEGIN
+    :new.id_sujeto_juridica := sch_orcl_desarchive_core_pre.seq_sujeto_juridica.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_sujeto_natural START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_sujeto_natural BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.sujeto_natural
+    FOR EACH ROW
+    WHEN ( new.id_sujeto_natural IS NULL )
+BEGIN
+    :new.id_sujeto_natural := sch_orcl_desarchive_core_pre.seq_sujeto_natural.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_sujeto_procesal START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_sujeto_procesal BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.sujeto_procesal
+    FOR EACH ROW
+    WHEN ( new.id_sujeto_procesal IS NULL )
+BEGIN
+    :new.id_sujeto_procesal := sch_orcl_desarchive_core_pre.seq_sujeto_procesal.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_tarifa START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg__tarifa BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.tarifa
+    FOR EACH ROW
+    WHEN ( new.id_tarifa IS NULL )
+BEGIN
+    :new.id_tarifa := sch_orcl_desarchive_core_pre.seq_tarifa.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_tipo_novedad START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_tipo_novedad BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.tipo_novedad
+    FOR EACH ROW
+    WHEN ( new.id_tipo_novedad IS NULL )
+BEGIN
+    :new.id_tipo_novedad := sch_orcl_desarchive_core_pre.seq_tipo_novedad.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_tipo_proceso START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_tipo_proceso BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.tipo_proceso
+    FOR EACH ROW
+    WHEN ( new.id_tipo_proceso IS NULL )
+BEGIN
+    :new.id_tipo_proceso := sch_orcl_desarchive_core_pre.seq_tipo_proceso.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_tipo_solicitud START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_tipo_solicitud BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.tipo_solicitud
+    FOR EACH ROW
+    WHEN ( new.id_tipo_solicitud IS NULL )
+BEGIN
+    :new.id_tipo_solicitud := sch_orcl_desarchive_core_pre.seq_tipo_solicitud.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_tipo_sujeto_procesal START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_tipo_sujeto_procesal BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.tipo_sujeto_procesal
+    FOR EACH ROW
+    WHEN ( new.id_tipo_sujeto_procesal IS NULL )
+BEGIN
+    :new.id_tipo_sujeto_procesal := sch_orcl_desarchive_core_pre.seq_tipo_sujeto_procesal.nextval;
+END;
+/
+
+CREATE SEQUENCE sch_orcl_desarchive_core_pre.seq_usuario_por_bodega START WITH 1 CACHE 20 ORDER;
+
+CREATE OR REPLACE TRIGGER sch_orcl_desarchive_core_pre.trg_usuario_por_bodega BEFORE
+    INSERT ON sch_orcl_desarchive_core_pre.usuario_por_bodega
+    FOR EACH ROW
+    WHEN ( new.id_bodega IS NULL )
+BEGIN
+    :new.id_bodega := sch_orcl_desarchive_core_pre.seq_usuario_por_bodega.nextval;
 END;
 /
 

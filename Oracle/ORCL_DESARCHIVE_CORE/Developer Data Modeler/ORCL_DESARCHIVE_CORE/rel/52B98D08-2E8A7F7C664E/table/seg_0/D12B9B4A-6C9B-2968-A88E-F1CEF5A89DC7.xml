@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D12B9B4A-6C9B-2968-A88E-F1CEF5A89DC7" name="JURISDICCION">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:44:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Jurisdicciones.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_23</ordsAlias>
 <abbreviation>JDC</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_JURISDICCION" id="B8D72766-E314-3C74-02F1-2901FC1DAA56">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Jurisdicción.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="CODIGO" id="F653D6EF-427C-1ACA-DBEF-5DABF75E729D">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:46:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único por cada Jurisdicción.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="NOMBRE" id="140BDE7F-FFEC-7B72-AECE-E06D761EB509">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la Jurisdicción.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="ES_ACTIVO" id="4D52A94D-F156-ACCA-D030-0D7B4D29BD18">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Jurisdicción.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
