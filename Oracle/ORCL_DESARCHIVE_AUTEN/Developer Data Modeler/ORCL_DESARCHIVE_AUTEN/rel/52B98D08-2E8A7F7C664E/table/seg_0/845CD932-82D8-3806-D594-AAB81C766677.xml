@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="845CD932-82D8-3806-D594-AAB81C766677" name="DETALLE_USUARIO">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:49:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información del Detalle de los Usuarios.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_20</ordsAlias>
 <abbreviation>DTU</abbreviation>
@@ -11,6 +12,7 @@
 <Column name="ID_DETALLE_USUARIO" id="95A6DB62-EBED-B63A-7E29-283E89280370">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Detalle de Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -28,6 +30,7 @@
 <Column name="ID_USUARIO" id="3D08B4AE-CD24-D87B-61EF-A754914877C4">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -42,6 +45,7 @@
 <Column name="ID_CARGO" id="5A65A3E6-38DA-A002-557A-DA89430383DD">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Cargo.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,6 +60,7 @@
 <Column name="ID_MUNICIPIO" id="914E4369-3526-1E28-F606-DF7CB942AC9E">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:51:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Municipio.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

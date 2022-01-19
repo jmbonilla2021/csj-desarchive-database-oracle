@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A04DA43-A1AA-36F8-1814-3875E8CE4899" name="CARGO">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:39:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Cargos.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_15</ordsAlias>
 <abbreviation>CRG</abbreviation>
@@ -11,6 +12,7 @@
 <Column name="ID_CARGO" id="E6431924-31E9-F0D4-5C5D-D575AF5A87A9">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Cargo.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -28,6 +30,7 @@
 <Column name="NOMBRE" id="A248F8FB-6F06-332B-38E0-F418EBC8A55C">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 17:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Cargo.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -39,6 +42,7 @@
 <Column name="ES_ACTIVO" id="76D24460-A2EB-2311-1079-0157DD37475B">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 20:21:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Cargo.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5EDE737-6F4D-F4B8-DB7B-1DCD2628254B" name="USUARIO_POR_BODEGA">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:41:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Usuarios por Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_22</ordsAlias>
 <abbreviation>USB</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_BODEGA" id="6277EC07-9747-B222-B31D-13AAB730B159">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-05 22:42:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="CODIGO_TIPO_IDENTIFICACION" id="610CAC4D-CDA1-B2D7-828B-C9567B177306">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-01 13:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el tipo de identificación del usuario de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="NUMERO_IDENTIFICACION" id="8B08E190-DEE2-7460-8A09-D5F479251D14">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-01 13:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número de identificación del usuario de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

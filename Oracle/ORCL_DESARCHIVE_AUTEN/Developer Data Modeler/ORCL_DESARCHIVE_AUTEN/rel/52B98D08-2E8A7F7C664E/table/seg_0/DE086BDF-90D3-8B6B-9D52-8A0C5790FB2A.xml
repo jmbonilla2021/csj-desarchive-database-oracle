@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE086BDF-90D3-8B6B-9D52-8A0C5790FB2A" name="ROLESXGRUPO">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-10 16:04:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Roles (perfiles) por Grupo de usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_10</ordsAlias>
 <abbreviation>RXG</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_ROL" id="AC757A99-AADC-07DA-B0FD-05455D0A6E3F">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-10 16:05:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Rol.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -26,6 +28,7 @@
 <Column name="ID_GRUPO" id="7539C5D1-FB00-832D-4312-A6CE031025BB">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-10 16:05:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Grupo]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="ES_ACTIVO" id="3B241B5B-46D7-E0F7-303D-3A2ACE89F272">
 <createdBy>gedua</createdBy>
 <createdTime>2021-09-22 21:42:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de Rol por Grupo.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

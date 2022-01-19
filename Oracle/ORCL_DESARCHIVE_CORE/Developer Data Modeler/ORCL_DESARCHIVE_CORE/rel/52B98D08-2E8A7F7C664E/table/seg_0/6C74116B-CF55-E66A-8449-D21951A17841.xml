@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C74116B-CF55-E66A-8449-D21951A17841" name="ESPECIALIDAD">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:22:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Especialidades.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_7</ordsAlias>
 <abbreviation>ESP</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_ESPECIALIDAD" id="8E3445D3-BD5D-97E5-F07C-9E43DB75884F">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:24:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Especialidad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="CODIGO" id="2DB9B334-9831-9BB7-BB7F-9AA53A04B890">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:24:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único de la Especialidad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="NOMBRE" id="089DA38A-6136-1B7C-A96C-4A4B3BFDB3FC">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:24:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la Especialidad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="ES_ACTIVO" id="A69CE88E-5DAF-4F10-DDD6-81BB834F20C0">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:24:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Especialidad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -62,6 +67,7 @@
 <Column name="ID_JURISDICCION" id="810C255D-C690-CE77-C74C-0A7412FC3F21">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-23 21:18:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la Jurisdicción al cual pertenece la Especialidad.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
