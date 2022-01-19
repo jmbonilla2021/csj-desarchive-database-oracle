@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A53D24DD-6DBC-CA55-BAB3-A4EE631759CC" name="TIPO_IDENTIFICACION">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:02:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Tipo de Identificación.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_20</ordsAlias>
 <abbreviation>TID</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_TIPO_IDENTIFICACION" id="DAEDF781-F55F-4586-E4BE-513EECFCB7A0">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:03:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de Tipo de Identificación.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="NOMBRE" id="5B385B5D-61C6-9DF7-5F8F-D88C77BD463A">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:03:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Tipo de Identificación.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="ABREVIACION" id="0218EC00-81F3-FBD5-070A-10D32FEB50A4">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:11:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la abreviación del Tipo de Identificación.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -52,6 +56,7 @@
 <Column name="ES_ACTIVO" id="7E82B987-87AE-561B-433C-4B6915EF3D88">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-29 15:03:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Identificación.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

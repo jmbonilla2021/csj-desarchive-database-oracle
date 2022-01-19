@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4AD0A657-94A2-7FD4-0B00-D27E1624E611" name="HISTORICO_TARIFA">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena el histórico de las tarifas aplicadas en el desarchive de los procesos.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_11</ordsAlias>
 <abbreviation>HTF</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_HISTORICO_TARIFA" id="2A6B9A43-7A06-B49C-5E16-0A714E56F6CA">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del histórico de tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="NOMBRE" id="A2D64418-9F73-1CA1-AD6F-C4B470D4EE52">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -41,6 +44,7 @@
 <Column name="CODIGO" id="E7DFCC7F-141E-2791-7B81-BB5BA01A7C80">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -53,6 +57,7 @@
 <Column name="VALOR" id="73734DC1-85B8-D005-5989-5577FFF66D0B">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el valor de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -66,6 +71,7 @@
 <Column name="FECHA_ACTUALIZACION" id="9EB438F2-EB31-3B38-AD79-67E99843527B">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de actualización de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -77,6 +83,7 @@
 <Column name="ID_TARIFA" id="646715A6-720D-06AF-0289-FCCB045AB25E">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:23:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

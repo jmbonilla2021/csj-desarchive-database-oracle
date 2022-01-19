@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BDAEB59-45C3-2947-7867-777849F55A41" name="PERMISOSXMODULOXROL">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:15:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Permisos por Módulo por Rol.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_22</ordsAlias>
 <abbreviation>PMR</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_PERMXMODXROL" id="545C96A1-860F-7C10-9E1B-0950C9236AC8">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de Permiso por Módulo por Rol.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="ID_MENU" id="6FF730E4-BBFA-CCC8-A335-1BFDF0C25786">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Menú.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="ID_ROL" id="8E2C0D11-97AB-659E-D3BA-34BBEC0E4541">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Rol.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="CONSULTAR" id="B4606E69-AF44-2AD5-F261-42D36BA9F530">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que indica si el Rol tiene permiso de CONSULTAR en el Menú correspondiente.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -62,6 +67,7 @@
 <Column name="CREAR" id="13AF3EA8-2D3E-53D0-6EE5-3619761762BA">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que indica si el Rol tiene permiso de CREAR en el Menú correspondiente.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -73,6 +79,7 @@
 <Column name="EDITAR" id="C1D812E7-9458-4FA6-CACD-E227083C7FD0">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que indica si el Rol tiene permiso de EDITAR en el Menú correspondiente.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -84,6 +91,7 @@
 <Column name="HABILITADO" id="7E0DA136-3306-02CE-007A-16DFE00BCC03">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Permiso.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

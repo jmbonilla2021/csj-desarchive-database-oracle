@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CA6D4FA-953E-53FA-4FDD-88AD45D6BCE7" name="PROCESO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CA6D4FA-953E-53FA-4FDD-88AD45D6BCE7" name="PROCEDIMIENTO">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Procedimientos o Sistemas que tienen Parámetros para su funcionamiento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_18</ordsAlias>
 <abbreviation>PRC</abbreviation>
@@ -9,9 +10,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_PROCESO" id="8A78A71E-6B31-8165-4936-95A2171DB6B6">
+<Column name="ID_PROCEDIMIENTO" id="8A78A71E-6B31-8165-4936-95A2171DB6B6">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de Procedimiento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,8 +31,8 @@
 <Column name="CODIGO" id="88F7C4F1-1882-7C1E-4F5C-01DB880FADEC">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único por cada Procedimiento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -41,8 +43,8 @@
 <Column name="NOMBRE" id="587EDCC6-0B20-BA15-E497-FE289ABEFFE9">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Procedimiento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -53,6 +55,7 @@
 <Column name="ES_ACTIVO" id="3D8AF4C7-C4B2-93D6-FDB4-8DD2136E5E16">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:53:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Procedimento.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

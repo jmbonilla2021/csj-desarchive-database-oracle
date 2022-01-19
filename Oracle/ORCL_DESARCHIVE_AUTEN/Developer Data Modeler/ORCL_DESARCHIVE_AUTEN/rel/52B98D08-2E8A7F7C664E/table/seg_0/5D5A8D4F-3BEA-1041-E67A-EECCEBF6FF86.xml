@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D5A8D4F-3BEA-1041-E67A-EECCEBF6FF86" name="MENU_X_ROL">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-26 16:44:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Menús por Roles (perfiles) de usuario.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_15</ordsAlias>
 <abbreviation>MXR</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_MENU" id="15B5880D-4EB1-1484-83C1-B55102C61CA7">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-26 16:52:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Menú.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -26,6 +28,7 @@
 <Column name="ID_ROL" id="D0FBA8AB-F605-79EB-80B3-9216534B5289">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-26 16:52:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Rol.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="ID_PERMISOSXMODULO" id="A937B2FD-F383-1BB0-6EC7-CDFAC7478AD6">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-26 16:52:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Permiso por Módulo.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

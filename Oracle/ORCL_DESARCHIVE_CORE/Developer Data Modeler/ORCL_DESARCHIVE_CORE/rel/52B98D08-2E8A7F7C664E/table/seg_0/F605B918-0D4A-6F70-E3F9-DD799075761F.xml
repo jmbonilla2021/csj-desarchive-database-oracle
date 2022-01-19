@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F605B918-0D4A-6F70-E3F9-DD799075761F" name="ANIO">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:15:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los años de los Procesos.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_5</ordsAlias>
 <abbreviation>ANI</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_ANIO" id="1DE7BE70-4A03-0861-C3B8-6D2D0B1126D2">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:17:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del año.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="CODIGO" id="5AA2AD79-56F7-5B13-2767-D9304795CFE0">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:17:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único por cada año.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="ES_ACTIVO" id="B66415AC-C7EC-E691-0548-FA0207BD92CA">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:17:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del año.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

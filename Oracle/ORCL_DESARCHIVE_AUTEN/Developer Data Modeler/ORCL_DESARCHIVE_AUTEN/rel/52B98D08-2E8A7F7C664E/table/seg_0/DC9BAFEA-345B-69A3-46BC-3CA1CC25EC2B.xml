@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC9BAFEA-345B-69A3-46BC-3CA1CC25EC2B" name="MENU">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-10 15:00:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Menús.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_7</ordsAlias>
 <abbreviation>MEN</abbreviation>
@@ -12,6 +13,7 @@
 <Column name="ID_MENU" id="DEEF565B-63FA-FF63-0091-9CF04882F5F4">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-10 15:01:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de Menú.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,6 +31,7 @@
 <Column name="NOMBRE" id="4F84C9B8-A9B4-5B42-9F3C-94430E47F1BF">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-10 15:01:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Menú.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,6 +43,7 @@
 <Column name="ID_MENU_PADRE" id="5C51F4E9-634B-09D3-40CD-C681C803FAC7">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:43:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Menú Padre.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,6 +55,7 @@
 <Column name="URL" id="BD7B0EE6-3B32-4988-1929-499AD605E0A1">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:08:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la dirección URL del Menú.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,6 +68,7 @@
 <Column name="ES_ACTIVO" id="7F2574E2-2D82-5233-532D-AB5711041A7F">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-15 20:43:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Menú.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

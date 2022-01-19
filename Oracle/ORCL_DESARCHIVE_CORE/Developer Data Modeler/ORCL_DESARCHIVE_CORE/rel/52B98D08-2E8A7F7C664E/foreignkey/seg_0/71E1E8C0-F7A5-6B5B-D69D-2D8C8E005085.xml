@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="71E1E8C0-F7A5-6B5B-D69D-2D8C8E005085" containerWithKeyObject="59105FCF-B799-246F-9325-F5145D424EA0" localFKIndex="E7A1BAB1-4845-CA1C-CDCD-C2FA73CE7E41" name="FK_ENO_NOV">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-14 15:16:50 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>ESTADO_NOVEDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C329F723-29E0-2951-9AF5-D2112CF9C37E</referredTableID>
+<keyObject>A425FCEE-0E59-29DA-C2A8-7B399790E09E</keyObject>
+<referredKeyID>A425FCEE-0E59-29DA-C2A8-7B399790E09E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESTADO_NOVEDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

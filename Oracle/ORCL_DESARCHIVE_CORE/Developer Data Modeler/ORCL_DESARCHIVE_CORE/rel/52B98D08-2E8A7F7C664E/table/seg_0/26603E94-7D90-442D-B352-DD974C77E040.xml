@@ -1,18 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="931BD9AE-6259-CD75-5FAF-24C978DCAA7C" name="TIPO_PROCESO">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-10 16:18:43 UTC</createdTime>
-<commentInRDBMS><![CDATA[Tabla que almacena la información de los Tipos de Proceso.]]></commentInRDBMS>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26603E94-7D90-442D-B352-DD974C77E040" name="TIPO_SOLICITUD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:14:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Tipo de Solicitudes de desarchive de procesos, realizadas por los usuarios.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<abbreviation>TPP</abbreviation>
+<ordsAlias>estado_solicitudv1</ordsAlias>
+<abbreviation>TSO</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_TIPO_PROCESO" id="8F90993D-5372-A811-B14A-BF6D0E5F33D4">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-10 16:20:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Tipo de Proceso.]]></commentInRDBMS>
+<Column name="ID_TIPO_SOLICITUD" id="CF7E8504-1C80-FDDC-AA5C-96E5C53EEB61">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:14:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Tipo de Solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -24,13 +25,13 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
 <autoIncrementCache>20</autoIncrementCache>
-<autoIncrementSequenceName>SEQ_TIPO_PROCESO</autoIncrementSequenceName>
-<autoIncrementTriggerName>TRG_TIPO_PROCESO</autoIncrementTriggerName>
+<autoIncrementSequenceName>SEQ_TIPO_SOLICITUD</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_TIPO_SOLICITUD</autoIncrementTriggerName>
 </Column>
-<Column name="CODIGO" id="7A3138DF-3BD5-2B87-6757-61AF5C72EA02">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-10 16:20:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el código único del Tipo de Proceso.]]></commentInRDBMS>
+<Column name="CODIGO" id="B4AF2EE8-BE41-01A5-75AE-93F760FB2BB7">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:14:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único por cada Tipo de Solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -39,10 +40,10 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NOMBRE" id="53E614B4-F98F-4298-19F9-50E96FBBB49B">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-10 16:20:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el nombre único del Tipo de Proceso.]]></commentInRDBMS>
+<Column name="NOMBRE" id="20E22A80-E72D-616B-8362-8318674E9774">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:14:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Tipo de Solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,10 +52,10 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ES_ACTIVO" id="9A6382CD-F1A4-4627-1B3A-402C3DA76096">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-10 16:20:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Proceso.]]></commentInRDBMS>
+<Column name="ES_ACTIVO" id="A2E640DC-4DAA-EEF9-A878-9CA93D519DA4">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:14:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -65,25 +66,25 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="64D2CBEB-0E95-1800-E77D-99D8F6105E7E" name="PK_TPP">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-10 16:20:46 UTC</createdTime>
+<ind_PK_UK id="38E65B6D-6098-CB68-7D05-745ACA4E6E06" name="PK_TSO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:14:49 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8F90993D-5372-A811-B14A-BF6D0E5F33D4"/>
+<colUsage columnID="CF7E8504-1C80-FDDC-AA5C-96E5C53EEB61"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="78EFC059-D208-511B-CE87-58A80F32D2D9" name="IDX_CODIGO_TIPO_PROC">
-<createdBy>japaez</createdBy>
-<createdTime>2021-11-10 16:21:51 UTC</createdTime>
+<ind_PK_UK id="98D45E1F-9952-731D-34C0-F78E2548EB4C" name="IDX_TIPO_SOLICITUD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:14:49 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7A3138DF-3BD5-2B87-6757-61AF5C72EA02"/>
+<colUsage columnID="B4AF2EE8-BE41-01A5-75AE-93F760FB2BB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
