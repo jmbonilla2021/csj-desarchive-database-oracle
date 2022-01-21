@@ -76,7 +76,7 @@
 <colUsage columnID="BFEB17FD-07BB-23C2-569D-F288D7FCFEB5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="321A070C-4B40-735D-7667-A72BE9BEABA0" name="IDX_CODIGO_ESTADO_SOLICITUD">
+<ind_PK_UK id="321A070C-4B40-735D-7667-A72BE9BEABA0" name="IDX_ESTADO_SOLICITUD">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0562F535-58A3-BAB5-698F-D39ADE27A8EB" containerWithKeyObject="F45A79C1-4931-5ED0-CF0E-61DF1B07E792" localFKIndex="E6AE2990-110E-BBB7-E41E-8C6BE3829054" name="FK_TPE_SPR">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:21:58 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>TIPO_PERSONA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD26FABC-9CB9-BC75-A62A-A149FF583D19</referredTableID>
+<keyObject>5FD2FA96-0462-C573-767B-00500EB9EB84</keyObject>
+<referredKeyID>5FD2FA96-0462-C573-767B-00500EB9EB84</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TIPO_PERSONA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

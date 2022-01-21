@@ -99,7 +99,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7FEE6E85-C1ED-A7FF-0EEF-03E8CB52A597" referredColumn="838DE0E8-48B4-A945-A638-DB8D69734E09"/>
@@ -118,7 +118,7 @@
 <colUsage columnID="76F1F5D6-D4EF-A539-B60C-0B7938FB6274"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1236F1AE-1B3B-67DD-D381-D00ECD11D936" name="IDX_CRD_IDUSUARIO">
+<ind_PK_UK id="1236F1AE-1B3B-67DD-D381-D00ECD11D936" name="IDX_CREDENCIAL">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-30 20:26:37 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>

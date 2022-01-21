@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D12B9B4A-6C9B-2968-A88E-F1CEF5A89DC7" name="JURISDICCION">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:44:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[Tabla que almacena la información de las Jurisdicciones.]]></commentInRDBMS>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD26FABC-9CB9-BC75-A62A-A149FF583D19" name="TIPO_PERSONA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:16:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Tipo de Persona, aplicables a los Sujetos Procesales..]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<ordsAlias>table_23</ordsAlias>
-<abbreviation>JDC</abbreviation>
+<ordsAlias>estado_solicitudv1</ordsAlias>
+<abbreviation>TPE</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_JURISDICCION" id="B8D72766-E314-3C74-02F1-2901FC1DAA56">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:45:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Jurisdicción.]]></commentInRDBMS>
+<Column name="ID_TIPO_PERSONA" id="8DF3D680-44AD-565E-74C9-AE41F0E87482">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:16:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Tipo de Persona.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -25,25 +25,13 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
 <autoIncrementCache>20</autoIncrementCache>
-<autoIncrementSequenceName>SEQ_JURISDICCION</autoIncrementSequenceName>
-<autoIncrementTriggerName>TRG_JURISDICCION</autoIncrementTriggerName>
+<autoIncrementSequenceName>SEQ_TIPO_PERSONA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_TIPO_PERSONA</autoIncrementTriggerName>
 </Column>
-<Column name="CODIGO" id="F653D6EF-427C-1ACA-DBEF-5DABF75E729D">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:46:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el código único por cada Jurisdicción.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="NOMBRE" id="140BDE7F-FFEC-7B72-AECE-E06D761EB509">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:45:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el nombre de la Jurisdicción.]]></commentInRDBMS>
+<Column name="CODIGO" id="DED1DB01-C665-E591-C940-FCC2CD3A8073">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:16:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único por cada Tipo de Persona.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -52,10 +40,22 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ES_ACTIVO" id="4D52A94D-F156-ACCA-D030-0D7B4D29BD18">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:45:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Jurisdicción.]]></commentInRDBMS>
+<Column name="NOMBRE" id="7B9594B9-9E87-6D75-2C99-10C3EBA5EA04">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:16:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Tipo de Persona.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="C5249C62-DB19-9329-DAE2-6ADFC167DC88">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:16:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Tipo de Persona.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -66,25 +66,25 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="352CF14C-A9B4-CCC4-91A7-0DC38D433F60" name="PK_JDC">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:45:07 UTC</createdTime>
+<ind_PK_UK id="5FD2FA96-0462-C573-767B-00500EB9EB84" name="PK_TPE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:16:22 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B8D72766-E314-3C74-02F1-2901FC1DAA56"/>
+<colUsage columnID="8DF3D680-44AD-565E-74C9-AE41F0E87482"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B0BEDF1E-67B2-56EA-561E-01A0D71D6BE8" name="IDX_JURISDICCION">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:46:07 UTC</createdTime>
+<ind_PK_UK id="3BB6B247-EB8D-B478-CF99-C89A35BD06C2" name="IDX_TIPO_PERSONA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:16:22 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F653D6EF-427C-1ACA-DBEF-5DABF75E729D"/>
+<colUsage columnID="DED1DB01-C665-E591-C940-FCC2CD3A8073"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
