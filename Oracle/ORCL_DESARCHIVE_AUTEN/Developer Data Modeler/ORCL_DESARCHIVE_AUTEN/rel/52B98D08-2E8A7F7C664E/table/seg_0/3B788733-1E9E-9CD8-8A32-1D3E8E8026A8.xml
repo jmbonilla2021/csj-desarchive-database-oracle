@@ -77,7 +77,7 @@
 <colUsage columnID="6853CD72-8B1D-97C2-F947-1DFB9CC4171D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D2E371AF-1354-33E5-FB99-D6D3B689B600" name="IDX_CODIGO_DEP">
+<ind_PK_UK id="D2E371AF-1354-33E5-FB99-D6D3B689B600" name="IDX_DEPARTAMENTO">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:44:37 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>

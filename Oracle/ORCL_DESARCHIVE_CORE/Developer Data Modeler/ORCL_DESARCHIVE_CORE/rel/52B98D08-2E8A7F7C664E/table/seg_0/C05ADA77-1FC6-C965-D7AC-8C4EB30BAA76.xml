@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C05ADA77-1FC6-C965-D7AC-8C4EB30BAA76" name="SUJETO_PROCESAL_X_PROCESO">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Tabla que almacena la información de los Sujetos Procesales por Porceso.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Sujetos Procesales por Proceso.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_4</ordsAlias>
 <abbreviation>SPP</abbreviation>
@@ -22,7 +22,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="EC384580-D783-9A37-7B77-6FC9C9A05982" referredColumn="1BC54EC9-6608-D311-5F80-EF6634DAA814"/>
+<colAssociation fkAssociation="62BC8202-5B8B-D384-70BF-433BFACFBE99" referredColumn="0D2810A7-F704-6DBD-260A-EE4A0779121C"/>
 </associations>
 </Column>
 <Column name="ID_PROCESO" id="076DCC21-3813-2220-29CF-331988EBBD2E">
@@ -54,16 +54,6 @@
 <colUsage columnID="076DCC21-3813-2220-29CF-331988EBBD2E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9F89C910-00FD-8A3A-F87A-2E4503A9DAE8" name="FK_SJP_SPP">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="0ED5816A-A38D-C651-F69E-3B26E63C5DBE"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="344CFD60-6DAB-767C-4C13-A8D7043C598F" name="FK_PRO_SPP">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
@@ -72,6 +62,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="076DCC21-3813-2220-29CF-331988EBBD2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AC74DC2-9276-A2CB-617E-1D6F138800C6" name="FK_SPR_SPP">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 15:14:06 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0ED5816A-A38D-C651-F69E-3B26E63C5DBE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

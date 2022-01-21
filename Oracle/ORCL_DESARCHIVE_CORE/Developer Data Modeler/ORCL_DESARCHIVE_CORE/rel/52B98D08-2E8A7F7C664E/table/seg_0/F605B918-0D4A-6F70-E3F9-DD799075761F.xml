@@ -65,7 +65,7 @@
 <colUsage columnID="1DE7BE70-4A03-0861-C3B8-6D2D0B1126D2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="98D2BD08-D369-EA1C-8668-884245302687" name="IDX_CODIGO_ANIO">
+<ind_PK_UK id="98D2BD08-D369-EA1C-8668-884245302687" name="IDX_ANIO">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:17:08 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>

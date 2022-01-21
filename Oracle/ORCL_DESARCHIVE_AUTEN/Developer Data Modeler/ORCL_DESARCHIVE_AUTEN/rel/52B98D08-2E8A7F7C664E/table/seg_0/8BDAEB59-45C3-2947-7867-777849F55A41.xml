@@ -88,7 +88,7 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="HABILITADO" id="7E0DA136-3306-02CE-007A-16DFE00BCC03">
+<Column name="ES_ACTIVO" id="7E0DA136-3306-02CE-007A-16DFE00BCC03">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:17:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Permiso.]]></commentInRDBMS>

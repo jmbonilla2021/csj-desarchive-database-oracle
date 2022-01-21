@@ -44,6 +44,7 @@
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el primer nombre del usuario quien realiza la solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -69,6 +70,7 @@
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el primer apellido del usuario quien realiza la solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -94,6 +96,19 @@
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el nombre completo del usuario quien realiza la solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAZON_SOCIAL" id="16AB2091-8E1E-7D72-9718-977A543B3CC9">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-19 19:24:57 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>

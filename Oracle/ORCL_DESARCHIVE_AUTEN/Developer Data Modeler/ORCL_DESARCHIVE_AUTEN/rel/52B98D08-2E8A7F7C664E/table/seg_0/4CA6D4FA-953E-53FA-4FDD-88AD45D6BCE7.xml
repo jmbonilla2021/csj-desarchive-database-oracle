@@ -77,7 +77,7 @@
 <colUsage columnID="8A78A71E-6B31-8165-4936-95A2171DB6B6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4491190A-F64A-4AD9-8260-D1FF18EC0371" name="IDX_CODIGO_PROCESO">
+<ind_PK_UK id="4491190A-F64A-4AD9-8260-D1FF18EC0371" name="IDX_PROCEDIMIENTO">
 <createdBy>japaez</createdBy>
 <createdTime>2021-12-03 20:55:51 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
