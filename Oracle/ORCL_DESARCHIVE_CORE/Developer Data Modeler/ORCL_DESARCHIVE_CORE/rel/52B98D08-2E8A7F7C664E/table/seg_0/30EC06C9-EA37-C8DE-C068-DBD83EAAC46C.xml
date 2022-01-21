@@ -77,7 +77,7 @@
 <colUsage columnID="9236FB6A-53AD-382D-3683-CBB65260F776"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C3C0EA23-64B3-1F19-2212-2B7152971475" name="IDX_CODIGO_TP_SPROCESAL">
+<ind_PK_UK id="C3C0EA23-64B3-1F19-2212-2B7152971475" name="IDX_TIPO_SUJETO_PROCESAL">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-30 16:04:27 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
