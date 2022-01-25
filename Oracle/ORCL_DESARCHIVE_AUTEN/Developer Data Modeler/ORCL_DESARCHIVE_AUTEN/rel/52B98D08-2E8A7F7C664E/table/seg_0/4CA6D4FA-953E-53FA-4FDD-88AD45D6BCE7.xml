@@ -25,8 +25,8 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementDisableCache>false</autoIncrementDisableCache>
 <autoIncrementCache>20</autoIncrementCache>
-<autoIncrementSequenceName>SEQ_PROCESO</autoIncrementSequenceName>
-<autoIncrementTriggerName>TRG_PROCESO</autoIncrementTriggerName>
+<autoIncrementSequenceName>SEQ_PROCEDIMIENTO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_PROCEDIMIENTO</autoIncrementTriggerName>
 </Column>
 <Column name="CODIGO" id="88F7C4F1-1882-7C1E-4F5C-01DB880FADEC">
 <createdBy>japaez</createdBy>
