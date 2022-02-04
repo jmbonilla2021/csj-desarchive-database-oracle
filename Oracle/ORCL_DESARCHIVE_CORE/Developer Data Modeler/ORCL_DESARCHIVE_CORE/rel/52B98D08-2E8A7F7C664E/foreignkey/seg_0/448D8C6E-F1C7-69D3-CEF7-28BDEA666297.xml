@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="448D8C6E-F1C7-69D3-CEF7-28BDEA666297" containerWithKeyObject="EDA7A935-940A-1045-0844-AEDD6F4E92E8" localFKIndex="D9B59409-54E1-C16E-AA0F-D48D63C9CB3C" name="FK_JUZ_SLC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:40:47 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>JUZGADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>55313A76-70BB-FA45-EF43-AD5647CCE1F6</referredTableID>
+<keyObject>337D2CA0-8853-DFAE-8ED5-6601AB295ADD</keyObject>
+<referredKeyID>337D2CA0-8853-DFAE-8ED5-6601AB295ADD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_JUZGADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

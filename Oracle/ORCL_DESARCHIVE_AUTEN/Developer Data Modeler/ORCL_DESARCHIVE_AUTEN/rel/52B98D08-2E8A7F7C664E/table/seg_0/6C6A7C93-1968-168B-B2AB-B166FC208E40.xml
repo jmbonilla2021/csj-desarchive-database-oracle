@@ -125,6 +125,7 @@
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="419D036C-2EC0-1175-26A7-8C96FFF9FF2C"/>
 <colUsage columnID="8DFDD9A0-31D7-B68E-E19D-2652CC848F41"/>
 </indexColumnUsage>
 </ind_PK_UK>

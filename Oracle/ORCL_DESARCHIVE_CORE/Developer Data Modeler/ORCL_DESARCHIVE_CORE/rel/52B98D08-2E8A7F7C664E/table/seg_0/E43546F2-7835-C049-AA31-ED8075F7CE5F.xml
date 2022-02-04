@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E43546F2-7835-C049-AA31-ED8075F7CE5F" name="DETALLE_PROF_BOD_PAQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Detalles de Paquete, del reparto por Profesional y Bodega de las solicitudes de desarchive.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>DPB</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DETALLE_PROF_BOD_PAQ" id="9A77BD8F-6F6A-AC82-B021-6F6A4C582C89">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Detalle Profesional Bodega Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_DETALLE_PROF_BOD_PAQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_DETALLE_PROF_BOD_PAQ</autoIncrementTriggerName>
+</Column>
+<Column name="FECHA_SELECCION_PROF_BOD" id="0D10262B-602C-E9A1-7808-FF637AFE330E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de selección del profesional de la Bodega.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROFESIONAL_BODEGA" id="392D6299-49EC-8D73-5F90-CBA5236FA51B">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Profesional de la Bodega.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9623398-04E6-63FD-B75D-A4C6FF231978" referredColumn="0CE8AA28-8B57-33F3-BFFA-9179EFA9420C"/>
+</associations>
+</Column>
+<Column name="ID_DETALLE_BOD_PAQ" id="550AB41B-811B-1C34-6180-7E40245F2D03">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Detalle Bodega Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEAE7EC1-5A5E-84D2-8430-0DAD1CD6B024" referredColumn="E549DB84-26D9-06C3-803F-100420BD03B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="263DFC7B-2A43-A98B-47B4-A78CFD1BDE78" name="PK_DPB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A77BD8F-6F6A-AC82-B021-6F6A4C582C89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FC2D1C3-7578-386C-71BC-A3F10CB6AC2F" name="FK_PBD_DPB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="392D6299-49EC-8D73-5F90-CBA5236FA51B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="616CB551-C261-A2AC-40C8-AC6E5D8CD45E" name="FK_DBP_DPB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="550AB41B-811B-1C34-6180-7E40245F2D03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

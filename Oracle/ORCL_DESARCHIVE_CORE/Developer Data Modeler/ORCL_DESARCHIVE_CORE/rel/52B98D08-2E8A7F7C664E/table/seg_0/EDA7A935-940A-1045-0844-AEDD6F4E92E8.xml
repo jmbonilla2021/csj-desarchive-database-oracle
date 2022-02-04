@@ -27,6 +27,18 @@
 <autoIncrementSequenceName>SEQ_SOLICITUD_DES</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_SOLICITUD_DES</autoIncrementTriggerName>
 </Column>
+<Column name="CODIGO_TIPO_IDENTIFICACION" id="794E670B-7C7C-EC42-05FC-44C31454510C">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del tipo de identificación del usuario quien realiza la solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="NUMERO_IDENTIFICACION" id="B304E459-13AE-CC0A-8037-FADBEFD60E2E">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
@@ -140,64 +152,63 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO_TIPO_PROCESO" id="E5A4774D-A60B-C1AD-BBA1-6C9DA403B51D">
+<Column name="ID_TIPO_PERSONA" id="81E6B85B-4E3C-A806-D655-5D511EFB2302">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el código del Tipo de Proceso.]]></commentInRDBMS>
+<createdTime>2022-02-03 15:21:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Tipo de Persona quien realiza la solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CODIGO_JUZGADO" id="41853DDB-CD44-2607-AA7F-69372E32317B">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el código del Juzgado al cual pertenece el Proceso.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CODIGO_ESPECIALIDAD" id="F1F80368-0A2C-B375-7D84-1C99EF662867">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el código de la especialidad al cual pertenece el Proceso.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CODIGO_TIPO_DOCUMENTO" id="794E670B-7C7C-EC42-05FC-44C31454510C">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el código del tipo de documento del usuario quien realiza la solicitud.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FECHA_RADICADO_SOLICITUD" id="B97953FB-5930-49B5-4C45-874F9D9B2FFA">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena la fecha de radicación de la solicitud.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANIO_PROCESO" id="54B0B4CE-A5D9-A3C9-17E9-7506A178674A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:27:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el año del proceso de la solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_PROCESO" id="9D80802C-A59D-DB03-C07E-5223AD6034B5">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:27:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número del proceso de la solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_MUNICIPIO" id="0BE92019-42BC-37FD-90F8-A5E68CA46A49">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:27:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del municipio del proceso de la solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUI" id="A8BFF032-C37B-4744-5F9E-BEDA1CB6B9EF">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:27:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el Número de Proceso Judicial (CUI) de la solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_ESTADO_SOLICITUD" id="79D63ADC-6295-0634-3AD3-362B0CB25C6E">
@@ -209,7 +220,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="BC752C78-0E9E-75B1-1392-B187AFD4A5FD" referredColumn="BFEB17FD-07BB-23C2-569D-F288D7FCFEB5"/>
@@ -224,11 +235,68 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="ACD00118-A4AE-4E43-9A17-0F4BA25B0B64" referredColumn="CF7E8504-1C80-FDDC-AA5C-96E5C53EEB61"/>
 </associations>
+</Column>
+<Column name="ID_TIPO_PROCESO" id="E5A4774D-A60B-C1AD-BBA1-6C9DA403B51D">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacenael identificador del Tipo de Proceso.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C031DC6-7537-4BA9-140B-D4351AE6396A" referredColumn="8F90993D-5372-A811-B14A-BF6D0E5F33D4"/>
+</associations>
+</Column>
+<Column name="ID_JUZGADO" id="41853DDB-CD44-2607-AA7F-69372E32317B">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Juzgado al cual pertenece el Proceso.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="448D8C6E-F1C7-69D3-CEF7-28BDEA666297" referredColumn="4546AB0B-88D7-0A27-3D51-B32B094FEBA8"/>
+</associations>
+</Column>
+<Column name="ID_ESPECIALIDAD" id="F1F80368-0A2C-B375-7D84-1C99EF662867">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la especialidad al cual pertenece el Proceso.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06BE5700-7384-C6D9-7C52-83CE132F9799" referredColumn="8E3445D3-BD5D-97E5-F07C-9E43DB75884F"/>
+</associations>
+</Column>
+<Column name="OBSERVACIONES" id="B97953FB-5930-49B5-4C45-874F9D9B2FFA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena las observaciones de la solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -261,6 +329,36 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="14E785C4-00DE-9401-E488-59723E1C456F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CC97C32-9804-883F-9915-BD785A09CA05" name="FK_TPP_SLC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:32:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5A4774D-A60B-C1AD-BBA1-6C9DA403B51D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91E8C86E-E1AA-2F82-F65C-969A02A49A98" name="FK_ESP_SLC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:36:21 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1F80368-0A2C-B375-7D84-1C99EF662867"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9B59409-54E1-C16E-AA0F-D48D63C9CB3C" name="FK_JUZ_SLC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:40:47 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41853DDB-CD44-2607-AA7F-69372E32317B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

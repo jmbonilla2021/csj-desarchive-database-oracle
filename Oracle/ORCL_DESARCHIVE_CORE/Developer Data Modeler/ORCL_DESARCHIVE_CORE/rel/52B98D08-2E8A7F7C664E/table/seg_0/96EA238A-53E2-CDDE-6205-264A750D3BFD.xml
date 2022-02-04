@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96EA238A-53E2-CDDE-6205-264A750D3BFD" name="PROFESIONAL_BODEGA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Profesionales por Bodega.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>PBD</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROFESIONAL_BODEGA" id="0CE8AA28-8B57-33F3-BFFA-9179EFA9420C">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Profesional por Bodega.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_PROFESIONAL_BODEGA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_PROFESIONAL_BODEGA</autoIncrementTriggerName>
+</Column>
+<Column name="ID_USUARIO" id="B8F71803-1BFF-4962-AD81-3FD70FA5632B">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del usuario.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="B5DE61FB-3350-4879-331E-6DFF82FB86C0">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Profesional por Bodega.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_BODEGA" id="926E2CFA-DA89-0CE8-AA4A-203BE51FE81F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la Bodega.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D51B395-D377-E58D-916E-E34249DD0D79" referredColumn="4708C4E3-3BE3-0247-F919-B1B9F51E97D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7AB0DB4-B2A2-29AD-4D9E-63E87F263106" name="PK_PBD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CE8AA28-8B57-33F3-BFFA-9179EFA9420C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="451E7038-0850-3D42-B187-990B06508115" name="FK_BDG_PBD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="926E2CFA-DA89-0CE8-AA4A-203BE51FE81F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
