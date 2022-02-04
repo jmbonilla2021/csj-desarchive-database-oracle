@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBB0632D-61A4-4CB0-B94A-B1AA7900B5C2" name="PARAM_SWEB_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:53:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los parámetros del Sitio Web que atiende las solicitudes de desarchive.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<abbreviation>PSW</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PARAM_SWEB_EXT" id="8E83E20B-C7C3-67B3-CA98-92B9489D729F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:55:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Parámetro.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_PARAM_SWEB_EXT</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_PARAM_SWEB_EXT</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="6862BEA7-DCFC-EC6C-DDE0-4D51EE12511D">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:55:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único del Parámetro.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="4ECA2739-844A-C76A-F337-9334B610652F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:55:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del Parámetro.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR" id="E07F4C2B-04AF-9DE5-27D3-E54A267492E5">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:55:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el valor del Parámetro.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ULTIMA_MODIFICACION" id="CE8467CF-83DD-D97D-D6AD-486A719B307E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:55:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de la última modificación del Parámetro.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="32B25823-5969-5AD2-C314-8C4DB5036737">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:55:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del Parámetro.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C493E37-EC37-60BD-C44C-095A46D6E00D" name="PK_PSW">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:55:29 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E83E20B-C7C3-67B3-CA98-92B9489D729F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC8A3A38-9D36-2A34-E4DF-4DFD6917EDC6" name="IDX_PARAM_SWEB_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 19:02:35 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6862BEA7-DCFC-EC6C-DDE0-4D51EE12511D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

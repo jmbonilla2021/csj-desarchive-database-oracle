@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="433D4DB5-F6A7-BC25-137F-ABFE76B8ACC2" name="PAQUETE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:13:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Paquetes existentes en las Bodegas (inventario).]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<abbreviation>PAQ</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PAQUETE" id="9034EE70-0235-16A0-1BB8-F6BCA328B3A3">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_PAQUETE</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_PAQUETE</autoIncrementTriggerName>
+</Column>
+<Column name="ANIO_PAQUETE" id="0F684F73-4622-FFAC-EFC8-1144A30EABCF">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el año del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_PAQUETE" id="76E84AAC-41D9-84EA-5303-355E43AFA2DC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLOQUE" id="4B232FFB-E928-D54A-AAC2-CDB15C8EB313">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el bloque donde se encuentra ubicado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZONA" id="B6E16DB4-6DB1-5E99-4344-49BE4DE9107F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la zona donde se encuentra ubicado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PISO" id="3A72166F-410F-E704-9F48-40B1BDB23B5F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el piso donde se encuentra ubicado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASILLO" id="4D4A7F49-EC05-B1BC-25CD-B9465754E476">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el pasillo donde se encuentra ubicado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COSTADO" id="20DF4270-2AFB-D8CA-87B3-EFC236EEF24A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el costado donde se encuentra ubicado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTANTE" id="FDBD7CBE-0A11-ABD6-4E88-9950D31617A6">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estante donde se encuentra ubicado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANAQUEL" id="D435D31C-591A-7797-7FB0-5035932038EA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el anaquel donde se encuentra ubicado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_BODEGA" id="02BC2E8A-CBD1-CFA5-BD28-21BB00DDF62F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la Bodega donde se encuentra ubidado el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="449FAA79-EFA8-0633-CFFE-8856D73C5BE9" referredColumn="4708C4E3-3BE3-0247-F919-B1B9F51E97D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD4EE0D3-342C-A9FC-FD5D-08603208DD72" name="PK_PAQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:24:56 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9034EE70-0235-16A0-1BB8-F6BCA328B3A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AFEAB5D-2A85-58A5-6E96-4EFD7A9E9845" name="FK_BDG_PAQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 18:46:02 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02BC2E8A-CBD1-CFA5-BD28-21BB00DDF62F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

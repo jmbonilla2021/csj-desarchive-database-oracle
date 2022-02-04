@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FCBAB9C7-DB79-D80E-FEEE-38BBEEE6B9C9" containerWithKeyObject="C05ADA77-1FC6-C965-D7AC-8C4EB30BAA76" localFKIndex="CD5C9344-3E72-CFA3-E98F-AF862B2855DD" name="FK_SLC_SXS">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:57:06 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>SOLICITUD_DES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EDA7A935-940A-1045-0844-AEDD6F4E92E8</referredTableID>
+<keyObject>D44807F0-AD6C-B5DA-0931-5DF9E61C247D</keyObject>
+<referredKeyID>D44807F0-AD6C-B5DA-0931-5DF9E61C247D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SOLICITUD_DES</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

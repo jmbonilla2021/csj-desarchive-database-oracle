@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A6A55CB-CD02-13D3-5D0C-3BEC3F33DA32" name="HIST_ESTADO_SOLICITUD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 14:57:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información del histórico de las modificaciones realizados a los Estados de la Solicitudes de desarchive.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<abbreviation>HES</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HIST_ESTADO_SOLICITUD" id="569534BD-02D1-437E-EE7C-956E87D96D1C">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 14:58:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del histórico del Estado de la Solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_HIST_ESTADO_SOLICITUD</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_HIST_ESTADO_SOLICITUD</autoIncrementTriggerName>
+</Column>
+<Column name="FECHA_ULTIMA_MOD" id="6308EF44-D72C-BB48-357E-B7D4EB083EBA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:02:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la última fecha de actualización del Estado de la Solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES" id="3640EA2B-7534-5C12-AEE2-5E9CDAE1BA24">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:02:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena las observaciones al cambio del Estado de la Solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_SOLICITUD_DES" id="3673FEEB-99D2-9B43-F0E1-3D4DB9F65320">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:02:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la Solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A955630-3112-7172-2A71-A086D5725A1D" referredColumn="A02561C8-DF16-1CE1-510D-F73EDE50DBF4"/>
+</associations>
+</Column>
+<Column name="ID_ESTADO_SOLICITUD " id="0C0FE178-379B-67D3-23DE-D6F6244E858A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:02:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Estado de la Solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1747A90A-733D-0C37-5639-D3C24651819E" referredColumn="BFEB17FD-07BB-23C2-569D-F288D7FCFEB5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="648DD2F7-34FC-A76F-7DE0-C206513585EC" name="PK_HES">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 14:58:26 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="569534BD-02D1-437E-EE7C-956E87D96D1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27A42A8F-F5B0-64E4-888D-486E2F1B484E" name="FK_ESS_HES">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:09:50 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C0FE178-379B-67D3-23DE-D6F6244E858A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77D9AB3B-CF07-B42E-2852-9E4722BC6DB6" name="FK_SLC_HES">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 15:13:01 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3673FEEB-99D2-9B43-F0E1-3D4DB9F65320"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
