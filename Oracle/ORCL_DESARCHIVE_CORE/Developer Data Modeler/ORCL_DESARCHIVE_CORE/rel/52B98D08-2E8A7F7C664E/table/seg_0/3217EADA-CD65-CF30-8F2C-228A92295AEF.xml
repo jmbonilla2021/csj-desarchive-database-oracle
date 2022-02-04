@@ -28,18 +28,6 @@
 <autoIncrementSequenceName>SEQ_TARIFA</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG__TARIFA</autoIncrementTriggerName>
 </Column>
-<Column name="NOMBRE" id="2DCF66EF-9E7C-145C-84A8-6CCBB073D632">
-<createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:18:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el nombre de la tarifa.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="CODIGO" id="94AD6C9F-2FF7-432E-D2B1-3EECE08FD371">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:18:18 UTC</createdTime>
@@ -52,6 +40,18 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NOMBRE" id="2DCF66EF-9E7C-145C-84A8-6CCBB073D632">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:18:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la tarifa.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="VALOR" id="366E3FF0-AB80-7C20-E942-8BAFCB7B58B2">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:18:18 UTC</createdTime>
@@ -60,20 +60,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
+<dataTypePrecision>38</dataTypePrecision>
 <dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,19,4</ownDataTypeParameters>
+<ownDataTypeParameters>,38,4</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FECHA_ACTUALIZACION" id="21DDD16F-9001-A86A-BE6D-BEA1076FE020">
+<Column name="ES_ACTIVO" id="38315F6D-2E9E-1AEB-4685-8D6CA9C9A7BC">
 <createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:18:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena la fecha de actualización de la tarifa.]]></commentInRDBMS>
+<createdTime>2022-02-03 14:48:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

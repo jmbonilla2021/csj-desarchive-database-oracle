@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9623398-04E6-63FD-B75D-A4C6FF231978" containerWithKeyObject="E43546F2-7835-C049-AA31-ED8075F7CE5F" localFKIndex="3FC2D1C3-7578-386C-71BC-A3F10CB6AC2F" name="FK_PBD_DPB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>PROFESIONAL_BODEGA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>96EA238A-53E2-CDDE-6205-264A750D3BFD</referredTableID>
+<keyObject>C7AB0DB4-B2A2-29AD-4D9E-63E87F263106</keyObject>
+<referredKeyID>C7AB0DB4-B2A2-29AD-4D9E-63E87F263106</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PROFESIONAL_BODEGA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

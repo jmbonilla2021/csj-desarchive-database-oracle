@@ -51,6 +51,30 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ES_VISIBLE_SITIO_WEB_EXT" id="D88C4BDB-89D9-642D-B417-6151BB1176D3">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena si el Tipo de Proceso es Visible o No Visble en el Sitio Web.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_DE_PAGO_SITIO_WEB_EXT" id="18637B00-5CEC-F017-C299-38EF7C23522F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena si el Tipo de Proceso si se permite o no el pago en el Sitio Web.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ES_ACTIVO" id="9A6382CD-F1A4-4627-1B3A-402C3DA76096">
 <createdBy>japaez</createdBy>
 <createdTime>2021-11-10 16:20:46 UTC</createdTime>
@@ -62,6 +86,21 @@
 <dataTypePrecision>1</dataTypePrecision>
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_JUZGADO" id="01695E75-3564-D843-D7A0-A9F5F8967BA9">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Juzgado.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F3EFA8C1-59D3-1B0E-FC63-56410BFE8AC3" referredColumn="4546AB0B-88D7-0A27-3D51-B32B094FEBA8"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -84,6 +123,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7A3138DF-3BD5-2B87-6757-61AF5C72EA02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="043AA21E-5188-A757-F0B1-58E40A5BF073" name="FK_JUZ_TPP">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 19:08:23 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01695E75-3564-D843-D7A0-A9F5F8967BA9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

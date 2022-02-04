@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CEAE7EC1-5A5E-84D2-8430-0DAD1CD6B024" containerWithKeyObject="E43546F2-7835-C049-AA31-ED8075F7CE5F" localFKIndex="616CB551-C261-A2AC-40C8-AC6E5D8CD45E" name="FK_DBP_DPB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>DETALLE_BOD_PAQ</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>682DEFE3-A6F3-FD43-DA69-B5CD7995D224</referredTableID>
+<keyObject>5F3F5FAE-AD54-0133-B4A7-38306BA20BD4</keyObject>
+<referredKeyID>5F3F5FAE-AD54-0133-B4A7-38306BA20BD4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_DETALLE_BOD_PAQ</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

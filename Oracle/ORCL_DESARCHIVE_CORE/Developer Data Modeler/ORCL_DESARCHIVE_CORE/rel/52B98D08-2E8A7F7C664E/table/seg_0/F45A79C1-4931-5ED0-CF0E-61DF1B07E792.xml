@@ -28,6 +28,32 @@
 <autoIncrementSequenceName>SEQ_SUJETO_PROCESAL</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_SUJETO_PROCESAL</autoIncrementTriggerName>
 </Column>
+<Column name="CODIGO_TIPO_IDENTIFICACION" id="3D1D21AC-88F4-6C3E-BC38-6484A56E2EF9">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:03:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del tipo de identificación del Sujeto Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_IDENTIFICACION" id="C8AD12B2-8460-3B95-513B-00DC993AF9DD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:04:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número de identificación del Sujeto Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="PRIMER_NOMBRE" id="A8AD41A1-1066-5A82-26A9-D81616AD412E">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-13 19:08:17 UTC</createdTime>
@@ -131,10 +157,25 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0562F535-58A3-BAB5-698F-D39ADE27A8EB" referredColumn="8DF3D680-44AD-565E-74C9-AE41F0E87482"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_SUJETO_PROCESAL" id="DAF3A8CC-CC2C-C503-77FA-31BB56C87146">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:06:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de Tipo de Sujeto Procesal del Sujeto Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5660973E-A667-DDFC-D2FC-B0182903746D" referredColumn="9236FB6A-53AD-382D-3683-CBB65260F776"/>
 </associations>
 </Column>
 </columns>
@@ -158,6 +199,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="24407F3A-B60E-90B5-9054-DBE916B8E1A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36399541-8E1D-04B1-D4C5-01840C3D42D4" name="FK_TSO_SPR">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 16:11:15 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAF3A8CC-CC2C-C503-77FA-31BB56C87146"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

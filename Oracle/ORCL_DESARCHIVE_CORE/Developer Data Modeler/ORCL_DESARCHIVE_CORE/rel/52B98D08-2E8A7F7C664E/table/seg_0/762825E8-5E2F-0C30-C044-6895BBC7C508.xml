@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87F8E00D-BBB8-1EC3-D647-B5028FADD7D7" name="BODEGA">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:36:49 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="762825E8-5E2F-0C30-C044-6895BBC7C508" name="BODEGA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <commentInRDBMS><![CDATA[Tabla que almacena la información de las Bodegas.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <ordsAlias>table_21</ordsAlias>
@@ -10,9 +10,9 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_BODEGA" id="6789E11F-D31E-F885-D8EA-D92F31E26423">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<Column name="ID_BODEGA" id="4708C4E3-3BE3-0247-F919-B1B9F51E97D7">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el identificador único de Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -28,10 +28,10 @@
 <autoIncrementSequenceName>SEQ_BODEGA</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_BODEGA</autoIncrementTriggerName>
 </Column>
-<Column name="IDENTIFICACION" id="1E50C580-1A3E-CF88-C584-D390369ACB81">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:39:08 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena la identificación de la Bodega.]]></commentInRDBMS>
+<Column name="CODIGO" id="3FAB0C84-9865-9810-D288-187C85375934">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,9 +40,9 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NOMBRE" id="1EC72BA6-0F98-328C-23AE-E0D31F630CCC">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<Column name="NOMBRE" id="8B398CC2-8070-439E-36FD-D30982B129F8">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el nombre de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -52,9 +52,9 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TELEFONO" id="01C38C71-1B3B-4B53-1150-00A352725A3D">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<Column name="TELEFONO" id="2F70DC58-33FE-62B5-3545-3F37EA377708">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el teléfono de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -64,9 +64,9 @@
 <ownDataTypeParameters>500,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DIRECCION" id="D46C805F-62DF-7420-1D7F-5A0A839D0290">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:39:56 UTC</createdTime>
+<Column name="DIRECCION" id="707406BC-2DF8-76A9-CEAC-15B93C6A0FBE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena la dirección de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -76,9 +76,21 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ES_ACTIVO" id="21F9B4B5-7BEC-EB0B-C0DF-DF2F22CA80D3">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:40:14 UTC</createdTime>
+<Column name="COD_MUNICIPIO" id="49DA7413-036E-E445-4669-16FAEAF92A4C">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del Municipio donde se encuentra ubicada la Bodega.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="0C9534F9-6156-C137-477C-828E7B808198">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Bodega.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -88,39 +100,27 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_MUNICIPIO" id="D01E880B-5CD0-B71D-9E4A-A5947551F628">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:39:08 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el identificador del Municipio donde se encuentra ubicada la Bodega.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7047DFA4-8C57-2696-77E6-6BEC8A69ADA8" name="PK_BDG">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:39:08 UTC</createdTime>
+<ind_PK_UK id="8AB5B7A7-2B99-7BD7-34CD-A8656CA4AB19" name="PK_BDG">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6789E11F-D31E-F885-D8EA-D92F31E26423"/>
+<colUsage columnID="4708C4E3-3BE3-0247-F919-B1B9F51E97D7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2D410D7C-3780-BB4C-DDD6-ABD38F5FBF97" name="IDX_IDENTIFICACION">
-<createdBy>japaez</createdBy>
-<createdTime>2021-10-05 22:40:50 UTC</createdTime>
+<ind_PK_UK id="74494474-FBB0-8BB1-012D-08C139FE3D0F" name="IDX_IDENTIFICACIONv2">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:47:15 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1E50C580-1A3E-CF88-C584-D390369ACB81"/>
+<colUsage columnID="3FAB0C84-9865-9810-D288-187C85375934"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

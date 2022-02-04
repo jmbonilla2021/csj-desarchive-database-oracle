@@ -28,25 +28,11 @@
 <autoIncrementSequenceName>SEQ_HISTORICO_TARIFA</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_HISTORICO_TARIFA</autoIncrementTriggerName>
 </Column>
-<Column name="NOMBRE" id="A2D64418-9F73-1CA1-AD6F-C4B470D4EE52">
-<createdBy>jmnunez</createdBy>
-<createdTime>2021-12-14 20:19:40 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el nombre de la tarifa.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="CODIGO" id="E7DFCC7F-141E-2791-7B81-BB5BA01A7C80">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el código de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -54,18 +40,29 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NOMBRE" id="A2D64418-9F73-1CA1-AD6F-C4B470D4EE52">
+<createdBy>jmnunez</createdBy>
+<createdTime>2021-12-14 20:19:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la tarifa.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="VALOR" id="73734DC1-85B8-D005-5989-5577FFF66D0B">
 <createdBy>jmnunez</createdBy>
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el valor de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>19</dataTypePrecision>
+<dataTypePrecision>38</dataTypePrecision>
 <dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,19,4</ownDataTypeParameters>
+<ownDataTypeParameters>,38,4</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FECHA_ACTUALIZACION" id="9EB438F2-EB31-3B38-AD79-67E99843527B">
@@ -73,11 +70,22 @@
 <createdTime>2021-12-14 20:19:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena la fecha de actualización de la tarifa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="BACDCDE6-B221-8795-8736-CC025355A57E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-03 14:50:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Tarifa.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_TARIFA" id="646715A6-720D-06AF-0289-FCCB045AB25E">
@@ -89,7 +97,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A198D573-2B04-F6E9-01A9-1F85D7CC2401" referredColumn="907C66A9-F706-5EA2-FF14-59770594E089"/>
