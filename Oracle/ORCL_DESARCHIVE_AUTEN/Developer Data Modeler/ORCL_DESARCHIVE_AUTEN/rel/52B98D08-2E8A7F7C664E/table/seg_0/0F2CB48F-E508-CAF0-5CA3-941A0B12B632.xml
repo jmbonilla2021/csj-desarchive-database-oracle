@@ -27,6 +27,18 @@
 <autoIncrementSequenceName>SEQ_GRUPO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_GRUPO</autoIncrementTriggerName>
 </Column>
+<Column name="CODIGO" id="54BCC8A9-7C6B-F0C7-B03D-013402686661">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-10 18:54:52 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="NOMBRE" id="635CEED8-5D58-87FC-C7E5-C2407950DAAC">
 <createdBy>japaez</createdBy>
 <createdTime>2021-09-09 20:13:18 UTC</createdTime>
@@ -62,6 +74,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9910152C-3674-4463-27B9-29DD1D219D84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF7A8F0D-BD62-3A1E-D3FF-2C78F9C148A5" name="IDX_GRUPO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-10 18:55:19 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54BCC8A9-7C6B-F0C7-B03D-013402686661"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
