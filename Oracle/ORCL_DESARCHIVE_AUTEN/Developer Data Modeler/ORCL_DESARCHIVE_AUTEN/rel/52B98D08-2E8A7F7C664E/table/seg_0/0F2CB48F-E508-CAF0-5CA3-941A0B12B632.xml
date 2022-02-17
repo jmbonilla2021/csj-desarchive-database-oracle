@@ -30,8 +30,8 @@
 <Column name="CODIGO" id="54BCC8A9-7C6B-F0C7-B03D-013402686661">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-02-10 18:54:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del Grupo.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4C60252-911E-CBD3-FA34-D4C4CCC2428E" name="GESTOR_PROCESAL_X_JUZGADO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 16:33:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<abbreviation>GXJ</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_GESTOR_PROCESAL" id="4239E98D-23F3-18EC-5816-BC345A91D90D">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 16:35:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8730958A-652F-5AEB-569A-BE72C3BC35F6" referredColumn="924B1D2C-BBCD-D9E2-3A90-52DAB2B14620"/>
+</associations>
+</Column>
+<Column name="ID_JUZGADO" id="F7D5A245-AB7E-5A28-4576-C041CAF18F75">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 16:35:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Juzgado.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3370F564-85FC-4D54-7C06-B8F9C092BDD3" referredColumn="4546AB0B-88D7-0A27-3D51-B32B094FEBA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12C55925-251A-3065-09F4-DF0E7AF8C524" name="PK_GXJ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 16:35:23 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4239E98D-23F3-18EC-5816-BC345A91D90D"/>
+<colUsage columnID="F7D5A245-AB7E-5A28-4576-C041CAF18F75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B118217E-B4CD-C1D7-136E-4CB56B499C3C" name="FK_JUZ_GXJ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 18:49:53 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7D5A245-AB7E-5A28-4576-C041CAF18F75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D0DA0F0-BA7F-FE42-A6D7-CE1224D31577" name="FK_GEP_GXJ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 18:51:00 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4239E98D-23F3-18EC-5816-BC345A91D90D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
