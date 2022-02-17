@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="E3EEF23A-A689-221B-4379-BE5EEF52536B">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:44:26 UTC</createdTime>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>
