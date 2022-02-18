@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3339AD50-1F33-AE9D-4DFE-05423753CC9F" name="APPS_INTERNAS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3339AD50-1F33-AE9D-4DFE-05423753CC9F" name="APP_EXTERNA">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:01:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[Tabla que almacena la información de las Aplicaciones Internas.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Aplicaciones Externas.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <ordsAlias>table_21</ordsAlias>
-<abbreviation>API</abbreviation>
+<abbreviation>APE</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_APPS_INT" id="7C8653DB-E13A-C517-944C-BA2EF84107F3">
+<Column name="ID_APP_EXTERNA" id="7C8653DB-E13A-C517-944C-BA2EF84107F3">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el identificador único de la Aplicación Interna.]]></commentInRDBMS>
@@ -31,7 +31,19 @@
 <Column name="NOMBRE" id="A52E158F-24B0-133A-E031-8641C1B325D6">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el nombre de la Aplicación Interna.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre de la Aplicación Externa.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="D152B4D1-C695-5330-5BEF-D393D51E6784">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:23:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código de la Aplicación Externa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,7 +55,7 @@
 <Column name="HOST" id="2EF09665-2957-F12A-0DBE-71A4E2E98DBC">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el host (dirección web) de la Aplicación Interna.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Campo que almacena el host (dirección web) de la Aplicación Externa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -55,7 +67,7 @@
 <Column name="PORT" id="B42D7421-979E-B812-793E-FD4D14790AF9">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el puerto de la Aplicación Interna.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Campo que almacena el puerto del host (dirección web) de la Aplicación Externa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,7 +80,7 @@
 <Column name="USERNAME" id="658D9BD4-9B7A-F70E-D52C-135B5C92AF0E">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el nombre del usuario de la Aplicación Interna.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del usuario de la Aplicación Externa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -80,7 +92,7 @@
 <Column name="PASSWORD" id="EE3D9309-FAB4-17BF-242B-E0BA5772D659">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena la contraseña del usuario de la Aplicación Interna.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Campo que almacena la contraseña del usuario de la Aplicación Externa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -92,7 +104,7 @@
 <Column name="DETALLE" id="4CEC218C-98DD-7819-6454-A500AE2399F4">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el detalle o la descripción de la Aplicación Interna.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Campo que almacena el detalle o la descripción de la Aplicación Externa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -105,7 +117,7 @@
 <Column name="ES_ACTIVO" id="4ED65CD1-7214-5624-A93B-D2F6E0CDAA47">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Aplicación Interna.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la Aplicación Externa.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -116,7 +128,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="84A11BB6-B4C3-13D9-FB54-80D351531319" name="PK_API">
+<ind_PK_UK id="84A11BB6-B4C3-13D9-FB54-80D351531319" name="PK_APE">
 <createdBy>japaez</createdBy>
 <createdTime>2021-10-07 14:03:36 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
@@ -125,6 +137,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7C8653DB-E13A-C517-944C-BA2EF84107F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2ADB2C5-52C8-4369-F7C1-A96C765606F5" name="IDX_APP_EXTERNA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:24:33 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D152B4D1-C695-5330-5BEF-D393D51E6784"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

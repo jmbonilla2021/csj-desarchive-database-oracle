@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9065CFD9-9ABB-6AA7-AFB5-EC4A5D8F9A50" name="GESTOR_PROCESAL">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:10:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los Gestores Procesales.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<abbreviation>GEP</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_GESTOR_PROCESAL" id="924B1D2C-BBCD-D9E2-3A90-52DAB2B14620">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_GESTOR_PROCESAL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_GESTOR_PROCESAL</autoIncrementTriggerName>
+</Column>
+<Column name="TIPO_IDENTIFICACION" id="0D3989EB-A8B8-CABE-9558-B625045DDD2A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el tipo de  identificación del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_IDENTIFICACION" id="47083741-7782-1ED7-D47E-901624A276EE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número de  identificación del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_NOMBRE" id="2C3D379F-D326-BC80-9265-DC42C2CFA0EB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el primer nombre del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="0DDA5059-DC99-3869-C9AC-4FA8AD4EB349">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el segundo nombre del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="871DF2BB-EFB4-73B8-D572-E8668EA30AA8">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el primer apellido del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="37E2038D-5114-0D4B-79F6-C0E44D60C668">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el segundo apellido del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="48609EB2-17D3-8F06-7A21-3D4BA6F9AAEC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el correo electrónico del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_USUARIO" id="812901CE-A07F-E92D-D953-EAEFFD06F3CD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Usuario del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8F1CF1F-29E8-744D-60DF-DA9A8214763F" name="PK_GEP">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 14:17:58 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="924B1D2C-BBCD-D9E2-3A90-52DAB2B14620"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
