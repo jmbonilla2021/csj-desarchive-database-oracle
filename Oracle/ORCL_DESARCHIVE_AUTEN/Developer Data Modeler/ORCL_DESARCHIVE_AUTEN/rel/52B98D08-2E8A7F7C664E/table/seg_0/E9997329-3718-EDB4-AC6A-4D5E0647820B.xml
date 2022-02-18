@@ -31,8 +31,8 @@
 <Column name="CODIGO" id="001FA5CC-B79C-7FB3-82C2-ED499B6A0BAB">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-02-10 18:53:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código de Rol.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>

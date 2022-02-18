@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------------------------------------------------------------------------------
--- OBJETIVO                  : Reversion del script ORCL_DESARCHIVE_CORE_V.01.00.00.sql
+-- OBJETIVO                  : Reversion del script ORCL_DIA_FESTIVO_V.01.00.00.sql
 -- PARÁMETROS DE ENTRADA     : NA
 -- PARÁMETROS DE SALIDA      : NA   
 -- OBJETOS QUE LO REFERENCIAN: NA

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="9D6E2FC9-49EB-B793-E59F-BD8D490E1C9F" mainViewID="F73E1EC1-77B5-ACB9-41AE-EE310EE97219">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:44:26 UTC</createdTime>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

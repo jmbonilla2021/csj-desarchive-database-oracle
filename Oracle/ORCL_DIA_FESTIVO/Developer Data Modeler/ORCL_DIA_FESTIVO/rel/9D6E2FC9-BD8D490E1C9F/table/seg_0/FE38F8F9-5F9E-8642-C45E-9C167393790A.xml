@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE38F8F9-5F9E-8642-C45E-9C167393790A" name="DIA_FESTIVO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:44:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los días festivos en el calendario colombiano.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<abbreviation>DFE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DIA_FESTIVO" id="C187F946-40C9-12EF-2CB1-83AA5FEE57E7">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:45:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del día festivo.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_DIA_FESTIVO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_DIA_FESTIVO</autoIncrementTriggerName>
+</Column>
+<Column name="ANIO" id="2366C0A5-B696-1C7B-19B6-F79D6F32FBCE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:45:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el año del día festivo.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES" id="7150B4F6-69EA-18C4-97A8-9FE61880C43E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:45:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el mes del día festivo.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA" id="48627200-C8E1-5323-4E47-42A80EAA0B36">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:45:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el día festivo dentro del mes y año correspondiente.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="F2ADD646-892F-3DEC-D04A-85FC8FB09A08">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:45:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el día festivo en formato fecha.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D80F6B5-52F3-BD0F-087D-C02C5B37DF04" name="PK_DFE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:56:32 UTC</createdTime>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C187F946-40C9-12EF-2CB1-83AA5FEE57E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

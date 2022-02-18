@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="B12D0E35-C841-2884-5EEE-FACADFB4EFF0" mainViewID="F304714B-7BBB-E6E6-9B72-FD7C70D86E4A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:44:26 UTC</createdTime>
+<ownerDesignName>ORCL_DIA_FESTIVO</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -107,6 +107,7 @@
 <Column name="RAZON_SOCIAL" id="0AB57E45-CB25-BCDE-87F8-C058F0EA11B6">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-20 16:07:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la Razón Social del Usuario (PJ).]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -114,6 +115,18 @@
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>2000</dataTypeSize>
 <ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_GESTOR_PROCESAL" id="D2BEA550-5892-7FC9-925F-F54AE73B4814">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-17 19:09:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena si el Usuario es o no Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_AUTEN</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ES_ACTIVO" id="87D428C1-E0C9-6155-D3C9-2DEC1498F9F5">
@@ -137,7 +150,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A8533BDC-542A-8762-C6AA-6A744471D602" referredColumn="2E04A431-BF5E-596D-19ED-062B3F51D174"/>
@@ -152,7 +165,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="F40E2133-B249-AAE3-247D-BB0FD5385B5C" referredColumn="DAEDF781-F55F-4586-E4BE-513EECFCB7A0"/>
