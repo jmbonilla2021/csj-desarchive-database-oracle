@@ -160,8 +160,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D27E2B1-4EA3-BEC5-BB82-C3D41D6FB92D" referredColumn="8DF3D680-44AD-565E-74C9-AE41F0E87482"/>
+</associations>
 </Column>
 <Column name="ANIO_PROCESO" id="54B0B4CE-A5D9-A3C9-17E9-7506A178674A">
 <createdBy>jmnunez</createdBy>
@@ -359,6 +363,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="41853DDB-CD44-2607-AA7F-69372E32317B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F2D5E4D-6CDB-9B86-6950-B1BBBA7E7065" name="FK_TPE_SLC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-21 20:19:03 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81E6B85B-4E3C-A806-D655-5D511EFB2302"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
