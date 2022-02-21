@@ -57,6 +57,7 @@
 <createdTime>2022-02-17 14:17:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el primer nombre del Gestor Procesal.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -82,6 +83,7 @@
 <createdTime>2022-02-17 14:17:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el primer apellido del Gestor Procesal.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -107,6 +109,18 @@
 <createdTime>2022-02-17 14:17:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el correo electrónico del Gestor Procesal.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAZON_SOCIAL" id="076D2949-C229-AD39-A56D-A2AE2E27BA30">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-21 15:09:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la razón social del Gestor Procesal.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -120,7 +134,6 @@
 <createdTime>2022-02-17 14:17:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el identificador del Usuario del Gestor Procesal.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
