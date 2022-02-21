@@ -28,7 +28,7 @@
 <autoIncrementSequenceName>SEQ_GESTOR_PROCESAL</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_GESTOR_PROCESAL</autoIncrementTriggerName>
 </Column>
-<Column name="TIPO_IDENTIFICACION" id="0D3989EB-A8B8-CABE-9558-B625045DDD2A">
+<Column name="CODIGO_TIPO_IDENTIFICACION" id="0D3989EB-A8B8-CABE-9558-B625045DDD2A">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-02-17 14:17:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena el tipo de  identificación del Gestor Procesal.]]></commentInRDBMS>
