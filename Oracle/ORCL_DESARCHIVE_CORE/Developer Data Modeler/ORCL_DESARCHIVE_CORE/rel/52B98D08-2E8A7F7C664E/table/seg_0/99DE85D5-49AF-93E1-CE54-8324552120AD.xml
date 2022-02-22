@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99DE85D5-49AF-93E1-CE54-8324552120AD" name="ESP_X_TIPO_PROCESO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 18:53:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las Especialidades por Tipo de Proceso.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<abbreviation>EXT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_PROCESO" id="A9FBD5D6-2BCF-8B83-4F17-60943639335F">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 18:56:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del Tipo de Proceso.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFC0EE1C-9BFA-2A1C-9C7E-9A1497589303" referredColumn="8F90993D-5372-A811-B14A-BF6D0E5F33D4"/>
+</associations>
+</Column>
+<Column name="ID_ESPECIALIDAD" id="4929CCB6-8639-ADE2-9E9D-C02092D47F77">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 18:56:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la Especialidad.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C69B017-0884-9C13-9309-97768FA19082" referredColumn="8E3445D3-BD5D-97E5-F07C-9E43DB75884F"/>
+</associations>
+</Column>
+<Column name="REQUIERE_PAGO_SITIO_WEB" id="FBC9E85B-1D44-5C29-0C4E-3470685DCB29">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 18:56:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena si el tipo de proceso si requiere o no pago en el Sitio Web.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_VISIBLE_SITIO_WEB" id="829AFCF8-C4DA-DC1F-CDF7-484CB83DE3ED">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 18:56:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena si el tipo de proceso es visible o no visble en el Sitio Web.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF53FE62-D6A2-2452-1493-344F579E81BC" name="PK_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 18:56:45 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4929CCB6-8639-ADE2-9E9D-C02092D47F77"/>
+<colUsage columnID="A9FBD5D6-2BCF-8B83-4F17-60943639335F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="903FAAAE-54C0-45C7-4B9A-87304151F48D" name="FK_ESP_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 19:01:16 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4929CCB6-8639-ADE2-9E9D-C02092D47F77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="716408F9-5821-5170-0D2B-91D87FD109EB" name="FK_TPP_EXT">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-22 19:02:05 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9FBD5D6-2BCF-8B83-4F17-60943639335F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
