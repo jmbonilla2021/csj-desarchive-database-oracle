@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEBEEBE8-21CF-8F0B-C469-CF474B7801B9" name="INCIDENCIA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 13:55:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de las incidencias ocurrentes por los cambios de estado u otros eventos en el proceso de desarchive.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<abbreviation>IDA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_INCIDENCIA" id="6A77C9B0-A5D6-D220-6A67-8BA462A5A1E1">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 13:57:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único de la incidencia.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_INCIDENCIA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_INCIDENCIA</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="1A992E51-0EAA-E38F-0D1A-702A850AF871">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 13:57:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único de la incidencia.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="1D5017FB-FBFB-DEE0-C0F6-EBFB051A2160">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 13:57:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la descripción de la incidencia.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="C9E2F57D-BF1F-18D8-1741-C97A7DAC615B">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 13:57:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la incidencia.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D1D15A1-85F2-7011-5876-C2E4D3439179" name="PK_IDA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 14:02:27 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A77C9B0-A5D6-D220-6A67-8BA462A5A1E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBAE9785-098B-ADB3-B53D-6F989E649D9D" name="IDX_INCIDENCIA">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 14:05:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A992E51-0EAA-E38F-0D1A-702A850AF871"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

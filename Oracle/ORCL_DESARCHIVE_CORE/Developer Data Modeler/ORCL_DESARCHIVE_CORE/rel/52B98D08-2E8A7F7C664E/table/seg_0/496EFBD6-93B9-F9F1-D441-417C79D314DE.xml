@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="496EFBD6-93B9-F9F1-D441-417C79D314DE" name="ESTADO_SOL_X_ROL">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:46:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los estados de solicitud de desarchive por rol de usuario.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<abbreviation>EXR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTADO_SOL_X_ROL" id="98039B1E-8459-9D41-D54D-E7A60DE354D0">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:51:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del estado de solicitud por rol.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_ESTADO_SOL_X_ROL</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG__ESTADO_SOL_X_ROL</autoIncrementTriggerName>
+</Column>
+<Column name="ID_ESTADO_SOLICITUD" id="D2B6D02A-DA9D-C367-A2E7-1A590F618B08">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:51:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de estado de solicitud.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADD0558B-E768-24D2-FCE7-6776EDC7E508" referredColumn="BFEB17FD-07BB-23C2-569D-F288D7FCFEB5"/>
+</associations>
+</Column>
+<Column name="CODIGO_ROL" id="CC8EA0BA-088C-891E-1109-6FD361DC84A2">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:51:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código del rol.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="018A6232-686A-5EB7-187C-EA8A0B0A7C14">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:51:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Campo que almacena el estado ACTIVO o INACTIVO del estado de solicitud por rol.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63665987-F1E6-1FF5-3319-A6C8A6B32BE6" name="PK_EXR">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:53:44 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98039B1E-8459-9D41-D54D-E7A60DE354D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6BC6E23-42A3-646A-206F-7F1A7CAFDF61" name="FK_ESS_EXR">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:59:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2B6D02A-DA9D-C367-A2E7-1A590F618B08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
