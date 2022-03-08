@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ADD0558B-E768-24D2-FCE7-6776EDC7E508" containerWithKeyObject="496EFBD6-93B9-F9F1-D441-417C79D314DE" localFKIndex="A6BC6E23-42A3-646A-206F-7F1A7CAFDF61" name="FK_ESS_EXR">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 13:59:40 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>ESTADO_SOLICITUD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>72CA0A6A-7A09-223E-07C4-E687F62A6F58</referredTableID>
+<keyObject>B1E072A8-903E-0535-7765-12567429E401</keyObject>
+<referredKeyID>B1E072A8-903E-0535-7765-12567429E401</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESTADO_SOLICITUD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

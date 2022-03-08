@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57E0E082-4542-A41B-3816-B2A37329E073" containerWithKeyObject="A696173A-AF38-85F6-05D6-D14C5860A0E9" localFKIndex="3BB617FE-0777-2D83-FB59-89BFE7FE15C6" name="FK_IDA_HXI">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-03 14:14:10 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<referredTableLongName>INCIDENCIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CEBEEBE8-21CF-8F0B-C469-CF474B7801B9</referredTableID>
+<keyObject>5D1D15A1-85F2-7011-5876-C2E4D3439179</keyObject>
+<referredKeyID>5D1D15A1-85F2-7011-5876-C2E4D3439179</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_INCIDENCIA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

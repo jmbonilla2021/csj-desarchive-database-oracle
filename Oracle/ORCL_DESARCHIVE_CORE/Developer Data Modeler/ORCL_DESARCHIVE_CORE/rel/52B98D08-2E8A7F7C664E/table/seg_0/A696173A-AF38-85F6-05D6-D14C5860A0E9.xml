@@ -1,19 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66AF027E-7B77-398E-1C06-5A27A7730133" name="ESPECIALIDAD_X_JUZGADO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A696173A-AF38-85F6-05D6-D14C5860A0E9" name="HIST_EST_SOL_X_INCIDENCIA">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-02-03 16:39:32 UTC</createdTime>
-<commentInRDBMS><![CDATA[Tabla que almacena la información de las Especialidades por Juzgado.]]></commentInRDBMS>
+<createdTime>2022-03-03 14:08:05 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<ordsAlias>table_31</ordsAlias>
-<abbreviation>EXJ</abbreviation>
+<ordsAlias>table_33</ordsAlias>
+<abbreviation>HXI</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_ESPECIALIDAD" id="600F116F-DA90-5750-840F-511AFF7CADAD">
+<Column name="ID_INCIDENCIA" id="7794E8DA-9964-71F7-B893-319444B9F3C1">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-02-03 16:40:47 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el identificador de la Especialidad.]]></commentInRDBMS>
+<createdTime>2022-03-03 14:08:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador de la incidencia.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,13 +21,13 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="CB5DC28E-34C2-B6BE-CB68-7874B09BF180" referredColumn="8E3445D3-BD5D-97E5-F07C-9E43DB75884F"/>
+<colAssociation fkAssociation="57E0E082-4542-A41B-3816-B2A37329E073" referredColumn="6A77C9B0-A5D6-D220-6A67-8BA462A5A1E1"/>
 </associations>
 </Column>
-<Column name="ID_JUZGADO" id="D3BF9769-F584-B937-9909-49E7935C3CCB">
+<Column name="ID_HIST_ESTADO_SOLICITUD" id="2C7CD300-E6E4-9DC4-33E0-E231A2AB8265">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-02-03 16:40:47 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el identificador del Juzgado.]]></commentInRDBMS>
+<createdTime>2022-03-03 14:08:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del histórico del Estado de la Solicitud.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -37,41 +36,41 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="455CDF43-643D-EA2A-B86B-4390D230BC84" referredColumn="4546AB0B-88D7-0A27-3D51-B32B094FEBA8"/>
+<colAssociation fkAssociation="AC6F1580-0C6B-B256-DFD3-18D228E7E0A8" referredColumn="569534BD-02D1-437E-EE7C-956E87D96D1C"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="44E0D115-3030-6CA9-670D-749E91BC3BE4" name="PK_EXJ">
+<ind_PK_UK id="918A72B7-818C-40FC-6042-B5B1AC9AE731" name="PK_HXI">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-02-03 16:40:47 UTC</createdTime>
+<createdTime>2022-03-03 14:09:41 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="600F116F-DA90-5750-840F-511AFF7CADAD"/>
-<colUsage columnID="D3BF9769-F584-B937-9909-49E7935C3CCB"/>
+<colUsage columnID="7794E8DA-9964-71F7-B893-319444B9F3C1"/>
+<colUsage columnID="2C7CD300-E6E4-9DC4-33E0-E231A2AB8265"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="031C8590-9675-0002-4CC6-7540746413E8" name="FK_ESP_EXJ">
+<ind_PK_UK id="0D809362-69C4-2ADE-BFBF-4744F6D7B99B" name="FK_HES_HXI">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-02-03 18:33:29 UTC</createdTime>
+<createdTime>2022-03-03 14:13:09 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="600F116F-DA90-5750-840F-511AFF7CADAD"/>
+<colUsage columnID="2C7CD300-E6E4-9DC4-33E0-E231A2AB8265"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="15C52926-2D27-9FFC-4AD2-10C3173C7D65" name="FK_JUZ_EXJ">
+<ind_PK_UK id="3BB617FE-0777-2D83-FB59-89BFE7FE15C6" name="FK_IDA_HXI">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-02-03 18:34:23 UTC</createdTime>
+<createdTime>2022-03-03 14:14:10 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D3BF9769-F584-B937-9909-49E7935C3CCB"/>
+<colUsage columnID="7794E8DA-9964-71F7-B893-319444B9F3C1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

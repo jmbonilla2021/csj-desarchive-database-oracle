@@ -28,16 +28,28 @@
 <autoIncrementSequenceName>SEQ_PARAMETRO</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_PARAMETRO</autoIncrementTriggerName>
 </Column>
-<Column name="NOMBRE_CLAVE" id="8B004876-1469-FE34-DA4C-0C10CC65057C">
+<Column name="CODIGO" id="0969E2E4-2469-F3F3-4D09-B75B6FBED156">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-01-14 13:53:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el nombre cleve del Parámetro.]]></commentInRDBMS>
+<createdTime>2022-03-04 14:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Campo que almacena el código único del parámetro.]]></commentInRDBMS>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>1000</dataTypeSize>
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="8B004876-1469-FE34-DA4C-0C10CC65057C">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-01-14 13:53:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la descripción del Parámetro.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="VALOR" id="52F98B54-D304-70FB-F02E-65E0DA257812">
@@ -78,6 +90,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="693A2F6A-B72F-285A-DEAC-58F2FE525943"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACEC4089-997C-B40A-4371-8E3E1C1D7B80" name="IDX_PARAMETRO">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-04 14:23:25 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0969E2E4-2469-F3F3-4D09-B75B6FBED156"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="F24266D5-2DF8-8999-6976-009CBCDD5D63" name="FK_PRC_PRM">
