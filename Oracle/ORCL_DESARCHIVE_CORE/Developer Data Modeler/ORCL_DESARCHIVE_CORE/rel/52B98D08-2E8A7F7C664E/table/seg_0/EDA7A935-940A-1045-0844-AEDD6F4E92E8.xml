@@ -227,7 +227,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="BC752C78-0E9E-75B1-1392-B187AFD4A5FD" referredColumn="BFEB17FD-07BB-23C2-569D-F288D7FCFEB5"/>
+<colAssociation fkAssociation="8966C560-B0FA-3F0F-AAEF-311065CC8C65" referredColumn="BFEB17FD-07BB-23C2-569D-F288D7FCFEB5"/>
 </associations>
 </Column>
 <Column name="ID_TIPO_SOLICITUD" id="14E785C4-00DE-9401-E488-59723E1C456F">
@@ -315,16 +315,6 @@
 <colUsage columnID="A02561C8-DF16-1CE1-510D-F73EDE50DBF4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0ED71B25-5D20-4787-5062-B298AD008208" name="FK_ESS_SLC">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="79D63ADC-6295-0634-3AD3-362B0CB25C6E"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="D750CAED-44EE-FDC8-8EA4-6DC1B8A8307A" name="FK_TSO_SLC">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-13 19:21:04 UTC</createdTime>
@@ -373,6 +363,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="81E6B85B-4E3C-A806-D655-5D511EFB2302"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E6D09A7-F7A2-F033-9D25-A3A80B58E988" name="FK_ESS_SLC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 14:08:48 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79D63ADC-6295-0634-3AD3-362B0CB25C6E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

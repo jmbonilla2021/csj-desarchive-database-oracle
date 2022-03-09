@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21579CA9-4428-B4BA-739F-27B308ACA8D2" name="ESTADO_PAQUETE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:55:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla que almacena la información de los estados de paquete archivados en las bodegas.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<ordsAlias>table_35</ordsAlias>
+<abbreviation>EPQ</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTADO_PAQUETE" id="C4041B95-5A69-20D0-87C0-946A6D7E2F75">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:57:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del estado del paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_ESTADO_PAQUETE</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_ESTADO_PAQUETE</autoIncrementTriggerName>
+</Column>
+<Column name="CODIGO" id="2708B75C-A980-9A4E-6C0A-3751C93C6EA3">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:57:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el código único del estado del paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="6E044A7C-E794-AF3B-9B6A-877C547DFDC9">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:57:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el nombre del estado del paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="1238289A-2D51-6BBA-C2F7-EE248C0BFB98">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:57:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO del estado del paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19AE1EFA-A6A6-52FC-F5F2-A414FFC55FAE" name="PK_EPQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:57:21 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4041B95-5A69-20D0-87C0-946A6D7E2F75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F790383D-7012-9BA2-3DF3-955C449CF459" name="IDX_ESTADO_PAQUETE">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 15:08:28 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2708B75C-A980-9A4E-6C0A-3751C93C6EA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
