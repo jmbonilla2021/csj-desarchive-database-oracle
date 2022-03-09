@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BC752C78-0E9E-75B1-1392-B187AFD4A5FD" containerWithKeyObject="EDA7A935-940A-1045-0844-AEDD6F4E92E8" localFKIndex="0ED71B25-5D20-4787-5062-B298AD008208" name="FK_ESS_SLC">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8966C560-B0FA-3F0F-AAEF-311065CC8C65" containerWithKeyObject="EDA7A935-940A-1045-0844-AEDD6F4E92E8" localFKIndex="9E6D09A7-F7A2-F033-9D25-A3A80B58E988" name="FK_ESS_SLC">
 <createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
+<createdTime>2022-03-09 14:08:48 UTC</createdTime>
 <ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
 <referredTableLongName>ESTADO_SOLICITUD</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
