@@ -28,32 +28,6 @@
 <autoIncrementSequenceName>SEQ_PAQUETE</autoIncrementSequenceName>
 <autoIncrementTriggerName>TRG_PAQUETE</autoIncrementTriggerName>
 </Column>
-<Column name="ANIO_PAQUETE" id="0F684F73-4622-FFAC-EFC8-1144A30EABCF">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-02-02 21:16:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el año del Paquete.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="NUMERO_PAQUETE" id="76E84AAC-41D9-84EA-5303-355E43AFA2DC">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-02-02 21:16:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el número del Paquete.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="BLOQUE" id="4B232FFB-E928-D54A-AAC2-CDB15C8EB313">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-02-02 21:16:19 UTC</createdTime>
@@ -145,6 +119,114 @@
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NUMERO_PAQUETE" id="76E84AAC-41D9-84EA-5303-355E43AFA2DC">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el número del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROCESO" id="8EB19F58-951B-6D57-2F56-8D93B542E50A">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:54:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el proceso contenido en el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANIO_PAQUETE" id="0F684F73-4622-FFAC-EFC8-1144A30EABCF">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-02-02 21:16:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el año del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="D067B338-C501-8381-4554-00D3AF9F966E">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:54:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena las observaciones referentes al Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEMANDANTE" id="6D30FCF3-6231-8B23-AC91-61E449D87F60">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:54:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el demandante del proceso que hace parte del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEMANDADO" id="47E1AC64-3C2D-6BCE-D5E9-A84388515DBB">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:54:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el demandado del proceso que hace parte del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_JUZGADO" id="C8E7ED99-FC19-CFA7-98E5-37FEBB630778">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 13:01:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador del juzgado al cual pertenece el Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66B87223-85B4-D444-7E56-2791034A8D8C" referredColumn="4546AB0B-88D7-0A27-3D51-B32B094FEBA8"/>
+</associations>
+</Column>
+<Column name="ID_ESTADO_PAQUETE" id="D1DB96F4-8CA0-4487-4529-F7FC105385FD">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:54:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado del Paquete.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04B2C0E2-5BE5-EA83-1004-FC0DDB8EB042" referredColumn="C4041B95-5A69-20D0-87C0-946A6D7E2F75"/>
+</associations>
+</Column>
 <Column name="ID_BODEGA" id="02BC2E8A-CBD1-CFA5-BD28-21BB00DDF62F">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-02-02 21:16:19 UTC</createdTime>
@@ -154,7 +236,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="449FAA79-EFA8-0633-CFFE-8856D73C5BE9" referredColumn="4708C4E3-3BE3-0247-F919-B1B9F51E97D7"/>
@@ -181,6 +263,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="02BC2E8A-CBD1-CFA5-BD28-21BB00DDF62F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60ECA0D5-0A49-34C2-8308-3B59D39DD8B5" name="FK_EPQ_PAQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 12:58:08 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1DB96F4-8CA0-4487-4529-F7FC105385FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1FBF83A-9BE4-512F-91FB-7D8B33FC63AB" name="FK_JUZ_PAQ">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-09 13:02:36 UTC</createdTime>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8E7ED99-FC19-CFA7-98E5-37FEBB630778"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
