@@ -9,6 +9,24 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HIST_EST_SOL_X_INCIDENCIA" id="191503AA-CBBF-EA6F-1F25-955AA9B96EB9">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-10 16:53:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el identificador único del historico estado solicitud por incidencia.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementSequenceName>SEQ_HIST_EST_SOL_X_INCIDENCIA</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_HIST_EST_SOL_X_INCIDENCIA</autoIncrementTriggerName>
+</Column>
 <Column name="ID_INCIDENCIA" id="7794E8DA-9964-71F7-B893-319444B9F3C1">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-03-03 14:08:53 UTC</createdTime>
@@ -18,7 +36,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="57E0E082-4542-A41B-3816-B2A37329E073" referredColumn="6A77C9B0-A5D6-D220-6A67-8BA462A5A1E1"/>
@@ -33,11 +51,35 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="AC6F1580-0C6B-B256-DFD3-18D228E7E0A8" referredColumn="569534BD-02D1-437E-EE7C-956E87D96D1C"/>
 </associations>
+</Column>
+<Column name="FECHA_SOLUCION" id="BD87BA0E-702A-59CB-E2E9-9DD633013976">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-10 16:39:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena la fecha de solución de la incidencia.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ACTIVO" id="DBAB2671-C120-00EE-A534-FF4079BBC280">
+<createdBy>jmnunez</createdBy>
+<createdTime>2022-03-10 16:39:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo que almacena el estado ACTIVO o INACTIVO de la incidencia, referente a la solicitud de desarchive.]]></commentInRDBMS>
+<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -49,8 +91,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7794E8DA-9964-71F7-B893-319444B9F3C1"/>
-<colUsage columnID="2C7CD300-E6E4-9DC4-33E0-E231A2AB8265"/>
+<colUsage columnID="191503AA-CBBF-EA6F-1F25-955AA9B96EB9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="0D809362-69C4-2ADE-BFBF-4744F6D7B99B" name="FK_HES_HXI">
