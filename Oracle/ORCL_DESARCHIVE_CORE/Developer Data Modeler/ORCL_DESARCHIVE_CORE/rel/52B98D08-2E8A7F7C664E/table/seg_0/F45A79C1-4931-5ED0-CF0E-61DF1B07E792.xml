@@ -119,22 +119,6 @@
 <ownDataTypeParameters>2000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO_TIPO_SUJ_PROCESAL" id="54E3DFB8-7360-F0D8-1BDB-00C7412C57C7">
-<createdBy>jmnunez</createdBy>
-<createdTime>2022-01-13 19:08:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Campo que almacena el código del Tipo de Sujeto Procesal.]]></commentInRDBMS>
-<ownerDesignName>ORCL_DESARCHIVE_CORE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<autoIncrementDisableCache>false</autoIncrementDisableCache>
-<autoIncrementCache>20</autoIncrementCache>
-<autoIncrementSequenceName>SEQ_SUJETO_PROCESAL</autoIncrementSequenceName>
-<autoIncrementTriggerName>TRG_SUJETO_PROCESAL</autoIncrementTriggerName>
-</Column>
 <Column name="RAZON_SOCIAL" id="DD9BCDA3-4BF8-E599-488D-42235D60CF87">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-01-19 15:07:47 UTC</createdTime>
@@ -157,7 +141,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0562F535-58A3-BAB5-698F-D39ADE27A8EB" referredColumn="8DF3D680-44AD-565E-74C9-AE41F0E87482"/>
@@ -172,7 +156,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="5660973E-A667-DDFC-D2FC-B0182903746D" referredColumn="9236FB6A-53AD-382D-3683-CBB65260F776"/>

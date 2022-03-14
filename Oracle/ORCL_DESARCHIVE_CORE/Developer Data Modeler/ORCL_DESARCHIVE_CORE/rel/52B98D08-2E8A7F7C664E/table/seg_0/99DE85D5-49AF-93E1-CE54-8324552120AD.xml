@@ -19,7 +19,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="DFC0EE1C-9BFA-2A1C-9C7E-9A1497589303" referredColumn="8F90993D-5372-A811-B14A-BF6D0E5F33D4"/>
@@ -34,13 +34,13 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="5C69B017-0884-9C13-9309-97768FA19082" referredColumn="8E3445D3-BD5D-97E5-F07C-9E43DB75884F"/>
 </associations>
 </Column>
-<Column name="REQUIERE_PAGO_SITIO_WEB" id="FBC9E85B-1D44-5C29-0C4E-3470685DCB29">
+<Column name="REQUIERE_PAGO" id="FBC9E85B-1D44-5C29-0C4E-3470685DCB29">
 <createdBy>jmnunez</createdBy>
 <createdTime>2022-02-22 18:56:45 UTC</createdTime>
 <commentInRDBMS><![CDATA[Campo que almacena si el tipo de proceso si requiere o no pago en el Sitio Web.]]></commentInRDBMS>
